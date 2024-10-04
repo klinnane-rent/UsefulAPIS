@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State         |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:--------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Boulder City, NV    |        16048 |           62792 |              304600 |                1290 | 94.999  |
+|  1 | North Las Vegas, NV |       247248 |           60972 |              260100 |                1292 | 78.3493 |
+|  2 | Las Vegas, NV       |       644594 |           58377 |              279700 |                1460 | 74.6125 |
+|  3 | Sun Valley, NV      |        21179 |           56503 |              190600 |                1635 | 65.7872 |
+|  4 | Fernley, NV         |        20616 |           66525 |              256200 |                1550 | 57.9801 |
+","# Cheapest Places to Live in Nevada
+
+Nevada, known for its vibrant nightlife, entertainment industry, and desert landscapes is not only a tourist attraction but also an affordable place to live for renters. While the state capital is Carson City, the largest city is Las Vegas, home to countless casinos, luxury hotels, and a plethora of entertainment shows. Despite its glitz and glamour, Nevada offers some of the cheapest places to live, verified by our comprehensive research on cities' population, median income, median home value, and 2-bedroom asking rent. The cheapest cities in the state according to our results include Boulder City, North Las Vegas, Las Vegas, Sun Valley, and Fernley.
+
+## Boulder City, NV
+
+Boasting a population of just over 16,000, Boulder City is a gem in the state of Nevada. Its median income is $62,792 which, together with a median home value of $304,600, makes it a worthwhile place to live. The 2-bedroom asking rent in Boulder City is $1,290, which is considerably affordable considering the amenities offered. A drive around Boulder City will take you past historical spots like the Boulder City/Hoover Dam Museum, nature trails like the River Mountain Loop Trail, or the scenic Boulder City Golf Course. The city’s high score of 94.999 implies a high standard of living, making it one of the best and most affordable places to live in Nevada.
+
+## North Las Vegas, NV
+
+North Las Vegas is another affordable city in Nevada, having a population of 247,248 and a median income of $60,972. With a median home value of $260,100 and an impressively low 2-bedroom asking rent of $1,292, North Las Vegas offers a comfortable living standard at a relatively low expense. The city is home to several attractions, such as the Aliante Nature Discovery Park and the Planetarium at the College of Southern Nevada. With an overall score of 78.3493, North Las Vegas provides a budget-friendly living destination.
+
+## Las Vegas, NV
+
+Despite being a famous international entertainment center, Las Vegas, with a population of 644,594, is surprisingly budget-friendly for renters. It has a median home value of $279,700, balanced against a median income of $58,377. Rent for a 2-bedroom residence in the city stands at $1,460, offering access to the thriving city life, vibrant nightlife, and numerous recreational areas such as the Red Rock Canyon National Conservation Area. With a score of 74.6125, Las Vegas certainly offers an affordable living standard, despite its world-renowned glitz and glamour.
+
+## Sun Valley, NV
+
+Sun Valley, a suburb of Reno with a population of 21,179, is an affordable city in Nevada for renters. The median home value is $190,600 while the median income is $56,503. Rent for a 2-bedroom apartment is around $1,635. Sun Valley is known for Sun Valley Community Park and its proximity to the Sparks Marina Park. With a score of 65.7872, Sun Valley is a great place to live, combining affordability with plenty of recreational opportunities.
+
+## Fernley, NV
+
+Located just 30 miles east of Reno, Fernley is one of the most affordable cities in Nevada with a population of 20,616. The city's median income is $66,525 and the median home value is $256,200. The 2-bedroom asking rent in Fernley is $1,550. Fernley offers plenty of outdoor activities with its proximity to the Pyramid Lake and Fernley Wildlife Management Area. The city's score of 57.9801 denotes a comfortable, affordable lifestyle in a peaceful, suburban setting."

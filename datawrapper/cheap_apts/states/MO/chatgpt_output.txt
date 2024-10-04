@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State        |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:-------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Cape Girardeau, MO |        40100 |           45713 |              153400 |                 538 | 94.105  |
+|  1 | Joplin, MO         |        50580 |           45091 |              125400 |                 899 | 90.4737 |
+|  2 | Branson, MO        |        11526 |           44184 |              168200 |                 850 | 88.4219 |
+|  3 | Farmington, MO     |        18792 |           44093 |              134900 |                 790 | 87.0954 |
+|  4 | Independence, MO   |       117139 |           50797 |              121200 |                1050 | 86.2869 |
+","# Cheapest Places to Live in Missouri
+
+When it comes to affordability, Missouri offers a wide range of options for renters. Known for its mix of urban excitement and rural charm, Missouri is a state that caters to a variety of lifestyle preferences while remaining budget-friendly. Our analysis of rental rates, median income, and overall cost of living reveals that some cities in the Show Me State offer unbeatable value. According to our methodology, the cheapest cities to rent a home in Missouri are Cape Girardeau, Joplin, Branson, Farmington, and Independence.
+
+## Cape Girardeau, Missouri
+
+Cape Girardeau, situated on the western bank of the Mississippi River, offers renters an affordable place to live coupled with a small-town vibe. With a population of 40,100, this welcoming city offers a high quality of life with a relatively low median asking rent for a 2-bedroom home of just $538. The city is home to Southeast Missouri State University, numerous parks like Capaha Park and the Cape LaCroix Recreational Trail, and historic attractions like the Glenn House, all contributing to a unique living experience.
+
+## Joplin, Missouri
+
+Home to 50,580 residents, Joplin provides a mix of affordability and small-city charm. The city, located in the southwestern corner of Missouri, boasts a median income of $45,091 and an affordable median asking rent of $899 for a 2-bedroom home. With attractions such as the George A. Spiva Center for the Arts, the Wildcat Glades Conservation & Audubon Center, and numerous parks, Joplin offers a mix of culture, nature, and affordability.
+
+## Branson, Missouri
+
+Renowned for its vibrant entertainment scene, Branson offers more than just affordable living. Despite a median home value of $168,200, the median asking rent for a 2-bedroom home is a reasonable $850. The city, with a population of 11,526, provides residents with access to iconic entertainment venues like the Branson Landing and Silver Dollar City, as well as the beautiful Table Rock Lake, offering an exciting blend of affordability and recreation.
+
+## Farmington, Missouri
+
+Farmington, a city with a population of 18,792, offers a great balance between affordability and quality of life. The median asking rent for a 2-bedroom home in Farmington is $790, making it a budget-friendly choice. Coupled with attraction points such as the St. Joe State Park and the Farmington Water Park, Farmington provides an affordable and comfortable living experience in Missouri.
+
+## Independence, Missouri
+
+Independence, the fifth-largest city in the state with a population of 117,139, affords renters with a larger urban environment without sacrificing affordability. The median asking rent for a 2-bedroom home is $1,050. The city, which sits on the eastern edge of Kansas City, offers a wealth of attractions including the Harry S. Truman Presidential Library and Museum, Independence Square, and numerous parks and trails. Despite its size, Independence maintains an affordable cost of living, providing renters with an ideal balance of city living and budget-friendly expenses."

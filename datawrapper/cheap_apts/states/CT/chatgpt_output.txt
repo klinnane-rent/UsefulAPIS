@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State       |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | East Hartford, CT |        50036 |           59954 |              168300 |                1312 | 94.7024 |
+|  1 | Waterbury, CT     |       107841 |           46329 |              132700 |                1250 | 94.2929 |
+|  2 | Bridgeport, CT    |       145014 |           47484 |              186000 |                1200 | 93.5189 |
+|  3 | Willimantic, CT   |        18669 |           35630 |              151500 |                1460 | 92.1922 |
+|  4 | Bristol, CT       |        60039 |           68485 |              198600 |                1410 | 91.6833 |
+","# Cheapest Places to Live in Connecticut 
+Connecticut, known for its coastal cities and rural areas dotted with small towns, is a state that offers a broad range of living experiences. From bustling urban centers to serene countryside, Connecticut provides various options for renters on a budget. While the state is often associated with wealth and high costs of living, particularly in areas such as Fairfield County and the Greater Hartford area, there are multiple cities in Connecticut where renters can find affordable housing. Based on our analysis, the five cheapest cities for renters are East Hartford, Waterbury, Bridgeport, Willimantic, and Bristol.
+
+## East Hartford, CT
+Located on the eastern bank of the Connecticut River, East Hartford offers affordable living with a population of 50,036 and a surprisingly high median income of $59,954. A renter can find a 2-bedroom apartment with an asking rent of $1,312, quite affordable considering the city's median home value of $168,300. East Hartford is home to many parks like Goodwin Park and Wickham Park, and is in close proximity to points of interest such as the Rentschler Field Stadium and the historic Main Street District.
+
+## Waterbury, CT
+Waterbury, with a population of 107,841, is another affordable city in Connecticut. Despite a lower median income of $46,329, the city's 2-bedroom asking rent is $1,250, which is quite reasonable. The city, known as ""The Brass City"" for its rich industrial past, offers a wealth of historic and cultural resources like the Mattatuck Museum and Palace Theater. Waterbury is also near the Naugatuck State Forest, providing ample opportunities for outdoor fun.
+
+## Bridgeport, CT 
+With a population of 145,014, Bridgeport is the largest city in Connecticut and one of the most affordable for renters. The city’s median income is $47,484, close to Waterbury, and the rent for a 2-bedroom apartment stands at $1,200. Filled with historical spots such as the Barnum Museum and beautiful seaside parks like Seaside Park and Pleasure Beach, Bridgeport offers a rich mixture of urban and outdoor delights.
+
+## Willimantic, CT
+Willimantic is a smaller city of 18,669 residents nestled in Eastern Connecticut. Despite a lower median income of $35,630, the asking rent for a 2-bedroom apartment is $1,460, still within reach for many. Known for landmarks like the Willimantic Footbridge and the Mill Museum, the city carries a charm that's distinctly New England.
+
+## Bristol, CT
+Bristol, with a population of 60,039 and a median income of $68,485, offers a 2-bedroom apartment for a reasonable $1,410 rent. Home to the famous ESPN headquarters and the historic New England Carousel Museum, Bristol offers a blend of urban amenities and historic charm. This, coupled with easy access to beautiful parks like Rockwell Park, makes Bristol an affordable and desirable city for renters."

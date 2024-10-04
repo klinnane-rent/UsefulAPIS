@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Smyrna, DE     |        11694 |           59830 |              210300 |                1237 | 99.0848 |
+|  1 | Newark, DE     |        33822 |           60767 |              277700 |                1662 | 75.2029 |
+|  2 | Dover, DE      |        37872 |           48500 |              182100 |                1647 | 75.1991 |
+|  3 | Middletown, DE |        22350 |           91663 |              294800 |                1865 | 59.1031 |
+|  4 | Wilmington, DE |        70655 |           45139 |              173500 |                1883 | 51.5301 |
+","# Cheapest Places to Live in Delaware
+
+Renters looking for the most affordable places to dwell in the United States might consider checking out the state of Delaware. Known as ""The First State,"" Delaware not only offers a rich history and diverse culture but also presents an affordable cost of living especially for renters. From vibrant, bustling cities to peaceful, countryside towns, the state presents a variety of options for individuals of different lifestyle preferences. In this article, we bring you the top five most economical cities to live in this northeastern state. Our list includes Smyrna, Newark, Dover, Middletown, and Wilmington, which all provide not just affordable rents but also quality lifestyle offerings.
+
+## Smyrna, DE
+
+Situated at the heart of Delaware, Smyrna is a city that boasts a balance between modern conveniences and rich historical charm. With a population of 11,694, it offers a small-town vibe that appeals to those who desire a peaceful living environment. Its residents earn a median income of $59,830, and the median home value is $210,300, but the average 2-bedroom asking rent is remarkably affordable at $1,237. The city is adorned with numerous parks, such as Lake Como and Smyrna Municipal Park, alongside a variety of dining and shopping opportunities spread across the city.
+
+## Newark, DE
+
+Newark, unlike Smyrna, is a busier city with its vibrant colleges and renowned universities. Home to the University of Delaware, this city of 33,822 residents pulsates with youthful energy. Its residents enjoy a median income of $60,767 with the median home value recorded at $277,700. Renters looking for a 2-bedroom home can expect an asking price of about $1,662. In Newark, the combination of affordable living and higher education facilities makes it an ideal location for students and young professionals.
+
+## Dover, DE
+
+Dover, the capital city of Delaware, is a city where historic charm meets contemporary flair. It has a population of 37,872, and the median income is $48,500. Dover’s residents can expect a median home value of $182,100, and an average 2-bedroom asking rent of $1,647. The city is known not only for its affordability but also for its significant attractions, including the Dover International Speedway, Dover Downs Hotel & Casino, and the Air Mobility Command Museum.
+
+## Middletown, DE
+
+Middletown, though less populous at 22,350, is on the rise. With a median income of $91,663, the highest amongst the five cities, it boasts a prosperous community. The median home value is $294,800, while the 2-bedroom asking rent is around $1,865. This city provides a blend of rural charm and suburban convenience with an array of amenities such as Silver Lake Park, the Everett Theatre, and several local shops and restaurants.
+
+## Wilmington, DE
+
+Wilmington, the largest city in Delaware with a population of 70,655, offers a diverse and dynamic environment. Despite a relatively lower median income of $45,139, the city offers reasonable living costs with a median home value of $173,500, and a 2-bedroom asking rent averaging $1,883. Wilmington is home to several corporate headquarters and also offers a vibrant arts scene, beautiful parklands like Brandywine Park, and access to various transportation options."

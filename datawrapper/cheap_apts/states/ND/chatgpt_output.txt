@@ -1,0 +1,41 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Jamestown, ND   |        15216 |           49846 |              151100 |                 780 | 73.3374 |
+|  1 | Minot, ND       |        47834 |           64401 |              211000 |                1020 | 57.1799 |
+|  2 | Dickinson, ND   |        22880 |           66306 |              237900 |                 825 | 44.5948 |
+|  3 | Williston, ND   |        27812 |           76873 |              244400 |                 995 | 44.0221 |
+|  4 | Grand Forks, ND |        56588 |           50194 |              209800 |                1055 | 37.3217 |
+","# Cheapest Places to Live in North Dakota
+
+In the eco-friendly landscape of North Dakota, the cost of living for renters can often be daunting. However, North Dakota boasts some cities which offer surprisingly affordable and comfortable living situations for renters. Our research using factors such as population, median income, median home value, 2-bedroom asking rent, and overall score has revealed the cheapest cities in North Dakota for renters. These cities are Jamestown, Minot, Dickinson, Williston, and Grand Forks. Each of these cities offers unique charm and affordability for renters looking for a place to call home in the state of North Dakota.
+
+## Jamestown, North Dakota
+
+With a population of 15,216, Jamestown offers a small-town atmosphere that includes a close-knit community and plenty of open space to explore. With a median income of $49,846, residents find the median home value of $151,100 and the two-bedroom asking rent of $780 quite affordable. Jamestown prides itself on its recreational activities, from the World’s Largest Buffalo Monument to the National Buffalo Museum. The city also hosts the annual ""Buffalo Days"" celebration, making Jamestown a fun and affordable place to live.
+
+## Minot, North Dakota 
+
+Larger than Jamestown with a population of 47,834, Minot offers the amenities of a larger town while still maintaining affordable costs for renters. The median income stands at $64,401 and the two-bedroom asking rent averages $1,020. Known as the ""Magic City,"" Minot houses the Scandinavian Heritage Park and Roosevelt Park Zoo, providing ample recreational opportunities for its residents. This combination of affordability, culture, and fun make Minot a top choice for renters.
+
+## Dickinson, North Dakota 
+
+Dickinson, with its population of 22,880, strikes a balance between small-town charm and city amenities. With a median income of $66,306, the median home value of $237,900, and the two-bedroom asking rent of $825 seem agreeable. Dickinson is a city chock-full of history with The Dickinson Museum Center and Theodore Roosevelt Center. The city's affordable living and rich history make it a great option for renters.
+
+## Williston, North Dakota 
+
+Williston, with a population of 27,812, is a bustling city with a median income of $76,873. The city's two-bedroom asking rent is $995, which is manageable for the residents. Williston offers attractions such as Fort Union Trading Post National Historic Site and Lake Sakakawea, providing residents with a rich blend of history, culture, and outdoor activities.
+
+## Grand Forks, North Dakota 
+
+Lastly, Grand Forks, with a population of 56,588 and a median income of $50,194 is another affordable choice for renters in North Dakota. The two-bedroom asking rent in the city is $1,055. The city is home to The University of North Dakota and the Grand Forks Air Force Base. The city also offers ample recreational opportunities with Red River State Recreation Area and the Japanese Gardens. The accessibility to cultural events, learning opportunities, and beautiful parks make Grand Forks a great city for renters.
+"

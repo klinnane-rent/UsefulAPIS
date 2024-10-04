@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State      |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:-----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Lorain, OH       |        63832 |           40486 |               90700 |                 695 | 91.1887 |
+|  1 | Elyria, OH       |        53844 |           43816 |              107600 |                 724 | 90.1092 |
+|  2 | Lima, OH         |        36908 |           34586 |               68900 |                 628 | 89.1939 |
+|  3 | Steubenville, OH |        17882 |           37457 |               96400 |                 550 | 88.2224 |
+|  4 | Fostoria, OH     |        13193 |           42131 |               66000 |                 700 | 87.6202 |
+","# Cheapest Places to Live in Ohio
+Ohio is a state that offers a unique blend of bustling city life and peaceful suburban tranquility. For those seeking an affordable place to lay their roots, Ohio boasts lower housing costs compared to the national average. From the serene landscapes of Lorain to the historic charm of Fostoria, the state of Ohio provides renters with a myriad of options that do not put a strain on their budget. These cities, which include Elyria, Lima, and Steubenville, offer lower rental prices, making them the top 5 cheapest cities to rent in Ohio.
+
+## Lorain, OH
+Lorain, with a population of 63,832, is a city that guarantees affordable living without compromising quality of life. With a median home value of $90,700 and a median income of $40,486, Loraine's reasonably-priced housing options stand out. The city offers potential renters the chance to lease a 2-bedroom apartment for just $695 per month. Located near the scenic Lake Erie and the beautiful Black River Reservation, Lorain offers several recreational opportunities for residents and a peaceful setting to come home to every day.
+
+## Elyria, OH 
+Elyria, Ohio, home to 53,844 residents, offers an attractive blend of affordability and opportunity. The city has a median home value of $107,600 and a median income of $43,816. The monthly asking rent for a 2-bedroom unit stands at $724. Elyria is home to Cascade Park, a beautiful natural area offering hiking trails, picnic areas, and a stunning waterfall, providing plenty of opportunities for outdoor fun and relaxation.
+
+## Lima, OH
+With a population of 36,908 and a median income of $34,586, Lima's affordability also extends to its rental market, where a 2-bedroom unit has an asking rent of just $628 per month. Lima’s median home value is $68,900, a figure that demonstrates the city's commitment to affordable living. Apart from its affordability, Lima is well-known for its rich history, with attractions like the Allen County Museum and the Ohio Theatre adding to the city's charm.
+
+## Steubenville, OH
+Steubenville, with a population of 17,882 and a median income of $37,457, offers a quaint small-town living experience. The median home value in the city is $96,400, and the asking rent for a 2-bedroom unit is $550, making it an incredibly affordable place to live. Steubenville is not just about affordable living; it's also rich in history and culture with attractions such as the Historic Fort Steuben and the Grand Theater.
+
+## Fostoria, OH
+Fostoria, the smallest of the listed cities, with a population of just 13,193 and a median income of $42,131, offers an affordable and peaceful living environment. The city has a median home value of $66,000, with a monthly asking rent for a 2-bedroom unit standing at $700. Known for its Glass Heritage Gallery and several beautiful parks like the Meadowlark Park, living in Fostoria provides a mix of affordability and quality of life."

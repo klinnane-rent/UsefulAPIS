@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State   |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:--------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Provo, UT     |       116886 |           50072 |              298000 |                1643 | 77.3737 |
+|  1 | Tooele, UT    |        35313 |           65740 |              212400 |                 930 | 69.6554 |
+|  2 | Ogden, UT     |        87175 |           55974 |              195600 |                1490 | 64.6724 |
+|  3 | Midvale, UT   |        33708 |           62354 |              285200 |                1534 | 60.9431 |
+|  4 | Layton, UT    |        77268 |           81067 |              285100 |                1562 | 59.5912 |
+","# Cheapest Places to Live in Utah
+
+When it comes to affordable living in the United States, Utah is a state worth considering. Renowned for its scenic vistas, enjoyable climate, and community-friendly locales, Utah offers a mix of city life and natural beauty. Although the state is known for high homeownership costs, the rental market tells a different story. Cities such as Provo, Tooele, Ogden, Midvale, and Layton make up our list of the cheapest places to live in Utah.
+
+## Provo, UT
+
+With a population of 116,886, Provo stands out as a city offering affordable rent prices without compromising on lifestyle. The median income in Provo is $50,072, which pairs well with a median 2-bedroom asking rent of $1,643. Located amidst the beauty of Provo Canyon, residents can enjoy recreational activities at Brigham Young University's campus, the Monte L. Bean Life Science Museum, and the Provo River Parkway.
+
+## Tooele, UT
+
+Tooele, nestled in Tooele Valley, is an appealing choice for renters with a significantly lower asking rent for a two-bedroom property at $930. The city has a population of 35,313 and offers a median income of $65,740. The city is surrounded by the majestic Oquirrh Mountains and Great Salt Lake, and it's known for Tooele Pioneer Museum and the Bonneville Salt Flats.
+
+## Ogden, UT
+
+Ogden serves as a picturesque city offering a balance between affordability and quality of life with a median two-bedroom asking rent of $1,490. Ogden, with a population of 87,175 and a median income of $55,974, offers an array of attractions such as Historic 25th street, Union Station, and the Ogden Nature Center. 
+
+## Midvale, UT
+
+Midvale, with a population of 33,708, is a town with a strong sense of community and a median asking rent of $1,534 for a two-bedroom property. The median income is $62,354, and conveniently, downtown Salt Lake City is just a short drive away via Interstate-15. Midvale Main Street Theatre and Big Cottonwood Regional Park offer local entertainment and outdoor enjoyment.
+
+## Layton, UT
+
+Layton is the largest city on our list with a population of 77,268 and offers a median asking rent is $1,562 for a two-bedroom property. Residents typically earn a median income of $81,067. Located close to the Great Salt Lake's shoreline and the Wasatch Mountain Range, Layton is a perfect locale for nature enthusiasts. The city also boasts Layton Hills Mall and the SeaQuest Utah aquarium for family-friendly attractions."

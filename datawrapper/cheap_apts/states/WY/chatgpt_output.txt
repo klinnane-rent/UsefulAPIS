@@ -1,0 +1,37 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State      |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:-----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Cheyenne, WY     |        64099 |           68611 |              229100 |                 850 | 71.4286 |
+|  1 | Rock Springs, WY |        23238 |           74625 |              205300 |                1584 | 67.3713 |
+|  2 | Gillette, WY     |        32513 |           73867 |              217400 |                1300 | 40.9079 |
+|  3 | Casper, WY       |        58287 |           59412 |              213900 |                1044 | 32.8058 |
+","# Cheapest Places to Live in Wyoming
+
+Choosing the right place to live is a significant decision - one that can impact your lifestyle, financial disposition, and overall quality of life. For renters seeking both affordability and quality of life, Wyoming presents an intriguing option. Best known for its majestic landscapes, including the iconic Yellowstone National Park, the state also boasts a low cost of living, and a laid-back lifestyle that has an appeal of its own. Based on our methodology, the cheapest cities to live in Wyoming are Cheyenne, Rock Springs, Gillette, and Casper.
+
+## Cheyenne, WY
+
+With a population of 64,099, Cheyenne is the largest city in Wyoming, and it also happens to be one of the most affordable places for renters. Renters can expect to pay a median asking rent of $850 for a 2-bedroom property. The city's proximity to the Front Range of the Rocky Mountains and the High Plains offers residents access to stunning natural beauty and plenty of outdoor recreational activities, from hiking to fishing. The city itself exudes a small-town charm with its historic downtown and friendly community.
+
+## Rock Springs, WY
+
+Rock Springs, a city known for its rich Western history, also makes the list of affordable cities in Wyoming for renters. The city has a population of 23,238 and a median income of $74,625. A 2-bedroom property in Rock Springs is listed with an asking rent of $1,584. The city is conveniently located near Interstate 80 and offers a variety of recreational opportunities, including Rock Springs Historical Museum and the nearby Flaming Gorge Recreation Area.
+
+## Gillette, WY
+
+Gillette, often referred to as the ""Energy Capital of the Nation,"" offers renters an affordable cost of living, with a median 2-bed asking rent of $1,300. Its population of 32,513 enjoys a median income of $73,867. The city is nestled between the Big Horn Mountains to the west and the Black Hills to the east, providing residents with endless opportunities for outdoor adventure. Gillette also offers a number of parks and recreation facilities, such as the Campbell County Recreation Center and Bicentennial Park.
+
+## Casper, WY
+
+In Casper, the second-largest city in Wyoming with a population of 58,287, the median asking rent for a 2-bedroom property is $1,044. The city, located at the foot of Casper Mountain, is a haven for outdoor enthusiasts, offering fishing, hiking, skiing, and more. In addition, Casper is home to several cultural institutions including the Nicolaysen Art Museum and the National Historic Trails Interpretive Center, enhancing the city's appeal. 
+
+Choosing to live in Wyoming offers residents the opportunity to experience the authentic American West lifestyle while still enjoying affordable rent prices. Whether you are attracted to the cultural offerings of Cheyenne, the natural beauty of Gillette, or the recreational opportunities in Casper and Rock Springs, Wyoming offers something for everyone."

@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Taylors, SC    |        23107 |           62365 |              176900 |                 800 | 89.9614 |
+|  1 | Gaffney, SC    |        12733 |           31355 |              104900 |                1149 | 88.1611 |
+|  2 | Orangeburg, SC |        12713 |           28587 |              107700 |                1025 | 86.9011 |
+|  3 | Sumter, SC     |        39758 |           40760 |              131800 |                1043 | 83.4502 |
+|  4 | Port Royal, SC |        13265 |           59081 |              242700 |                1200 | 81.4057 |
+","# Cheapest Places to Live in South Carolina
+
+In the context of finding the most affordable places to live for renters in the United States, South Carolina presents a compelling case. With a blend of attractive coastal and inland cities, the Palmetto State offers a rich palate of cultural, recreational, educational, and economic opportunities. Moreover, the cost of living here is relatively low compared to other states. According to our comprehensive methodology, the cheapest cities to rent in South Carolina are Taylors, Gaffney, Orangeburg, Sumter, and Port Royal. Offering a cocktail of reasonable rents, growing economies, and accessible amenities, these cities provide an appealing mix for renters on a budget.
+
+## Taylors, SC
+
+Home to over 23,000 residents, Taylors appears to hit the sweet spot for renters looking for affordability without sacrificing quality of life. The median income here is $62,365, and the median home value is $176,900. A 2-bedroom comes with an asking rent of around $800 per month. The small-town life with the perks of nearby Greenville, accessibility to the Enoree River, and various recreational activities at Pavilion Recreation Complex makes this city a charming place to live. The city's score is 89.96, highlighting its value proposition for renters.
+
+## Gaffney, SC
+
+Gaffney features next on the list. With a population of about 12,733, the city presents an appealing option for those seeking a small-town vibe with affordable living costs. The median income for the residents is $31,355, while the median home value is $104,900. A 2-bedroom property commands a rent of roughly $1,149 per month. The city is known for its rich history and notable attractions like the Gaffney Outlet Marketplace and the Gaffney Little Theatre. Gaffney's score stands solid at 88.16.
+
+## Orangeburg, SC
+
+Orangeburg, with a population of 12,713, offers a monthly 2-bedroom asking rent of $1,025. The city has a median income of $28,587 and a median home value of $107,700. Its mix of historical sites, parks like Edisto Memorial Gardens, and renowned institutes like South Carolina State University and Claflin University make it a unique mix of affordability, recreation, and education. Orangeburg's score is 86.90.
+
+## Sumter, SC
+
+Sumter, home to about 39,758 people, is another reasonable choice for renters in South Carolina. The median income in Sumter stands at $40,760 with a median home value of $131,800. The monthly asking rent for a 2-bedroom home is around $1,043. The city, known as the Gamecock City, offers a variety of outdoor activities, including Swan Lake Iris Gardens, the first public park in the US to feature all eight species of swan. Sumter has a score of 83.45.
+
+## Port Royal, SC
+
+Port Royal, a small but vibrant city with a population of 13,265, presents a compelling case for renters with a median income of $59,081 and a median home value of $242,700. The 2-bedroom asking rent in Port Royal is approximately $1,200 a month. The city boasts of a charming downtown, historical landmarks like Fort Frederick Heritage Preserve, and easy access to Port Royal Sound. With a score of 81.40, Port Royal completes the list of cheapest places to live in South Carolina."

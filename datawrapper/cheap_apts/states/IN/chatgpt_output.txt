@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in Indiana. Start by producing a section titled exactly as ""# Cheapest Places to Live in Indiana"". This section should be 7 to 8 sentences and an overview of Indiana within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: Bedford, IN, Richmond, IN, Marion, IN, Terre Haute, IN, Logansport, IN.
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Bedford, IN     |        13246 |           42893 |              107200 |                 500 | 93.6716 |
+|  1 | Richmond, IN    |        35467 |           40871 |               86300 |                 740 | 86.4834 |
+|  2 | Marion, IN      |        27730 |           35252 |               69800 |                 757 | 85.6289 |
+|  3 | Terre Haute, IN |        60690 |           37299 |               83800 |                 785 | 82.2566 |
+|  4 | Logansport, IN  |        17968 |           38053 |               66800 |                 895 | 81.1075 |
+","# Cheapest Places to Live in Indiana
+Indiana, known as the Hoosier State, has been highly recognized for its low-cost living, especially for renters. According to our data, several cities in Indiana offer affordable living conditions while offering a bounty of recreational and cultural activities. The cities of Bedford, Richmond, Marion, Terre Haute, and Logansport particularly stand out as the cheapest places to live for renters. Each of these cities has its unique charm, community spirit, and cost-effective living options that make them attractive for both individuals and families.
+
+## Bedford, IN
+Located in Lawrence County, Bedford, IN, with a population of 13,246, offers not only an affordable median rent of $500, but also a pleasant living environment. The median income in Bedford is $42,893, with a reasonable median home value of $107,200. The city is known for its limestone quarries, and the close-knit community often gathers at the popular Wilson Park or enjoys outdoor activities at the nearby Hoosier National Forest. The city's score of 93.6716 is a testament to its affordability and quality of life.
+
+## Richmond, IN
+With a population of 35,467, Richmond, IN offers a perfect blend of affordability and attractive amenities. The city has a median income of $40,871, and the median home value stands at $86,300, making it an affordable place to live in Indiana. Renters can find a 2-bedroom place for an ask rent of $740. Richmond is known for its historic architecture, beautiful parks like the Glen Miller Park, and the Whitewater Gorge Trail. The city's overall score is 86.4834.
+
+## Marion, IN
+Marion, IN, home to 27,730 residents, is another affordable city in the Hoosier State. With a median income of $35,252 and a median home value of $69,800, Marion offers a low-cost yet comfortable living. The city's 2-bed asking rent stands at $757, making it an attractive option for renters. Marion is famous for hosting the largest WWII reenactment in the US and features a variety of activities at the Matter Park. The city's score is 85.6289.
+
+## Terre Haute, IN
+Terre Haute, IN, with a population of 60,690, is a city that combines affordability and a vibrant lifestyle. The median income is $37,299, and the median home value is $83,800. Rent prices are also affordable, with a 2-bedroom unit's asking rent at $785. Terre Haute is home to Indiana State University and boasts numerous attractions like the Terre Haute Children's Museum and the Deming Park. The city's score is 82.2566.
+
+## Logansport, IN
+Home to 17,968 people, Logansport, IN offers an affordable lifestyle with a median income of $38,053 and a median home value of $66,800. The city's 2-bedroom ask rent is slightly higher at $895, but still well within reach for many. Logansport is known for its historic downtown area and the beautiful Riverside Park. Outdoor enthusiasts enjoy the France Park and its scenic waterfall. The city's overall livability score is 81.1075."

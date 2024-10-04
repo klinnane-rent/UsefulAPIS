@@ -1,0 +1,1 @@
+rsconnect deploy api app/ -n BulkContent --entrypoint main:app

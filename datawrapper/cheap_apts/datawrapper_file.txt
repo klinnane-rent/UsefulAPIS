@@ -1,0 +1,3 @@
+https://developer.datawrapper.de/docs/chart-types
+To do updates. send chart id, patch, then post publication.
+https://developer.datawrapper.de/docs/automatic-updates-for-live-data

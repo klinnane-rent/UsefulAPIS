@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State       |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Americus, GA      |        15319 |           33405 |               93400 |                 675 | 90.8989 |
+|  1 | Statesboro, GA    |        32115 |           32790 |              115100 |                 809 | 88.6192 |
+|  2 | Albany, GA        |        72634 |           38826 |              100300 |                 737 | 88.3025 |
+|  3 | Milledgeville, GA |        18526 |           32235 |              137400 |                 825 | 87.9654 |
+|  4 | Warner Robins, GA |        76967 |           55163 |              129000 |                1010 | 81.3478 |
+","# Cheapest Places to Live in Georgia
+
+When it comes to affordability in the United States, Georgia ranks high among the best states for renters seeking to balance their budget without sacrificing quality of life. Its diverse range of cities offers something for everyone - from lively urban centers to quiet, picturesque small towns. After considering factors like population, median income, home value, and rent price, we've identified the top five most affordable cities in Georgia, each with its unique charm and appeal. These cities are Americus, Statesboro, Albany, Milledgeville, and Warner Robins.
+
+## Americus, GA
+
+With a population of 15,319 and a score of 90.8989, Americus, Georgia, offers an affordable cost of living with a two-bedroom rental asking price of $675. The city is known for its charm and historical significance, boasting attractions like the Jimmy Carter National Historic Site and the picturesque downtown area. Americus also lies in proximity to the Georgia Southwestern State University, making it an attractive place for students and educators alike. 
+
+## Statesboro, GA
+
+Statesboro, home to a population of 32,115 and a score of 88.6192, presents a median income of $32,790. The city's draw is not only in its affordability, with a two-bedroom rental asking price of $809, but also in its vibrant college-town atmosphere. Statesboro is home to Georgia Southern University and boasts a variety of entertainment options, including the Garden of the Coastal Plain and the Averitt Center for the Arts.
+
+## Albany, GA
+
+Albany, the largest city on our list with a population of 72,634 and a score of 88.3025, offers a median two-bedroom rental for $737. This city is rich in cultural and natural attractions, featuring the Albany Museum of Art, Chehaw Park, and the Flint RiverQuarium. Albany's welcoming community and low cost of living make it an outstanding choice for those seeking affordability without compromising on amenities and entertainment.
+
+## Milledgeville, GA
+
+Milledgeville, a city with a population of 18,526 and a score of 87.9654, has a median home value of $137,400. The city distinguishes itself with a two-bedroom asking rent of $825 - an affordable rate considering the city’s historic charm and the presence of prominent educational institutions like the Georgia College & State University. Its picturesque downtown area and green spaces like the Bartram Forest add to the city's overall appeal.
+
+## Warner Robins, GA
+
+Finally, Warner Robins, with a population of 76,967 and a score of 81.3478, stands out with the highest median income on our list at $55,163. Despite its size, Warner Robins maintains an affordable living standard with an asking rent for a two-bedroom dwelling at $1,010. Known for the Robins Air Force Base, the city provides a mix of military heritage, community spirit, and accessibility to natural attractions like the Ocmulgee National Monument."

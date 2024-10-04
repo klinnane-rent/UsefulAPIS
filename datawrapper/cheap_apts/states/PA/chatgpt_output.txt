@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in Pennsylvania. Start by producing a section titled exactly as ""# Cheapest Places to Live in Pennsylvania"". This section should be 7 to 8 sentences and an overview of Pennsylvania within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: Johnstown, PA, Indiana, PA, Pottsville, PA, McKeesport, PA, Butler, PA.
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Johnstown, PA  |        19381 |           29171 |               37000 |                 685 | 95.7702 |
+|  1 | Indiana, PA    |        13162 |           30934 |              113200 |                 601 | 94.389  |
+|  2 | Pottsville, PA |        13549 |           39154 |               77600 |                 412 | 93.738  |
+|  3 | McKeesport, PA |        19128 |           28881 |               51200 |                 903 | 89.9787 |
+|  4 | Butler, PA     |        13008 |           32746 |               91900 |                 785 | 88.5588 |
+","# Cheapest Places to Live in Pennsylvania
+Pennsylvania, the Keystone State, offers a range of diverse living experiences from bustling urban centers like Philadelphia and Pittsburgh to serene rural boroughs. Amidst this diversity, cost of living is a key factor for many looking to relocate within the state. For renters, some cities in Pennsylvania stand out as particularly economical options. Our analysis identified five cities - Johnstown, Indiana, Pottsville, McKeesport, and Butler - as the most affordable places to live for renters. Each of these cities offers the charm and amenities of Pennsylvania living, while being friendly on the pocket too.
+
+## Johnstown, PA
+Johnstown, home to close to 20,000 residents, shines as one of the most affordable cities in Pennsylvania. With a median income of $29,171 and a median rent for a two-bedroom apartment at just $685, Johnstown is a great option for renters. Despite the modest cost of living, the city doesn't lack for attractions. It's home to the Johnstown Flood National Memorial, the Johnstown Inclined Plane - the world's steepest - and the Grandview Cemetery. The city's rich industrial heritage and resilient spirit offer a unique living experience.
+
+## Indiana, PA
+Indiana, Pennsylvania, offers a compact small-town charm with a population just above 13,000. Notwithstanding the median income of $30,934, the living expenses here are quite low with a two-bedroom rental asking price of $601. Indiana is home to the Jimmy Stewart Museum, dedicated to the legendary actor and native son. Access to education is easily available with the Indiana University of Pennsylvania in town. With many parks and recreational spots like Blue Spruce Park and Yellow Creek State Park nearby, Indiana provides a balanced and affordable living experience.
+
+## Pottsville, PA
+Pottsville, with a population of over 13,000, boasts a remarkably reasonable median two-bedroom rent of $412. The city, with a median income of $39,154, offers a high quality yet economical lifestyle. Home to the historic Yuengling brewery, the oldest in America, Pottsville is rich in culture and history. Beautiful local parks like Rotary Park and JFK Memorial Pool and recreation areas offer ample opportunities for outdoor activities.
+
+## McKeesport, PA
+In terms of affordability, McKeesport stands out, especially with a modest median home value of $51,200. Renters will find it good value for money with a median rent of $903 for a two-bedroom home. McKeesport's population of 19,128 benefit from the city's great location at the confluence of the Monongahela and Youghiogheny rivers. The city's Renziehausen Park Rose Garden is a local treasure, and the Great Allegheny Passage trail offers a great opportunity for biking and hiking.
+
+## Butler, PA
+Despite being the smallest city on the list with a population of 13,008, Butler packs in an impressive punch when it comes to affordability. With a median income of $32,746 and a median rent of $785 for a two-bedroom home, it makes for a great place to live for renters. Butler is known for its historic landmarks like the Butler County Courthouse and is just a short drive from Moraine State Park, offering lots of outdoor activity options."

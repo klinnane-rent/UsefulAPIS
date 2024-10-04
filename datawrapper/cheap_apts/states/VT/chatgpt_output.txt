@@ -1,0 +1,25 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State        |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:-------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Essex Junction, VT |        10761 |           76845 |              305300 |                2325 |       0 |
+|  1 | Winooski, VT       |         7320 |           56236 |              231300 |                1705 |       0 |
+","# Cheapest Places to Live in Vermont
+
+When it comes to affordable living in the New England region, Vermont stands out as an attractive option for renters. The Green Mountain State is known for its picturesque landscapes, outdoor activities, and high quality of life. Despite the state's reputation for high costs, there are still several cities in Vermont where renters can find reasonably priced accommodations. Based on our methodology, the cheapest cities for renters in Vermont are Essex Junction and Winooski.
+
+## Essex Junction, VT
+
+Essex Junction, with a population of 10,761, offers the appeal of small-town living while still providing easy access to amenities. The median income is $76,845, indicating a robust local economy. Renters can expect to pay around $2,325 for a 2-bedroom apartment, which is quite reasonable considering the city's high median home value of $305,300. The city is known for its high-quality schools and family-friendly environment. Points of interest include the Links at Lang Farm and the Essex Outlets, offering shopping, dining, and entertainment options.
+
+## Winooski, VT
+
+Winooski, with a population of 7,320, is another city that offers affordable rental options. The median income in this city is $56,236, while the median home value is $231,300. Renters can expect to pay approximately $1,705 for a 2-bedroom apartment. Known as the 'Brooklyn of Burlington', Winooski is an eclectic city with a diverse range of dining, shopping, and entertainment options, featuring a vibrant downtown district and the beautiful Winooski River."

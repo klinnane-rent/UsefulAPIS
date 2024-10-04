@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Clarksdale, MS |        15342 |           30603 |               65100 |                 655 | 94.3683 |
+|  1 | Natchez, MS    |        14854 |           26800 |               99500 |                 675 | 87.6527 |
+|  2 | Brookhaven, MS |        12045 |           31488 |               93300 |                 700 | 86.9673 |
+|  3 | Meridian, MS   |        37252 |           30088 |               84300 |                 835 | 81.6787 |
+|  4 | Columbus, MS   |        23853 |           34551 |              115100 |                 800 | 81.39   |
+","# Cheapest Places to Live in Mississippi
+
+Mississippi is known for its rich history, vibrant culture, and picturesque riverside towns. On top of that, the state offers a low cost of living, which is a key attraction for many individuals, families, and retirees. Mississippi's affordable housing market, specifically for renters, places it among the best states for cheap living. This is not surprising considering the general low cost of living that extends to groceries, healthcare, and utilities. The top five cheapest cities to live in Mississippi, based on our analysis, are Clarksdale, Natchez, Brookhaven, Meridian, and Columbus.
+
+## Clarksdale, MS
+
+Clarksdale, Mississippi, is a city filled with rich blues history and a population of 15,342. With a median income of $30,603 and an extremely affordable median home value of $65,100, this city offers a balance of culture and affordability. The cost of renting a two-bedroom home is also friendly to wallets with a median ask of $655. Clarksdale is home to attractions such as the Delta Blues Museum and the Crossroads, adding to its charm as a residential city.
+
+## Natchez, MS
+
+Natchez, a city with a population of 14,854, is known for being the oldest city on the Mississippi River. It offers a median income of $26,800 and a median home value of $99,500. For renters, Natchez provides asking prices around $675 for a two-bedroom home. The city's affordable living is complemented by its charm, historic architecture, and attractions like the Natchez National Historical Park.
+
+## Brookhaven, MS
+
+Nicknamed the ""Homeseeker's Paradise,"" Brookhaven boasts a population of 12,045. With a median income of $31,488 and a median home value of $93,300, the city offers affordability to its residents, while maintaining elements of Southern charm. The median rent for a two-bedroom home stands at $700. Brookhaven is also home to a bustling downtown area with historic buildings and beautiful recreational parks such as the Brookhaven City Park.
+
+## Meridian, MS
+
+As the sixth largest city in Mississippi with a population of 37,252, Meridian offers a lively community and affordable housing. A median income of $30,088 and a median home value of $84,300 make the city an attractive place to live. Two-bedroom homes have a median rental ask of $835. Meridian is also known for its historic sites and arts scene, featuring landmarks like the Meridian Museum of Art and the Mississippi Industrial Heritage Museum.
+
+## Columbus, MS
+
+Columbus, with a population of 23,853, is a city rich in history and culture. Residents see a median income of $34,551 and a comfortable median home value of $115,100. The median rental ask for a two-bedroom residence is $800, which is very affordable considering its offerings. The historic downtown, the Tennessee Williams Home and Welcome Center, and the Columbus Riverwalk are just a few of the attractions that make this city a desirable place to live."

@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in Oregon. Start by producing a section titled exactly as ""# Cheapest Places to Live in Oregon"". This section should be 7 to 8 sentences and an overview of Oregon within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: La Grande, OR, Klamath Falls, OR, Dallas, OR, Forest Grove, OR, Lebanon, OR.
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State       |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | La Grande, OR     |        13380 |           45573 |              183600 |                 945 | 98.8457 |
+|  1 | Klamath Falls, OR |        21509 |           40783 |              180900 |                1100 | 91.1054 |
+|  2 | Dallas, OR        |        16612 |           58398 |              253400 |                1360 | 85.3426 |
+|  3 | Forest Grove, OR  |        24847 |           69513 |              346400 |                1340 | 82.4487 |
+|  4 | Lebanon, OR       |        17144 |           45215 |              193200 |                1505 | 80.8628 |
+","# Cheapest Places to Live in Oregon
+
+Oregon, located on the Pacific coast, is a state that offers a variety of lifestyles. From bustling cities to quiet, scenic rural areas, this state has something for everyone. However, Oregon's rents can be quite disparate, with some areas being quite affordable and others much less so. For renters seeking economical living options, our research indicates that five cities in Oregon stand out for their affordability. These cities are La Grande, Klamath Falls, Dallas, Forest Grove, and Lebanon. Each of these locations offers a unique set of attractions and advantages for residents beyond just affordable rent.
+
+## La Grande, OR
+
+With a population of 13,380, La Grande is a small city that provides a friendly, close-knit community atmosphere. The median income here is $45,573 and the median home value is $183,600. The average asking rent for a 2-bedroom apartment is quite affordable at $945. One of the main attractions of La Grande is its beautiful location in the Blue Mountains, providing abundant opportunities for outdoor activities. It's situated along I-84, offering easy access to other parts of the state and beyond. The city also boasts a historic downtown with a variety of shops and restaurants.
+
+## Klamath Falls, OR
+
+Klamath Falls is a charming city with a population of 21,509, and it offers residents the best of both city and country living. The median income in the city is $40,783, with a median home value of $180,900. The rent for a 2-bedroom apartment is only $1,100 on average. The city offers multiple recreational activities given its location near Klamath Lake and Crater Lake National Park. The downtown area is a hub for local businesses, events, and the Oregon Institute of Technology.
+
+## Dallas, OR
+
+Dallas, home to 16,612 residents, is an affordable city that scores high on livability. With a median income of $58,398 and a median home value of $253,400, the city offers economic advantages. The average asking rent for a 2-bedroom apartment is $1,360. Located in the heart of Willamette Valley, Dallas residents enjoy a variety of outdoor activities while being only a short drive from Salem, the state capital. The city features a historic courthouse, an aquatic center, and the beautiful Central Bark Dog Park.
+
+## Forest Grove, OR
+
+Forest Grove, with a population of 24,847, is a city that combines affordability with a range of amenities. It has a median income of $69,513 and a median home value of $346,400. The rent for a 2-bedroom apartment is an average of $1,340. Forest Grove is home to Pacific University and offers a rich, educational atmosphere. It is located near the Tualatin Valley, which is known for its wineries. Residents also enjoy the city's numerous parks and its proximity to Portland.
+
+## Lebanon, OR
+
+Lebanon, a city of 17,144 residents, offers a cost-effective and comfortable lifestyle. It has a median income of $45,215 and a median home value of $193,200. Despite the affordable 2-bedroom apartment rent of $1,505, Lebanon offers many attractions. The city has an abundance of parks and outdoor recreational facilities, including Waterloo County Park. Additionally, it's located along Highway 20, allowing for easy navigation to and from the city. The city is also home to Western University of Health Sciences, contributing to a vibrant and intellectual community."

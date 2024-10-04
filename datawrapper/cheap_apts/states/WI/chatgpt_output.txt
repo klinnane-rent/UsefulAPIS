@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State          |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Menomonie, WI        |        16479 |           43789 |              152200 |                 725 | 83.1493 |
+|  1 | Racine, WI           |        76893 |           44346 |              116200 |                1043 | 76.8397 |
+|  2 | Wisconsin Rapids, WI |        17691 |           44585 |               89500 |                1235 | 74.3957 |
+|  3 | Oshkosh, WI          |        66753 |           51282 |              134200 |                1055 | 73.4209 |
+|  4 | Beaver Dam, WI       |        16322 |           55551 |              141000 |                 815 | 72.0206 |
+","# Cheapest Places to Live in Wisconsin
+
+When exploring affordable places to live in Wisconsin, five cities stand out for their low rent prices and cost of living. These cities, Menomonie, Racine, Wisconsin Rapids, Oshkosh, and Beaver Dam, offer modestly priced rent, comfortable median incomes, and a relatively low cost of housing. They appeal to a diverse range of people, from young professionals to families to retirees. While each city has unique characteristics, they all share a common trait: affordability. The cities have been evaluated based on factors like population, median income, median home value, 2-bed asking rent, and an overall score reflecting the cost of living assessment.
+
+## Menomonie, WI
+
+Menomonie, a small city with a population of 16,479, presents a cozy and affordable living situation ideal for renters. The median income here stands at $43,789 which aligns well with the median home value of $152,200. The 2-bed asking rent is a fairly low $725 which makes it an attractive option for people looking for cost-effective housing. The city is surrounded by numerous parks like Wakanda Park and Lakeside Park, making it ideal for outdoor lovers. Menomonie is also home to the University of Wisconsin-Stout, providing it a youthful, vibrant energy.
+
+## Racine, WI
+
+With a population of 76,893, Racine is larger than Menomonie but still offers affordability for would-be renters. A median income of $44,346 and the 2-bed asking rent at $1,043 make it affordable for a wide variety of residents. Racine is known for its location on Lake Michigan shore, providing scenic beauty and recreational opportunities. Wind Point Lighthouse and North Beach are popular attractions in the city. 
+
+## Wisconsin Rapids, WI
+
+Wisconsin Rapids offers another affordable living option in Wisconsin. With a population of 17,691, the city presents a median income of $44,585. The 2-bed asking rent is slightly higher at $1,235, but is offset by the city's lower median home value of $89,500. The city features attractions such as the Wisconsin River, with beautiful green spaces like Demitz Park and Ben Hanson Park adding to its charm. 
+
+## Oshkosh, WI
+
+Oshkosh, with a population of 66,753, offers an attractive mix of affordability and vibrant city life. The city has a median income of $51,282 with a 2-bed asking rent of $1,055. Oshkosh is home to the University of Wisconsin-Oshkosh, adding an academic atmosphere to the city. The Oshkosh Public Museum and the Oshkosh Farmers Markets are popular attractions that enhance the city's appeal.
+
+## Beaver Dam, WI 
+
+Beaver Dam rounds up this list of affordable places to live in Wisconsin. With a population of 16,322, Beaver Dam offers its residents a higher median income of $55,551, with 2-bed asking rents averaging around $815. The city is known for Beaver Dam Lake and parks such as Edgewater Park and Tahoe Park, providing numerous recreational opportunities. The city’s neighborhoods feature a mix of historic charm and contemporary convenience, adding to the overall quality of life."

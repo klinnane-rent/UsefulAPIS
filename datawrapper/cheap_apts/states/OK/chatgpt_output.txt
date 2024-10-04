@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Ponca City, OK  |        23940 |           44281 |              102600 |                 452 | 91.969  |
+|  1 | Shawnee, OK     |        31361 |           41123 |              113300 |                 647 | 76.1986 |
+|  2 | Enid, OK        |        50116 |           51784 |              112800 |                 895 | 74.2651 |
+|  3 | Weatherford, OK |        11908 |           47740 |              190300 |                 650 | 69.2994 |
+|  4 | El Reno, OK     |        19539 |           42659 |              114300 |                 776 | 68.3734 |
+","# Cheapest Places to Live in Oklahoma
+When it comes to affordable living, Oklahoma stands out as one of the best options in the United States, particularly for renters. Boasting an overall low cost of living and a variety of cultural and natural attractions, Oklahoma offers a unique set of advantages to its residents. According to our comprehensive analysis, the cities with the lowest cost of living in Oklahoma are Ponca City, Shawnee, Enid, Weatherford, and El Reno. This analysis took into account factors such as median income, median home value, and average asking rent for a two-bedroom property.
+
+## Ponca City, OK
+With a population of 23,940 and a median income of $44,281, Ponca City ranks as the most affordable city in Oklahoma. The median home value is $102,600, and the 2-bed asking rent is a mere $452, making it a viable place for renters. Ponca City offers a tranquil living environment with attractions such as the Marland Estate Mansion and the Pioneer Woman Museum. The city is also conveniently located on U.S. Route 77, providing easy access to nearby cities and states.
+
+## Shawnee, OK
+Shawnee is a vibrant city with a population of 31,361 and a median income of $41,123. With a median home value of $113,300 and a 2-bed asking rent of $647, Shawnee is quite affordable for renters. The city, named after the Shawnee tribe, is steeped in Native American culture with attractions like the Mabee-Gerrer Museum. Additionally, Shawnee is conveniently located along Interstate 40, providing easy commutes to Oklahoma City and beyond.
+
+## Enid, OK
+Enid, with a population of 50,116 and a median income of $51,784, is the third most affordable city in Oklahoma. The median home value stands at $112,800, and a 2-bed asking rent averages around $895. The city is renowned for its vibrant art scene, with attractions like Leonardo's Children's Museum and Enid Symphony Orchestra. Enid is also conveniently situated on U.S Route 81, providing seamless connectivity to other parts of the state.
+
+## Weatherford, OK
+Weatherford is a small city with low living costs. With a population of 11,908 and a median income of $47,740, it seems quite affordable. The median home value in Weatherford is $190,300, and the asking rent for a two-bedroom property averages at $650. The city is home to Southwestern Oklahoma State University and boasts the Stafford Air & Space Museum. Moreover, Weatherford's location along Interstate 40 ensures easy access to both Oklahoma City and Amarillo, Texas.
+
+## El Reno, OK
+Lastly, El Reno, with a population of 19,539 and a median income of $42,659, offers affordable living for renters. The median home value is $114,300, and the 2-bed asking rent averages around $776. El Reno is known for its annual Fried Onion Burger Day Festival, a unique culinary event. The city's location along U.S. Routes 81 and 270, and I-40 ensure easy commutes to various parts of Oklahoma."

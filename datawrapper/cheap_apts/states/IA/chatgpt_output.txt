@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State      |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |    Score |
+|---:|:-----------------|-------------:|----------------:|--------------------:|--------------------:|---------:|
+|  0 | Keokuk, IA       |        10225 |           43304 |               75400 |                 530 | 100      |
+|  1 | Fort Madison, IA |        10407 |           44334 |               81200 |                 530 |  99.3805 |
+|  2 | Marshalltown, IA |        26957 |           54778 |               93300 |                 725 |  81.8218 |
+|  3 | Indianola, IA    |        15921 |           62761 |              167600 |                 795 |  78.1179 |
+|  4 | Newton, IA       |        15160 |           48417 |              123200 |                1250 |  74.5411 |
+","# Cheapest Places to Live in Iowa
+
+Across the United States, there is a growing trend of individuals seeking cost-effective places to live and Iowa is no exception. While this midwestern state has long been known for its agriculture, it also offers an array of budget-friendly cities to rent in. The state’s diverse economy, quality healthcare facilities, and strong education system, combined with the affordable living costs make it a compelling destination for renters. The cities in Iowa thriving most regarding affordability include Keokuk, Fort Madison, Marshalltown, Indianola, and Newton.
+
+## Keokuk, IA
+
+Keokuk, with a population of 10,225, is recognized among Iowa’s most affordable places to live. With a median income of $43,304 and a two-bedroom asking rent of just $530, Keokuk is remarkably affordable, especially considering the median home value is $75,400. Despite its smaller size, Keokuk is filled with charm and history. The city offers various recreational opportunities, with the Mississippi River and Rand Park being nearby points of interest.
+
+## Fort Madison, IA
+
+Fort Madison offers a unique blend of affordability, quality lifestyle, and cost-effective housing. The city has a population of 10,407, a median income of $44,334, and a competitive two-bedroom asking rent of $530. The median home value stands at $81,200. Fort Madison is home to the Historic Old Fort Madison, a replica of an 1808 U.S. military fort that offers educational and entertaining activities.
+
+## Marshalltown, IA
+
+Marshalltown, with a population of 26,957, boasts a median income of $54,778, a median home value of $93,300, and a two-bedroom asking rent of $725. Even with its larger population, Marshalltown remains an affordable place to reside. Added to this, it has numerous parks and recreational areas, including the Linn Creek Recreational Trail that runs through the city, and the notable Iowa Veterans Home.
+
+## Indianola, IA
+
+Indianola, home to 15,921 residents, offers a median income of $62,761, with the median home value at $167,600. The two-bedroom asking rent is slightly higher relative to the other cities at $795, yet the city still presents a balance of affordability and quality living. Known for hosting the National Balloon Classic, Indianola buffers outdoor enthusiasts with the likes of Lake Ahquabi State Park and the Summerset Trail.
+
+## Newton, IA
+
+Although Newton is the more upscale among the listed cities, with a median home value of $123,200 and two-bedroom asking rent at $1,250, its median income stands at an impressive $48,417. The city, home to 15,160 residents, offers a robust economy with the presence of multiple industries. Newton's landmarks include the Valle Drive-In, Iowa's oldest drive-in theater, and the Maytag Dairy Farms, well-known for blue cheese production."

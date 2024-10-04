@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State      |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:-----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Albert Lea, MN   |        17804 |           45929 |              102700 |                 605 | 97.075  |
+|  1 | Hibbing, MN      |        15923 |           47030 |              111900 |                 822 | 92.4704 |
+|  2 | Fergus Falls, MN |        13754 |           42659 |              142700 |                 850 | 88.3894 |
+|  3 | Grand Rapids, MN |        11218 |           48247 |              153200 |                 800 | 87.0457 |
+|  4 | Willmar, MN      |        19728 |           51884 |              140800 |                 882 | 86.8291 |
+","# Cheapest Places to Live in Minnesota
+When it comes to affordability, Minnesota offers a diverse range of options for renters. While many flock to the state's larger cities like Minneapolis or Saint Paul, there are numerous smaller towns and cities across the state that provide affordable living without sacrificing quality of life. Whether you're attracted to the state's natural beauty, reputed education system, or growing economy, there are plentiful opportunities to find affordable rental homes. Based on our methodology, the cheapest cities to rent in Minnesota are Albert Lea, Hibbing, Fergus Falls, Grand Rapids, and Willmar.
+
+## Albert Lea, MN
+Albert Lea is a charming city with a population of around 17,804. With a median income of approximately $45,929 and median home values at $102,700, living here is reasonably affordable. The average two-bedroom rent is only $605 per month. Nestled between Albert Lea Lake and Myre Big Island State Park, residents will find plenty to appreciate outdoors. Plus, with the nearby Interstates 35 and 90, accessibility to other parts of the state is made easy.
+
+## Hibbing, MN
+Hibbing, with a population of 15,923 and a median income of $47,030, is known for its rich history and natural scenery. The median home value in Hibbing is $111,900, making it an affordable option for many. The asking rent for a two-bedroom apartment hovers around $822. It is the birthplace of singer Bob Dylan, hosting the annual Dylan Days, and residents can enjoy the outdoors at the nearby Lake Irvin Park and Bennett Park.
+
+## Fergus Falls, MN
+Fergus Falls, a city with a population of approximately 13,754, boasts of a median income of $42,659, with median home values standing at $142,700. Renters can find a two-bedroom house for around $850 per month. The nearby Interstate 94 makes commuting a breeze, while the town's extensive parks and trails system, including the scenic Central Lakes Trail, provide ample outdoor recreation opportunities.
+
+## Grand Rapids, MN
+Grand Rapids, a town of roughly 11,218 residents, has a median income of $48,247 and a median home value of $153,200. Renting a two-bedroom house here would cost approximately $800 per month. Known for its rich cultural history, Grand Rapids is the birthplace of actress Judy Garland, and its proximity to the Mississippi River and numerous lakes offer abundant recreational opportunities.
+
+## Willmar, MN
+Lastly, Willmar, with a population of 19,728 and a median income of $51,884, offers a balance of affordability and amenities. The median home value is $140,800, and a two-bedroom rental averages $882 per month. Willmar Lake, Robbins Island Park, and the Eagle Creek Golf Club are just a few of the attractions that make Willmar a desirable place to live."

@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State           |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Pine Bluff, AR        |        42323 |           34410 |               74900 |                 700 | 97.6804 |
+|  1 | Harrison, AR          |        13124 |           41393 |              115200 |                 645 | 93.7218 |
+|  2 | North Little Rock, AR |        66079 |           43831 |              144100 |                 725 | 89.8951 |
+|  3 | Hot Springs, AR       |        38697 |           40125 |              127500 |                 775 | 88.453  |
+|  4 | Jacksonville, AR      |        28442 |           48587 |              126900 |                 795 | 87.1925 |
+","# Cheapest Places to Live in Arkansas
+
+When it comes to choosing a place to live, affordability is usually one of the most crucial deciding factors. Arkansas already ranks as one of the most affordable states for renters in the US, but even within its borders, some cities stand out as particularly budget-friendly. Factors such as population size, median income, median home value, and rent prices for a two-bedroom house play an integral role in our affordability index. According to our methodology, the cheapest cities to live in Arkansas are Pine Bluff, Harrison, North Little Rock, Hot Springs, and Jacksonville. 
+
+## Pine Bluff, AR
+
+Pine Bluff, with a population of 42,323 and a median income of $34,410, stands as one of the most affordable cities in Arkansas. The town offers a low median home value of $74,900, while renters can expect to pay an average of $700 for a two-bedroom property. Pine Bluff is not just affordable but also boasts vast attractions such as the Arkansas Railroad Museum, Saracen Landing, and Bayou Bartholomew, the longest bayou in the world. 
+
+## Harrison, AR
+
+Harrison, a small city of approximately 13,124 residents, offers a significant balance between cost and quality of life. With a median income of $41,393 and a median home value of $115,200, the city’s affordability is evident. Renters can expect to pay around $645 for a two-bedroom apartment. Plus, residents have plenty to enjoy with the nearby Buffalo National River Park and the Mystery Cave State Park.
+
+## North Little Rock, AR
+
+North Little Rock, with a population reaching 66,079, also ranks high on the affordability chart. The city exhibits a median income of $43,831 and a median home value of $144,100. The typical rent for a two-bedroom house stands at about $725. The city is also home to several attractions such as the Dickey-Stephens Park, the Old Mill at T. R. Pugh Memorial Park, and the Arkansas River Trail.
+
+## Hot Springs, AR
+
+Hot Springs is a captivating city that comprises about 38,697 residents. Despite its popularity, it remains an affordable place to live, with the median home value standing at $127,500 and a median income of $40,125. Renters can anticipate an average ask of $775 for a two-bedroom house. The city is famous for Hot Springs National Park and includes attractions such as Magic Springs Theme and Water Park.
+
+## Jacksonville, AR
+
+Lastly, Jacksonville, with a population of 28,442 and a median income of $48,587, offers a fantastic balance of affordability and high living standards. The median home value stands at $126,900, with the typical rent for a two-bedroom home rounding off to about $795. The city features the Little Rock Air Force Base, Reed’s Bridge Battlefield, and Dupree Park, offering plenty for residents to see and do."

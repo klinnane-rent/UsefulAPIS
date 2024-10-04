@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Mercedes, TX   |        16561 |           39734 |               74400 |                 575 | 98.0785 |
+|  1 | San Benito, TX |        24259 |           30565 |               59300 |                 695 | 94.6906 |
+|  2 | Levelland, TX  |        13566 |           45196 |              100500 |                 727 | 93.0626 |
+|  3 | Marshall, TX   |        22881 |           42467 |              104400 |                 700 | 91.3674 |
+|  4 | Pampa, TX      |        17226 |           53535 |               78500 |                 774 | 90.5864 |
+","# Cheapest Places to Live in Texas
+
+Texas is a famously vast state, with real estate markets as diverse as its geography. Affordable living opportunities abound in the Lone Star State, making it a compelling choice for renters seeking high quality of life at a low cost. Improved housing affordability benefits communities across the state, contributing to economic growth and diversity. The cheapest places to live in Texas often combine low rental costs with other desirable qualities like quality infrastructure, great amenities, and a strong sense of community. These locations offer a good balance of affordability and desirability, which is why they are considered the cheapest places to live in Texas. The cities that meet these criteria include Mercedes, San Benito, Levelland, Marshall, and Pampa.
+
+## Mercedes, TX
+
+Mercedes, known as ""The Queen City of the Rio Grande Valley,"" is one of the oldest cities in South Texas and offers a budget-friendly lifestyle with a population of around 16,561. Its median income stands at $39,734, and the median home value is $74,400. With a 2-bedroom asking rent of $575, living in Mercedes is indeed affordable. At the same time, it is home to numerous parks like the Mercedes City Park and Hinojosa Park, which add to the city’s charm. Boasting a high score of 98.0785 in terms of livability, Mercedes offers a blend of affordability, history, and community spirit.
+
+## San Benito, TX
+
+San Benito, located in the heart of the Rio Grande Valley, is a city with a population of 24,259. The median income in this city is $30,565, with a median home value of $59,300. For renters, the 2-bedroom asking rent stands at a modest $695. San Benito is known for its vibrant culture and rich history, with attractions like the Freddy Fender Museum and the Narciso Martinez Cultural Arts Center. With a score of 94.6906, San Benito offers an affordable cost of living without compromising on quality of life.
+
+## Levelland, TX
+
+Situated in Hockley County, Levelland is a small city with a population of approximately 13,566. The city’s median income is $45,196, while the median home value stands at $100,500. The 2-bedroom asking rent in Levelland is relatively low at $727. Known as ""City of Mosaics,"" Levelland is home to South Plains College and is renowned for its public art installations. With a score of 93.0626, Levelland combines affordability, excellent education opportunities, and a strong sense of community.
+
+## Marshall, TX
+
+Marshall, a city with a population of 22,881, offers a median income of $42,467 and a median home value of $104,400. With a 2-bedroom asking rent of $700, Marshall is a practical choice for renters. This historic city boasts the Michelson Museum of Art and the Starr Family Home State Historic Site, along with beautiful colleges like East Texas Baptist University and Wiley College. With a livability score of 91.3674, Marshall presents a low cost of living while maintaining a rich cultural heritage and strong community feel.
+
+## Pampa, TX
+
+Pampa, a city with a population of 17,226, stands out with its higher median income of $53,535. The median home value in Pampa is $78,500, and the 2-bedroom asking rent is $774. Pampa is a friendly, vibrant community with attractions like the White Deer Land Museum and Pampa H20 Aquatic Center. With a score of 90.5864, Pampa sets itself apart by offering an affordable lifestyle along with unique cultural and recreational opportunities."

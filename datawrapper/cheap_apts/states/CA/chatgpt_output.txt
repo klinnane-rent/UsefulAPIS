@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State          |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Susanville, CA       |        14922 |           47685 |              175100 |                 800 | 99.0005 |
+|  1 | Twentynine Palms, CA |        26748 |           42959 |              139400 |                1045 | 97.6204 |
+|  2 | Coalinga, CA         |        17252 |           62420 |              199200 |                1375 | 95.8303 |
+|  3 | Barstow, CA          |        23547 |           42912 |              130100 |                1400 | 94.8005 |
+|  4 | Redding, CA          |        92025 |           56098 |              274800 |                1302 | 94.3407 |
+","# Cheapest Places to Live in California
+
+California, known for its sunny beaches, towering mountains, and bustling cities, also boasts a range of affordable towns and cities that are ideal for renters. While the state overall commands some of the highest living costs in the US, there are numerous pockets offering lower-than-average rent prices - a critical aspect for those looking to move. Our data analysis shows that Susanville, Twentynine Palms, Coalinga, Barstow, and Redding are the five cheapest cities to live in California for renters. These cities prove that it's possible to enjoy the quintessential California lifestyle without breaking the bank.
+
+## Susanville, CA
+
+Despite its small size, Susanville has all the makings of a great place to live. With a population of just under 15,000, it offers a quiet and peaceful setting for people seeking an escape from bustling urban centres. A two-bedroom unit in this city asks for around $800 per month in rent, a modest sum considering the quality of life offered. The median income here is about $47,685, making the cost of living quite manageable. Local attractions include the nearby Susanville Ranch Park and stunning views of the Sierra Nevada mountains.
+
+## Twentynine Palms, CA
+
+Located in the desert region of San Bernardino County, Twentynine Palms offers a unique blend of affordability and scenic beauty. The city, with a population of around 26,748, has a median rent of $1,045 for a two-bedroom home. The local economy, which leans heavily on tourism and the presence of a Marine Corps base, provides a median income of $42,959. Residents can take advantage of the city's proximity to Joshua Tree National Park and enjoy stunning stargazing opportunities.
+
+## Coalinga, CA
+
+Coalinga serves as proof that affordability can still exist in California. The city offers a median income of $62,420 and a surprisingly low 2-bedroom asking rent of $1,375. The city is home to around 17,252 residents and offers a peaceful style of living. The vibrant downtown area, close to the scenic West Hills and Fresno County parks, has a lot to offer in terms of shopping, dining, and entertainment.
+
+## Barstow, CA
+
+Located midway between Los Angeles and Las Vegas, Barstow is a city known for its rich history and natural charm. It's a relatively small city, with approximately 23,547 residents, and offers an affordable lifestyle with a median 2-bedroom asking rent of $1,400. The median income stands at $42,912. The presence of the Mojave National Preserve nearby adds to the appeal of living in Barstow.
+
+## Redding, CA
+
+With a population just over 92,000, Redding is a city that combines affordability with an enjoyable lifestyle. The median income in Redding is $56,098, and renters can expect to pay about $1,302 for a two-bedroom home. The city is nestled in the heart of California's most stunning landscapes, including the nearby Shasta-Trinity National Forest. An array of hiking trails, water sports, and fishing opportunities makes Redding a great place for outdoor enthusiasts."

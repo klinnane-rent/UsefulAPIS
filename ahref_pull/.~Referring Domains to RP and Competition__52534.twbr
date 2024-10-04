@@ -1,0 +1,2289 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='mac' version='18.1' xml:base='https://viz.rentpath.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://viz.rentpath.com/workbooks/ReferringDomainstoRPandCompetition?rev=1.2' id='ReferringDomainstoRPandCompetition' path='/workbooks' revision='1.3' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+        <calculation class='tableau' formula='20' />
+      </column>
+    </datasource>
+    <datasource caption='all_domain (2)' inline='true' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_domain' name='textscan.0pi056n1kposxn1edqepa18mvpy2'>
+            <connection class='textscan' directory='/Users/rentpath/ahref_pull' filename='referring_domains.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='referring_domains' name='textscan.1n41b3b17tdavs1038n3k0rbr26r'>
+            <connection class='textscan' directory='/Users/rentpath/ahref_pull' filename='referring_domains.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='datetime' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[First Seen]' />
+            <value name='[Last Visited]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[referring_domains.csv].[first_seen]' />
+              <field name='[referring_domains.csv].[last_visited]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1n41b3b17tdavs1038n3k0rbr26r' name='referring_domains.csv' table='[referring_domains#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='refdomain' ordinal='1' />
+              <column datatype='integer' name='backlinks' ordinal='2' />
+              <column datatype='integer' name='refpages' ordinal='3' />
+              <column datatype='datetime' name='first_seen' ordinal='4' />
+              <column datatype='datetime' name='last_visited' ordinal='5' />
+              <column datatype='integer' name='domain_rating' ordinal='6' />
+              <column datatype='string' name='target' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='datetime' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[First Seen]' />
+            <value name='[Last Visited]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[referring_domains.csv].[first_seen]' />
+              <field name='[referring_domains.csv].[last_visited]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1n41b3b17tdavs1038n3k0rbr26r' name='referring_domains.csv' table='[referring_domains#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='refdomain' ordinal='1' />
+              <column datatype='integer' name='backlinks' ordinal='2' />
+              <column datatype='integer' name='refpages' ordinal='3' />
+              <column datatype='datetime' name='first_seen' ordinal='4' />
+              <column datatype='datetime' name='last_visited' ordinal='5' />
+              <column datatype='integer' name='domain_rating' ordinal='6' />
+              <column datatype='string' name='target' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refdomain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[refdomain]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>refdomain</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>backlinks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[backlinks]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>backlinks</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refpages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[refpages]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>refpages</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domain_rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[domain_rating]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>domain_rating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>target</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[target]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>target</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Link Lost Calc' datatype='integer' name='[Calculation_3801741782955028487]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;Lost&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN [domain_rating] ELSE 0 END' />
+      </column>
+      <column caption='Total New Links' datatype='integer' name='[Calculation_3801741782956609544]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(SUM([Calculation_3999407585370488839])) - RUNNING_SUM(SUM([Calculation_3999407585370349574]))'>
+          <table-calc ordering-field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[Pivot Field Values]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <column caption='Link Last Seen Calc' datatype='integer' name='[Calculation_3801741782956675082]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;First seen&apos; AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN [domain_rating] ELSE 0 END' />
+      </column>
+      <column caption='RunningDiff' datatype='integer' name='[Calculation_3801741782961410063]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='//RUNNING_SUM(SUM([Link Last Seen Calc])) - RUNNING_SUM(SUM([Link Lost Calc]))[Link LOST Calc]&#10; SUM([Calculation_3801741782956675082]) - SUM([Calculation_3801741782955028487])' />
+      </column>
+      <column caption='RunningAvgDiff' datatype='real' name='[Calculation_3999407585364246529]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='//AVG([Link New Count])*SUM([Link Las*SUM([Lin//[Seen]//RUNNING_SUM(SUM([Link Last Seen Calc])) - RUNNING_SUM(SUM([Link Lost Calc]))[Link LOST Calc]lc])*[Link New Count] - AVG([Link Lost Count])*[Link Lost Count]}&#10;RUNNING_AVG(AVG([Link Last Seen Calc (copy)_3999407585465630749]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Link Lost Count' datatype='integer' name='[Calculation_3999407585370349574]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;Lost&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Link New Count' datatype='integer' name='[Calculation_3999407585370488839]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;First Seen&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN 1 ELSE 0 END' />
+      </column>
+      <column caption='Total New Count' datatype='integer' name='[Calculation_3999407585370669064]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(SUM([Calculation_3999407585370488839])) - RUNNING_SUM(SUM([Calculation_3999407585370349574]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Calculation1' datatype='real' name='[Calculation_3999407585379696655]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[domain_rating] * [Dofollow links]' />
+      </column>
+      <column caption='DR*Count Of Lost Links' datatype='real' name='[Calculation_3999407585379885072]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Lost links] * [domain_rating]' />
+      </column>
+      <column caption='Link Last Seen Calc2' datatype='integer' name='[Link Last Seen Calc (copy)_3999407585465630749]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;First seen&apos; AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN [domain_rating] ELSE NULL END' />
+      </column>
+      <column caption='Link Lost Calc 2' datatype='integer' name='[Link Lost Calc (copy)_3999407585465659422]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;Lost&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN [domain_rating] ELSE NULL END' />
+      </column>
+      <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+      <column caption='Seen Value (copy)' datatype='datetime' name='[Seen Value (copy)_3999407585455472659]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[Pivot Field Values]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='referring_domains.csv' datatype='table' name='[__tableau_internal_object_id__].[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]' role='measure' type='quantitative' />
+      <column caption='Backlinks' datatype='integer' name='[backlinks]' role='measure' type='quantitative' />
+      <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+      <column caption='Refdomain' datatype='string' name='[refdomain]' role='dimension' type='nominal' />
+      <column caption='Refpages' datatype='integer' name='[refpages]' role='measure' type='quantitative' />
+      <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+      <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_12axzic00gzf9j1d98qcy1.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/15/2023 03:01:46 PM' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='all_domain (2)' increment-value='%null%' refresh-type='create' rows-inserted='341476' timestamp-start='2023-06-15 15:01:45.582' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>96421</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>refdomain</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[refdomain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>refdomain</remote-alias>
+              <ordinal>1</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>125797</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>backlinks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[backlinks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>backlinks</remote-alias>
+              <ordinal>2</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1787</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>refpages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[refpages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>refpages</remote-alias>
+              <ordinal>3</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1591</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>domain_rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[domain_rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>domain_rating</remote-alias>
+              <ordinal>4</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>target</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[target]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>target</remote-alias>
+              <ordinal>5</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Pivot</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>319920</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.918544' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.0814558' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:target:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;rentals&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;apartmentguide&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;hotpads&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;rentcafe&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;realtor&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;apartmentlist&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;redfin&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;zillow&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;rent&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;apartments&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;forrent&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+          <calculation class='tableau' formula='20' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='referring_domains.csv' id='referring_domains.csv_E88656C71A0D41C29E8A77CF4FE64E5C'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='datetime' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[First Seen]' />
+                  <value name='[Last Visited]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[referring_domains.csv].[first_seen]' />
+                    <field name='[referring_domains.csv].[last_visited]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.1n41b3b17tdavs1038n3k0rbr26r' name='referring_domains.csv' table='[referring_domains#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='refdomain' ordinal='1' />
+                    <column datatype='integer' name='backlinks' ordinal='2' />
+                    <column datatype='integer' name='refpages' ordinal='3' />
+                    <column datatype='datetime' name='first_seen' ordinal='4' />
+                    <column datatype='datetime' name='last_visited' ordinal='5' />
+                    <column datatype='integer' name='domain_rating' ordinal='6' />
+                    <column datatype='string' name='target' ordinal='7' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='all_domain' inline='true' name='federated.1buyj4v134hyvf1542uyd1ws2y1x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_domain' name='textscan.0jwr6e711ersow1cqlmau08j219m'>
+            <connection class='textscan' directory='/Users/rentpath/ahref_pull' filename='referring_domains.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='datetime' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[First Seen]' />
+            <value name='[Last Visited]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[referring_domains.csv].[first_seen]' />
+              <field name='[referring_domains.csv].[last_visited]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0jwr6e711ersow1cqlmau08j219m' name='referring_domains.csv' table='[referring_domains#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='refdomain' ordinal='1' />
+              <column datatype='integer' name='backlinks' ordinal='2' />
+              <column datatype='integer' name='refpages' ordinal='3' />
+              <column datatype='datetime' name='first_seen' ordinal='4' />
+              <column datatype='datetime' name='last_visited' ordinal='5' />
+              <column datatype='integer' name='domain_rating' ordinal='6' />
+              <column datatype='string' name='target' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='datetime' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[First Seen]' />
+            <value name='[Last Visited]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[referring_domains.csv].[first_seen]' />
+              <field name='[referring_domains.csv].[last_visited]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0jwr6e711ersow1cqlmau08j219m' name='referring_domains.csv' table='[referring_domains#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='refdomain' ordinal='1' />
+              <column datatype='integer' name='backlinks' ordinal='2' />
+              <column datatype='integer' name='refpages' ordinal='3' />
+              <column datatype='datetime' name='first_seen' ordinal='4' />
+              <column datatype='datetime' name='last_visited' ordinal='5' />
+              <column datatype='integer' name='domain_rating' ordinal='6' />
+              <column datatype='string' name='target' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refdomain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[refdomain]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>refdomain</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>backlinks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[backlinks]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>backlinks</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refpages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[refpages]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>refpages</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domain_rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[domain_rating]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>domain_rating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>target</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[target]</local-name>
+            <parent-name>[referring_domains.csv]</parent-name>
+            <remote-alias>target</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Composite_lost' datatype='real' name='[Calculation_3801741782929334274]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF NOT ISNULL([Lost]) THEN [DR]&#10;ELSE 0&#10;END' />
+      </column>
+      <column caption='first_seen - lost' datatype='real' name='[Calculation_3801741782930153475]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[DR] - [Calculation_3801741782929334274]' />
+      </column>
+      <column caption='first_seen - lost filtering' datatype='boolean' name='[Calculation_3801741782935539716]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Calculation_3801741782930153475] &gt; [Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Calculation1' datatype='real' name='[Calculation_3801741782936645637]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[DR]' />
+      </column>
+      <column caption='DR*LinkLost' datatype='real' name='[Calculation_3801741782939017222]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[DR]*[Calculation_3801741782929334274]' />
+      </column>
+      <column caption='Link Lost Count' datatype='real' name='[Calculation_3999407585370169349]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='' />
+      </column>
+      <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='referring_domains.csv' datatype='table' name='[__tableau_internal_object_id__].[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]' role='measure' type='quantitative' />
+      <column caption='Backlinks' datatype='integer' name='[backlinks]' role='measure' type='quantitative' />
+      <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+      <column caption='Refdomain' datatype='string' name='[refdomain]' role='dimension' type='nominal' />
+      <column caption='Refpages' datatype='integer' name='[refpages]' role='measure' type='quantitative' />
+      <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Extracts/federated_1buyj4v134hyvf1542uyd1.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/15/2023 03:01:19 PM' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='all_domain' increment-value='%null%' refresh-type='create' rows-inserted='341476' timestamp-start='2023-06-15 15:01:18.881' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>106983</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>refdomain</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[refdomain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>refdomain</remote-alias>
+              <ordinal>1</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>123131</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>backlinks</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[backlinks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>backlinks</remote-alias>
+              <ordinal>2</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1345</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>refpages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[refpages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>refpages</remote-alias>
+              <ordinal>3</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1106</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>domain_rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[domain_rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>domain_rating</remote-alias>
+              <ordinal>4</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>target</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[target]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>target</remote-alias>
+              <ordinal>5</ordinal>
+              <family>referring_domains.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Pivot</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>319920</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Domain' />
+        <field-sort-custom-order field='DR' />
+        <field-sort-custom-order field='Dofollow ref. domains' />
+        <field-sort-custom-order field='Dofollow linked domains' />
+        <field-sort-custom-order field='Traffic ' />
+        <field-sort-custom-order field='Links to target' />
+        <field-sort-custom-order field='New links' />
+        <field-sort-custom-order field='Lost links' />
+        <field-sort-custom-order field='Dofollow links' />
+        <field-sort-custom-order field='First seen' />
+        <field-sort-custom-order field='Lost' />
+        <field-sort-custom-order field='Calculation_3801741782936645637' />
+        <field-sort-custom-order field='Calculation_3801741782927998977' />
+        <field-sort-custom-order field='target_domain' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='referring_domains.csv' id='referring_domains.csv_F6DC6A99A4E7482387D81FA3433BAA64'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='datetime' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[First Seen]' />
+                  <value name='[Last Visited]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[referring_domains.csv].[first_seen]' />
+                    <field name='[referring_domains.csv].[last_visited]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0jwr6e711ersow1cqlmau08j219m' name='referring_domains.csv' table='[referring_domains#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='refdomain' ordinal='1' />
+                    <column datatype='integer' name='backlinks' ordinal='2' />
+                    <column datatype='integer' name='refpages' ordinal='3' />
+                    <column datatype='datetime' name='first_seen' ordinal='4' />
+                    <column datatype='datetime' name='last_visited' ordinal='5' />
+                    <column datatype='integer' name='domain_rating' ordinal='6' />
+                    <column datatype='string' name='target' ordinal='7' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Count of domains'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+            <column caption='Total New Links' datatype='integer' name='[Calculation_3801741782956609544]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(SUM([Calculation_3999407585370488839])) - RUNNING_SUM(SUM([Calculation_3999407585370349574]))'>
+                <table-calc ordering-field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[Pivot Field Values]' ordering-type='Field' />
+              </calculation>
+            </column>
+            <column caption='Link Lost Count' datatype='integer' name='[Calculation_3999407585370349574]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;Lost&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Link New Count' datatype='integer' name='[Calculation_3999407585370488839]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;First Seen&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+            <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Month-Trunc' name='[tmn:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3801741782956609544]' derivation='User' name='[usr:Calculation_3801741782956609544:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Pivot Field Values]' derivation='Year' name='[yr:Pivot Field Values:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]'>
+            <groupfilter function='level-members' level='[none:target:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' included-values='in-range'>
+            <min>#2013-08-01 00:00:00#</min>
+            <max>#2023-06-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</column>
+            <column>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[usr:Calculation_3801741782956609544:qk]' scope='rows' value='Total Count of New Links' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' />
+              <text column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[usr:Calculation_3801741782956609544:qk]</rows>
+        <cols>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[yr:Pivot Field Values:ok]</cols>
+      </table>
+      <simple-id uuid='{34E3A081-A132-43C9-B35D-910C30300E76}' />
+    </worksheet>
+    <worksheet name='Running Total of DR Domains Gained'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Running Total of DR Gained</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+            <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column-instance column='[domain_rating]' derivation='Sum' name='[cum:sum:domain_rating:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+            <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Month-Trunc' name='[tmn:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:Pivot Field Names:nk]'>
+            <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;First seen&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:Pivot Field Names:nk]</column>
+            <column>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' scope='cols' value='Month' />
+            <encoding attr='space' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' field-type='quantitative' max='#2021-12-31 04:41:04.930#' min='#2015-12-31 19:18:55#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]' scope='rows' value='Running DR Sum of Domains Gained' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' />
+              <tooltip column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>Website:  &lt;</run>
+                <run>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]</run>
+                <run>&gt;&#10;DR: </run>
+                <run>&lt;</run>
+                <run>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-first' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</rows>
+        <cols>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</cols>
+        <mark-labels>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;rentcafe.com&quot;</value>
+                <value>#2021-08-01 00:00:00#</value>
+                <value>518777</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-10' y='2' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{53583A17-A52D-44F7-8C8B-47B45B436874}' />
+    </worksheet>
+    <worksheet name='Running Total of DR Domains Lost'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Running Total of DR of Domains</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+            <column caption='Link Lost Calc' datatype='integer' name='[Calculation_3801741782955028487]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;Lost&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN [domain_rating] ELSE 0 END' />
+            </column>
+            <column caption='Link Last Seen Calc' datatype='integer' name='[Calculation_3801741782956675082]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;First seen&apos; AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN [domain_rating] ELSE 0 END' />
+            </column>
+            <column caption='RunningDiff' datatype='integer' name='[Calculation_3801741782961410063]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='//RUNNING_SUM(SUM([Link Last Seen Calc])) - RUNNING_SUM(SUM([Link Lost Calc]))[Link LOST Calc]&#10; SUM([Calculation_3801741782956675082]) - SUM([Calculation_3801741782955028487])' />
+            </column>
+            <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column-instance column='[domain_rating]' derivation='Sum' name='[cum:sum:domain_rating:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_3801741782961410063]' derivation='User' name='[cum:usr:Calculation_3801741782961410063:qk:5]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[Pivot Field Values]' ordering-type='Field' type='CumTotal' />
+            </column-instance>
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+            <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Month-Trunc' name='[tmn:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' field-type='quantitative' max='#2021-12-31 04:41:04.930#' min='#2015-12-31 19:18:55#' range-type='fixed' scope='cols' type='space' />
+            <format attr='width' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:usr:Calculation_3801741782961410063:qk:5]' value='68' />
+            <format attr='title' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:usr:Calculation_3801741782961410063:qk:5]' scope='rows' value='Running Sum of DR' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' />
+              <tooltip column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>Website:  &lt;</run>
+                <run>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]</run>
+                <run>&gt;&#10;DR: </run>
+                <run>&lt;</run>
+                <run>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:usr:Calculation_3801741782961410063:qk:5]</rows>
+        <cols>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{10E5493A-3C28-4DE1-9BD8-C4375C8686AD}' />
+    </worksheet>
+    <worksheet name='Running Total of DR Domains Lost 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Running Total of DR LOST</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+            <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column-instance column='[domain_rating]' derivation='Sum' name='[cum:sum:domain_rating:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+            <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Month-Trunc' name='[tmn:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:Pivot Field Names:nk]'>
+            <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Lost&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:Pivot Field Names:nk]</column>
+            <column>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' scope='cols' value='Month' />
+            <format attr='height' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' value='53' />
+            <encoding attr='space' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' field-type='quantitative' max='#2021-11-13 14:07:36.940#' min='#2015-12-31 09:52:23#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]' scope='rows' value='Running DR Sum of Domains Lost' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' />
+              <tooltip column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]' />
+              <color column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>Website:  &lt;</run>
+                <run>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]</run>
+                <run>&gt;&#10;DR: </run>
+                <run>&lt;</run>
+                <run>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+                <format attr='mark-labels-line-first' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</rows>
+        <cols>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</cols>
+        <mark-labels>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;rent.com&quot;</value>
+                <value>#2016-03-01 00:00:00#</value>
+                <value>2300</value>
+                <value>&quot;[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:DR:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-3' y='14' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;rentcafe.com&quot;</value>
+                <value>#2021-08-01 00:00:00#</value>
+                <value>250595</value>
+                <value>&quot;[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:DR:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='12' y='4' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:domain_rating:qk]</field>
+                  <field>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Apartmentguide.com&quot;</value>
+                <value>#2021-08-01 00:00:00#</value>
+                <value>246925</value>
+                <value>&quot;[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:DR:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='13' y='-10' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{E2E489E5-4636-47B9-B982-25F79385EE7E}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average DR of Referral Domains&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+            <column caption='RunningAvgDiff' datatype='real' name='[Calculation_3999407585364246529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='//AVG([Link New Count])*SUM([Link Las*SUM([Lin//[Seen]//RUNNING_SUM(SUM([Link Last Seen Calc])) - RUNNING_SUM(SUM([Link Lost Calc]))[Link LOST Calc]lc])*[Link New Count] - AVG([Link Lost Count])*[Link Lost Count]}&#10;RUNNING_AVG(AVG([Link Last Seen Calc (copy)_3999407585465630749]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Link Last Seen Calc2' datatype='integer' name='[Link Last Seen Calc (copy)_3999407585465630749]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;First seen&apos; AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN [domain_rating] ELSE NULL END' />
+            </column>
+            <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+            <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Month-Trunc' name='[tmn:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3999407585364246529]' derivation='User' name='[usr:Calculation_3999407585364246529:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[Pivot Field Values]' ordering-type='Field' />
+            </column-instance>
+            <column-instance column='[Calculation_3999407585364246529]' derivation='User' name='[usr:Calculation_3999407585364246529:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[usr:Calculation_3999407585364246529:qk:2]' included-values='non-null' />
+          <slices>
+            <column>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</column>
+            <column>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[usr:Calculation_3999407585364246529:qk:2]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' scope='cols' value='Month' />
+            <encoding attr='space' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]' field-type='quantitative' max='#2022-01-31 10:27:05#' min='#2016-04-01 13:32:54#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[usr:Calculation_3999407585364246529:qk:1]' field-type='quantitative' max='64.813309959230523' min='40.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[usr:Calculation_3999407585364246529:qk:1]' scope='rows' value='Running Avg. Of Gained DR' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' />
+              <text column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='line-ends' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1125' />
+                <format attr='maxwidth' value='1125' />
+                <format attr='minheight' value='652' />
+                <format attr='maxheight' value='652' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[usr:Calculation_3999407585364246529:qk:1]</rows>
+        <cols>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tmn:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{81528F74-6E98-4789-A2A5-3A6102071A2E}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <repository-location id='Sheet6' path='/workbooks/ReferringDomainstoRPandCompetition' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+            <column caption='Link New Count' datatype='integer' name='[Calculation_3999407585370488839]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;First Seen&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_3999407585370488839]' derivation='Sum' name='[cum:sum:Calculation_3999407585370488839:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+            <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Day-Trunc' name='[tdy:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:Calculation_3999407585370488839:qk]</rows>
+        <cols>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tdy:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{2B603D06-49DD-48DD-8537-42D695FA2361}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <repository-location id='Sheet7' path='/workbooks/ReferringDomainstoRPandCompetition' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+            <column caption='Link Lost Count' datatype='integer' name='[Calculation_3999407585370349574]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;Lost&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_3999407585370349574]' derivation='Sum' name='[cum:sum:Calculation_3999407585370349574:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+            <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Day-Trunc' name='[tdy:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[cum:sum:Calculation_3999407585370349574:qk]</rows>
+        <cols>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[tdy:Pivot Field Values:qk]</cols>
+      </table>
+      <simple-id uuid='{F3F83964-480C-4AA6-8B4A-5E2B030685BB}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+            <column caption='Link New Count' datatype='integer' name='[Calculation_3999407585370488839]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;First Seen&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN 1 ELSE 0 END' />
+            </column>
+            <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_3999407585370488839]' derivation='Sum' name='[sum:Calculation_3999407585370488839:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[sum:Calculation_3999407585370488839:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{17112B14-6EA5-4162-9762-9A1E24B8E0FE}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+              <calculation class='tableau' formula='20' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+            <column caption='Link Lost Calc' datatype='integer' name='[Calculation_3801741782955028487]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Pivot Field Names] = &apos;Lost&apos; AND NOT ISNULL([Pivot Field Values]) AND [domain_rating] &gt; [Parameters].[Parameter 1] THEN [domain_rating] ELSE 0 END' />
+            </column>
+            <column caption='Seen' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Seen Value' datatype='datetime' name='[Pivot Field Values]' role='dimension' type='ordinal' />
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_3801741782955028487]' derivation='Sum' name='[sum:Calculation_3801741782955028487:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.12axzic00gzf9j1d98qcy1yzvpuz].[sum:Calculation_3801741782955028487:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{2D9F218D-EC15-4620-A8BE-DE805FB57B2C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Cumaltive DR of Domain Acquistion '>
+      <repository-location id='CumaltiveDRofDomainAcquistion' path='/workbooks/ReferringDomainstoRPandCompetition' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+          <calculation class='tableau' formula='20' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='1' name='Running Total of DR Domains Lost' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='4' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='2750' id='6' name='Running Total of DR Domains Lost' pane-specification-id='4' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='7' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='16000' x='83200' y='3750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='53' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='52' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='1' is-fixed='true' name='Running Total of DR Domains Lost' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='30750' id='6' name='Running Total of DR Domains Lost' pane-specification-id='4' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='7' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='16000' x='83200' y='31750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1B8C7F54-AE58-4A1A-9F5F-A40646A150F6}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 5'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='3' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{99EEB526-F41D-4D80-A6BE-C8BE1172D8C5}' />
+    </dashboard>
+    <dashboard name='Domain Acquistion'>
+      <repository-location id='DomainAcquistion' path='/workbooks/ReferringDomainstoRPandCompetition' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='all_domain (2)' name='federated.12axzic00gzf9j1d98qcy1yzvpuz' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+          <calculation class='tableau' formula='20' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.12axzic00gzf9j1d98qcy1yzvpuz'>
+        <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+        <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Count of domains' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='30750' id='8' name='Count of domains' pane-specification-id='0' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='9' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='16000' x='83200' y='31750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32500' id='52' name='Count of domains' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' type-v2='filter' values='database' w='16000' x='83200' y='38250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='55' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='32500' id='52' mode='checkdropdown' name='Count of domains' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' type-v2='filter' values='database' w='16000' x='83200' y='38250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Count of domains' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='30750' id='8' name='Count of domains' pane-specification-id='0' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='9' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='16000' x='83200' y='31750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BE2A881C-28B1-498F-A669-3BE913501DE8}' />
+    </dashboard>
+    <dashboard name='Domains Lost and Gained'>
+      <repository-location id='DomainsLostandGained' path='/workbooks/ReferringDomainstoRPandCompetition' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Filter DR&apos;s' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='20'>
+          <calculation class='tableau' formula='20' />
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='43375' id='1' name='Running Total of DR Domains Gained' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='54625' id='8' name='Running Total of DR Domains Lost 1' w='82400' x='800' y='44375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='4' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='23250' id='6' name='Running Total of DR Domains Gained' pane-specification-id='4' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target_domain:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='7' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='16000' x='83200' y='24250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='54' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='53' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='43375' id='1' is-fixed='true' name='Running Total of DR Domains Gained' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='23250' id='6' name='Running Total of DR Domains Gained' pane-specification-id='4' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target_domain:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6500' id='7' mode='type_in' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='16000' x='83200' y='24250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54625' id='8' is-fixed='true' name='Running Total of DR Domains Lost 1' w='82400' x='800' y='44375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C2D0E747-6284-4DFB-BA2F-81E990E19D8A}' />
+    </dashboard>
+    <dashboard name='Running DR of Acquired Domains '>
+      <repository-location id='RunningDRofAcquiredDomains' path='/workbooks/ReferringDomainstoRPandCompetition' revision='' />
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='41' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='39' type-v2='layout-basic' w='85000' x='800' y='1000'>
+              <zone h='98000' id='28' name='Sheet 5' w='85000' x='800' y='1000'>
+                <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='134' h='98000' id='40' is-fixed='true' param='vert' type-v2='layout-flow' w='13400' x='85800' y='1000'>
+              <zone h='3375' id='42' name='Sheet 5' pane-specification-id='2' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' type-v2='color' w='13400' x='85800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='78' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='77' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='28' is-fixed='true' name='Sheet 5' w='85000' x='800' y='1000'>
+                  <layout-cache minheight='198' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3375' id='42' name='Sheet 5' pane-specification-id='2' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' type-v2='color' w='13400' x='85800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{51449949-EA49-4F7E-95CD-78C858092108}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' name='Domain Acquistion'>
+      <viewpoints>
+        <viewpoint name='Count of domains'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{18FBAE63-EBA1-434B-8718-B63C759FF3EE}' />
+    </window>
+    <window class='worksheet' name='Count of domains'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='123'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9270597A-B20B-4B53-A5DD-CC80574E22B2}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Cumaltive DR of Domain Acquistion '>
+      <viewpoints>
+        <viewpoint name='Running Total of DR Domains Lost'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5BF9DFBF-C026-4120-8838-2B393ABB2474}' />
+    </window>
+    <window class='dashboard' name='Running DR of Acquired Domains '>
+      <viewpoints>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='42' />
+      <simple-id uuid='{BB9E4524-A39E-4E7C-B92A-B7D0615CEBC4}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4D48824C-E3BF-45B9-BA3E-A854496AA322}' />
+    </window>
+    <window class='dashboard' name='Domains Lost and Gained'>
+      <viewpoints>
+        <viewpoint name='Running Total of DR Domains Gained'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Running Total of DR Domains Lost 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+      <simple-id uuid='{82B410C9-C5D6-4767-8B42-2752485BEE8F}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA023632-FDA2-4D27-B257-31FD8BD1BA96}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{76EE44CA-3A2A-45F1-B0EA-CAC62FAAE1C2}' />
+    </window>
+    <window class='dashboard' name='Dashboard 5'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{57C9811D-9A8D-4578-8E10-8D3197E08551}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D25C8E3-80E6-4CD7-BE9C-C942B8ED4D5C}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A708672B-9C24-4271-9E0B-93D7E8B41672}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Running Total of DR Domains Gained'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='162'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='4' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target_domain:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7122C7D5-D7AC-46E8-BB69-0FABF3BC0812}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Running Total of DR Domains Lost'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='162'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='4' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target_domain:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CE23028E-5912-4298-ACF6-7D9DBF38563E}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Running Total of DR Domains Lost 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='162'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='5' param='[federated.12axzic00gzf9j1d98qcy1yzvpuz].[none:target_domain:nk]&#10;[federated.12axzic00gzf9j1d98qcy1yzvpuz].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B6AE186-CEB0-4605-B50C-31B00356A48D}' />
+    </window>
+  </windows>
+</workbook>

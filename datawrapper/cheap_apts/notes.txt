@@ -1,0 +1,11 @@
+Pipeline: 
+On first run.  Use bash file: states/creates_dirs.sh to create all the necessary directories.
+
+
+
+cheapestCities_datawrapper.py will be called to create the data files.  
+TODO: have bigquery calls to DB in this file and put this file on a CRON job.  IF THE NEW FILE IS NOT NEWER THAN THE CURRENT ONE, DO NOT SAVE FILE. 
+
+Lastly:
+Run process.py, which should be called from cheapestCities_datawrapper once the files are allegedly created.  It will update or create the charts.
+  

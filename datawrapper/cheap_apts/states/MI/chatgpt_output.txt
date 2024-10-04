@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State       |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Mount Clemens, MI |        16212 |           47528 |              118800 |                 300 | 95.0935 |
+|  1 | Highland Park, MI |        10818 |           20666 |               50200 |                 641 | 93.1967 |
+|  2 | Niles, MI         |        11168 |           38415 |               86000 |                 700 | 93.1867 |
+|  3 | Coldwater, MI     |        12203 |           40561 |               93400 |                 583 | 90.3937 |
+|  4 | Flint, MI         |        95999 |           30383 |               31700 |                 891 | 89.9168 |
+","# Cheapest Places to Live in Michigan
+Affordable living is a sought-after commodity in today's economic climate, and certain cities in Michigan offer this in abundance. This state, also famous for its Great Lakes, auto industry, and diverse culture, features a significant variety of cost-effective living spaces for renters. Amidst the myriad of cities within Michigan's borders, we've identified five standout locations that boast the lowest living costs for renters. These cities include Mount Clemens, Highland Park, Niles, Coldwater, and Flint. Each of these locales offers their own unique charms and affordable rental costs, providing excellent value for people considering to move to Michigan.
+
+## Mount Clemens, MI
+Situated in Michigan’s Macomb County, Mount Clemens boasts an impressive balance between a reasonable cost of living and a good quality of life. A population of just over 16,000 enjoys a median income of around $47,528. With median home values hovering around $118,800 and an average 2-bedroom ask rent costing a mere $300, it paints a very economical picture for renters. The city's convenient location, near Clinton River and the I-94 highway, offers easy access to Detroit and other major cities. Points of interest such as the Anton Art Center and the beautiful Clemens Park are just icing on the cake.
+
+## Highland Park, MI
+Highland Park, a city enclaved in Detroit, features a more urban living environment. The 10,818 residents enjoy affordable housing, with a median house value of $50,200 and a 2-bedroom rent averaging $641. The city's economical living conditions are further balanced by its rich cultural heritage; it's the birthplace of the Model T and home to attractions like the Highland Park Ford Plant and the McGregor Library.
+
+## Niles, MI
+Niles, known as the ""City of Four Flags,"" provides a comfortable and affordable living environment in Berrien County. Its 11,168 residents have a median income of $38,415 with a median home value of $86,000. The average 2-bed asking rent is approximately $700. Located along the banks of the St. Joseph River and near the US-12 highway, residents can enjoy the beauty of Riverfront Park or the history of the Fort St. Joseph Museum.
+
+## Coldwater, MI
+Coldwater is a peaceful city in Michigan's Branch County, offering a very economical living standard. The city’s 12,203 residents experience an average income of $40,561 and a median home value of $93,400. The average rent for a 2-bedroom space is $583. The city boasts of several parks and lakes for outdoor enthusiasts, including Heritage Park and Coldwater Chain of Lakes. Coldwater is also home to the Tibbits Opera House, one of the oldest theaters in the country.
+
+## Flint, MI
+Flint, the largest city on our list with a population of 95,999, balances affordability and city amenities. Its median income is $30,383, median home value stands at $31,700, and an average 2-bedroom rent comes to $891. Flint's residents can enjoy the local cultural center, the Flint Institute of Arts, explore the sprawling University of Michigan-Flint campus, or relax at the scenic Stepping Stone Falls. Despite its larger size, Flint still manages to offer cost-effective living, making it an appealing choice for renters in Michigan."

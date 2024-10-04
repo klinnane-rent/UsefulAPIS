@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in New Hampshire. Start by producing a section titled exactly as ""# Cheapest Places to Live in New Hampshire"". This section should be 7 to 8 sentences and an overview of New Hampshire within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: Rochester, NH, Concord, NH, Somersworth, NH, Manchester, NH, Keene, NH.
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Rochester, NH   |        31305 |           66831 |              186600 |                1310 | 88.9928 |
+|  1 | Concord, NH     |        43503 |           70004 |              239300 |                1667 | 78.1813 |
+|  2 | Somersworth, NH |        12027 |           67209 |              211400 |                1795 | 75.1153 |
+|  3 | Manchester, NH  |       112441 |           62087 |              241600 |                2152 | 67.157  |
+|  4 | Keene, NH       |        22823 |           57393 |              186200 |                2325 | 63.6811 |
+","# Cheapest Places to Live in New Hampshire
+
+New Hampshire, renowned for its sublime natural beauty and historical significance, offers a myriad of living options for renters wanting to enjoy the state's charm without a harsh hit on their wallets. The Granite State's cost of living varies across its cities, making some locales more affordable than others. When it comes to renting, cities like Rochester, Concord, Somersworth, Manchester, and Keene make the top of the list for their reasonable rates and high scores based on median income, home values, and population size. Whether you're drawn towards the buzz of a larger city or the tranquility of a small town, these cities in New Hampshire offer affordability, convenience, and an appealing lifestyle for renters.
+
+## Rochester, NH
+
+With a population of 31,305, Rochester, nestled in Stratford County, is an appealing city for anyone hoping to escape the hustle and bustle of more heavily populated cities. The median income in Rochester is a comfortable $66,831, and the asking rent for a two-bedroom home is around $1,310. This city, rich in history, offers beautiful nearby attractions like the Rochester Opera House and the Cocheco River. The city has a high score of 88.9928 due to its blend of affordability and quality of life.
+
+## Concord, NH
+
+Concord, the capital of New Hampshire, is known for its rich history, vibrant arts scene, and beautiful parks. With a population of 43,503 and a median income of $70,004, Concord offers an excellent quality of life. The asking rent for a two-bedroom home is approximately $1,667. Nearby attractions include the New Hampshire State House, Walker State Forest, and the Merrimack River, contributing to its score of 78.1813. 
+
+## Somersworth, NH
+
+Somersworth is a cozy city with a population of 12,027. Despite its small size, it has a strong sense of community and a median income of $67,209. With an asking price of $1,795 for a two-bedroom house, it's an affordable choice worth considering. Somersworth residents enjoy the nearby Willand Pond Area and the Salmon Falls River. The city's score of 75.1153 is attributable to its affordable living and charming small-town feel.
+
+## Manchester, NH
+
+Manchester, the most populated city in the list with 112,441 residents, is known for its vibrant urban life and rich cultural scene. The median income stands at $62,087, and the rent for a two-bedroom house averages around $2,152. Manchester boasts attractions like the Currier Museum of Art, Lake Massabesic, and the bustling Elm Street, contributing to its score of 67.157. 
+
+## Keene, NH
+
+Keene is a charming city in Cheshire County with a population of 22,823. It offers a median income of $57,393, making it an affordable option with a two-bedroom house rent rate around $2,325. Keene is known for its beautiful parks like the Ashuelot River Park and the welcoming downtown area. The city's scores 63.6811 due to its balance between affordability and a vibrant community lifestyle."

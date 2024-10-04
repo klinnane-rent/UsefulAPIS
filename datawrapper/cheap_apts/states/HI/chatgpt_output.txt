@@ -1,0 +1,22 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in Hawaii. Start by producing a section titled exactly as ""# Cheapest Places to Live in Hawaii"". This section should be 7 to 8 sentences and an overview of Hawaii within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: Kailua, HI.
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State   |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:--------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Kailua, HI    |        37900 |          122706 |              992100 |                2450 |       0 |
+","# Cheapest Places to Live in Hawaii
+Hawaii is renowned for its idyllic landscapes, pristine beaches, diverse culture, and vibrant hospitality. However, living in this paradise comes with a price tag, and it is generally considered one of the most expensive states in the US. Nevertheless, there are still affordable gems for renters tucked in these islands, based on factors such as population, median income, and median home value. Notably, among these affordable places is the city of Kailua. This city boasts a fair share of the Hawaiian charm at a relatively affordable cost for renters, making it an ideal place to consider when looking for pocket-friendly places to live in Hawaii.
+
+## Kailua, HI
+Kailua, located in Honolulu County on the island of Oahu, is a city that beautifully captures the essence of Hawaii. It boasts a population of 37,900, a median income of $122,706 and a median home value of $992,100. The two-bed asking rent is reasonable at $2,450 given the city's offerings and Hawaiian cost of living, scoring it favorable for renters.
+
+Kailua is more than just an affordable city; it offers a rich quality of life with its array of offerings. This coastal town is known for its stunning Kailua Beach Park, which is popular amongst wind-surfers and kayakers. Additionally, it's also home to the tranquil Lanikai Beach, perfect for those seeking peace and serenity. 
+
+For the outdoor enthusiasts, there is the picturesque Maunawili Falls, a popular hiking trail leading to a waterfall and swimming hole. The town also has a vibrant shopping and dining scene, with Kailua town center boasting numerous unique shops, restaurants and farmers markets. Furthermore, Kailua's proximity to major roads such as the Pali Highway provides easy access to downtown Honolulu, offering the perfect balance between island tranquility and city conveniences. With these features, Kailua indeed offers a great place to live for renters seeking the Hawaiian charm at affordable rates."

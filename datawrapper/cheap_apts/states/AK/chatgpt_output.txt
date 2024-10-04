@@ -1,0 +1,26 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Fairbanks, AK  |        31427 |           64397 |              217700 |                1400 | 54.5998 |
+|  1 | Anchorage, AK  |       292090 |           84813 |              320100 |                1629 | 28.9062 |
+|  2 | North Pole, AK |         2969 |           81491 |              222400 |                1350 |  0      |
+","# Cheapest Places to Live in Alaska
+As the largest state in the U.S. by land area, Alaska presents a diverse range of living options. It's known for its vast wilderness, stunning natural beauty, and unique native cultures. Although it's often associated with a high cost of living due to its remote location, there are affordable places to live for renters. Based on our in-depth analysis, we've identified the cheapest cities for renters in Alaska that offer a blend of affordability and quality of life. These cities are Fairbanks, Anchorage, and North Pole.
+
+## Fairbanks, Alaska
+With a population of 31,427, Fairbanks is a moderate-sized city that offers an affordable housing market to its residents. The median asking rent for a 2-bedroom apartment in Fairbanks is $1,400, which is considerably reasonable considering the city's median income of $64,397. Being the largest city in the interior region of Alaska, Fairbanks is home to the University of Alaska Fairbanks, making it an educational hub. The city also boasts breathtaking sights such as the Northern Lights, Chena River State Recreation Area, and Creamer's Field Migratory Waterfowl Refuge, that not only provide recreational opportunities but also contribute to the overall appeal of living in Fairbanks. 
+
+## Anchorage, Alaska
+Anchorage, the largest city in Alaska with a population of 292,090, offers its residents a blend of urban and wilderness experiences. Despite its higher median home value of $320,100, renters can find a comfortable 2-bedroom apartment at a reasonable median asking rent of $1,629. With a high median income of $84,813, living in Anchorage is financially feasible for many. The city is surrounded by natural wonders including the Chugach Mountains and the Tony Knowles Coastal Trail, and it has a thriving downtown with shopping centers, restaurants, and the renowned Alaska Native Heritage Center. 
+
+## North Pole, Alaska
+The small city of North Pole with a population of just 2,969 is also among the most affordable places to live in Alaska. The median asking rent for a 2-bedroom apartment is the lowest among the three cities at $1,350. In addition, North Pole residents have a median income of $81,491, illustrating the affordability of the city. Despite its size, this city is rich in charm and community spirit. It's known for its Christmas-themed landmarks, including the Santa Claus House, which adds a unique and playful aura to the city. Moreover, it's only a short drive away from Fairbanks, providing easy access to more amenities and attractions."

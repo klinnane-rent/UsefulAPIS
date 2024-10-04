@@ -1,0 +1,35 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State       |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Mattoon, IL       |        17273 |           40576 |               84400 |                 361 | 97.3602 |
+|  1 | Herrin, IL        |        12806 |           45713 |               95800 |                 595 | 93.9981 |
+|  2 | Charleston, IL    |        20141 |           41436 |              110500 |                 632 | 92.922  |
+|  3 | North Chicago, IL |        29967 |           47213 |              107900 |                 644 | 92.0887 |
+|  4 | Rantoul, IL       |        12946 |           41837 |               88200 |                 633 | 91.1537 |
+","# Cheapest Places to Live in Illinois
+
+When it comes to rental affordability, Illinois presents a variety of options for every budget. As one of the most populous states in the U.S., Illinois offers a mix of urban, suburban, and rural living, with some cities standing out as especially cost-effective for renters. Despite the high cost of living in some areas, especially Chicago, there are several cities throughout the state that offer reasonably priced rent along with a good quality of life. The cities of Mattoon, Herrin, Charleston, North Chicago, and Rantoul rise to the top as the cheapest places to live for renters.
+
+## Mattoon, IL
+With a moderate population of 17,273, Mattoon is a city that blends affordability, with a median income of $40,576, and a reasonable median home value of $84,400. The city is not only affordable but also teeming with quality of life amenities. The two-bedroom asking rent of $361 makes it an attractive place for renters. Mattoon is conveniently located off of Interstate 57, making travel and commutes easy. The city also boasts beautiful landmarks like Peterson Park and the Kinzel Field.
+
+## Herrin, IL
+Home to 12,806 residents, Herrin offers a comfortable lifestyle with a median income of $45,713. With a median home value of $95,800 and two-bedroom asking rent of $595, Herrin stands out for its affordability. Herrin City Park, a popular local attraction, provides a massive green space for leisure and recreational activities. The city's close-knit community and friendly neighborhoods make it an appealing choice for renters.
+
+## Charleston, IL
+Charleston, with a population of 20,141 and a median income of $41,436, offers an affordable and comfortable lifestyle. The median home value stands at $110,500, and the two-bedroom asking rent is $632. Charleston offers a vibrant community life with a rich history. Attractions such as the Lincoln Douglas Debate Museum and Fox Ridge State Park add to the appeal of living in this affordable city.
+
+## North Chicago, IL
+With a population of 29,967 and a median income of $47,213, North Chicago offers affordable living with an urban feel. A two-bedroom apartment in North Chicago asks for a rent of $644 on average, making it an attractive place for renters looking for affordability. The city is home to the Great Lakes Naval Station and borders Lake Michigan, offering stunning natural beauty and recreational opportunities.
+
+## Rantoul, IL
+Rantoul, with a population of 12,946 and a median income of $41,837, is another city in Illinois offering affordable rent. The median home value is slightly lower at $88,200, with a two-bedroom asking rent of $633. The city is known for its friendly community, good schools, and the nearby University of Illinois Urbana-Champaign. Points of interest such as the Chanute Air Museum and Heritage Lake Park add to the city's charm."

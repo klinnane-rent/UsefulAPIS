@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State      |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:-----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Hagerstown, MD   |        40027 |           41905 |              160000 |                1306 | 91.6312 |
+|  1 | Essex, MD        |        39307 |           59426 |              195700 |                1192 | 90.9815 |
+|  2 | California, MD   |        14730 |           97331 |              283300 |                1280 | 87.3175 |
+|  3 | Dundalk, MD      |        63826 |           55489 |              156300 |                1481 | 86.3274 |
+|  4 | Middle River, MD |        29665 |           65947 |              197700 |                1472 | 85.1776 |
+","# Cheapest Places to Live in Maryland 
+
+Maryland, the ""Old Line State,"" is well-known for its rich history, diverse culture and, more importantly, it's range of affordable living options suitable for renters. Being strategically located in the Mid-Atlantic region of the United States, Maryland is within proximity to major cities such as Washington, D.C., Philadelphia, and New York. In the context of affordability for renters, certain cities in Maryland stand out for their relatively low rental costs, while likewise promising an elevated quality of life. In ascending order, these cities are Hagerstown, Essex, California, Dundalk and Middle River.
+
+## Hagerstown, MD 
+
+Hagerstown, a city in Western Maryland, is known for its rich history and scenic outdoors, making it a great place to live for renters. With a population of 40,027 and a median income of $41,905, Hagerstown is characterized by its modest living conditions. The city's 2-bedroom asking rent is $1,306, and it boasts a home value median of $160,000. Hagerstown's attractions such as the Washington County Museum of Fine Arts, the Maryland Theatre, and City Park offer enjoyable activities for residents.
+
+## Essex, MD
+
+Essex, nestled on the eastern outskirts of Baltimore County, offers a charming suburban lifestyle with a population of 39,307 and a median income of $59,426. With the affordable asking rent for a 2-bedroom residence averaging $1,192, Essex proves to be a favorable location for renters. The city, with its proximate location to the Chesapeake Bay waterfront and other attractions like the Rocky Point Golf Course, offers residents an engaging outdoor experience.
+
+## California, MD
+
+California, a southern Maryland city, despite its relatively small population of 14,730, offers a big city appeal with a high median income of $97,331. The 2-bedroom asking rent of $1,280 is reasonably modest considering the high standard of living in the city. Enriched with several parks and reserves like the Myrtle Point Park and the Patuxent River Naval Air Museum, California offers a multitude of recreational opportunities for its residents.
+
+## Dundalk, MD
+
+Dundalk, located in Baltimore County, offers an inexpensive yet quality living experience for its 63,826 residents. The city's median income stands at $55,489, and the asking rent for a 2-bedroom residence is $1,481. The city offers an array of attractions such as the Battle Acre Park, North Point State Park, and the Heritage Park, allowing residents to revel in nature's beauty and historical landmarks.
+
+## Middle River, MD
+
+Middle River, another Baltimore County city, offers an affordable lifestyle with a median income of $65,947 for its 29,665 inhabitants. The typical asking rent for a 2-bedroom residence is $1,472. The city’s attraction lies in its abundance of water-related activities. With numerous parks like the Eastern Regional Park, Wilson Point Park, and the waterfront restaurants, Middle River offers its residents an engaging and leisurely lifestyle."

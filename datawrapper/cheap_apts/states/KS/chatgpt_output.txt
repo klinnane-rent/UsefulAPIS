@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Haysville, KS  |        11260 |           54982 |              110200 |                 545 | 98.5106 |
+|  1 | Newton, KS     |        18846 |           56729 |              109100 |                 487 | 98.4611 |
+|  2 | Hutchinson, KS |        40669 |           48889 |              101300 |                 809 | 92.3304 |
+|  3 | Topeka, KS     |       125819 |           49647 |              105700 |                 857 | 91.0322 |
+|  4 | Winfield, KS   |        11990 |           48027 |               92900 |                 938 | 88.0915 |
+","# Cheapest Places to Live in Kansas 
+
+The state of Kansas, known for its vast wheat fields and picturesque sunsets, offers a variety of affordable living options for renters. The cost of living here is considerably lower than the national average, making it an appealing choice for those who wish to maximize the value of their income. With the blend of both urban and rural towns, Kansas offers a unique blend of lifestyle choices to meet everyone's needs. According to our analysis, the cheapest cities to live in Kansas are Haysville, Newton, Hutchinson, Topeka, and Winfield. 
+
+## Haysville, KS
+
+Haysville, a city with a population of 11,260, is not just economical but also a great place to live. With a median home value of $110,200 and a 2-bedroom asking rent of $545, the cost of living is quite affordable. The median income here is around $54,982, making it a balanced place to live financially. Furthermore, Haysville is not short of local amenities, including Haysville City Park, a popular spot for community gatherings, and proximity to major highways for easy commuting.
+
+## Newton, KS
+
+Newton is another city in Kansas that offers affordable living with a population of 18,846. The city boasts a median income of $56,729, a median home value of $109,100, and a 2-bedroom asking rent of just $487. What makes Newton exceptional is not only its affordability but also its strong sense of community and well-preserved historic downtown, where you'll find a variety of shops, restaurants, and local businesses. 
+
+## Hutchinson, KS
+
+With a population of 40,669, Hutchinson offers a nice blend of small-town feel and city amenities. The median income stands at $48,889, the median home value is $101,300, and the 2-bedroom asking rent is $809, making it an economical place to live. Hutchinson is also famous for the Kansas State Fair, The Cosmosphere, and Strataca, making it a fun place to reside.
+
+## Topeka, KS
+
+Topeka, the capital city of Kansas, has a population of 125,819. Despite being a larger city, it offers affordable living with a median income of $49,647, a median home value of $105,700, and a 2-bed asking rent of $857. Topeka is home to a rich history, numerous parks, and cultural attractions such as the Kansas Museum of History and the Topeka Performing Arts Center.
+
+## Winfield, KS
+
+Winfield, with a population of 11,990, offers its residents a median income of $48,027. The median home value is $92,900, and the 2-bedroom asking rent stands at $938. The town is known for its annual Walnut Valley Festival, Island Park, and its historic downtown area complete with boutique shops and charming cafes. Winfield is indeed an affordable and delightful place to call home."

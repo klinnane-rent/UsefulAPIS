@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Custom Article - Article Assistant</title>
+        <style>
+            body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                    padding-top: 40px;
+                    color: #333;
+                }
+                .unselectable-crossed-out {
+                    text-decoration: line-through;
+                    user-select: none;
+                }
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .navbar a.active { /* Styles for hover and the active page */
+                    background-color: #ddd;
+                    color: rgb(201, 199, 199);
+            }
+
+            .navbar a.active { /* Additional specific styles for the active link */
+                    background-color: #555; /* Darker than hover to stand out */
+            }
+            .container {
+                display: flex;
+                width: 100%;
+            }
+            .form-section {
+                width: 38%;
+                padding-right: 20px;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                padding: 20px;
+            }
+            .form-section label {
+                display: block;
+                margin-bottom: 5px; /* Reduced from a potentially larger value */
+            }
+
+            .form-section .form-control {
+                margin-top: 0px; /* Ensure there's no additional top margin pushing the input down */
+                width: 100%; /* Assuming you want the input to be full width */
+                padding: 8px;
+                box-sizing: border-box; /* Includes padding in the width */
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .table-section {
+                width: 60%;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                padding: 5px;
+            }
+
+            .table-section table {
+                width: 100%; /* Full width to fill the container */
+                border-collapse: collapse; /* No space between borders of cells */
+
+            }
+
+            .table-section th, .table-section td {
+                border: 1px solid #ddd; /* Light gray border for readability */
+                
+                text-align: left; /* Align text to the left */
+            }
+
+            .table-section input, .table-section select {
+                width: 100%; /* Full width of the cell */
+                padding: 8px; /* Padding for touch-friendly interaction */
+                margin: 4px 0; /* Slightly space out elements vertically */
+                box-sizing: border-box; /* Border and padding included in width */
+            }
+
+            .table-section button {
+                padding: 10px 20px; /* Generous padding for easy clicking */
+                background-color: #4CAF50; /* A pleasant green background */
+                color: white; /* Text color for the button */
+                border: none; /* No border for a cleaner look */
+                border-radius: 5px; /* Rounded corners for a modern look */
+                cursor: pointer; /* Cursor indicates clickable button */
+            }
+
+            .table-section button:hover {
+                background-color: #45a049; /* Slightly darker on hover for feedback */
+            }
+
+            .table-section input[type='checkbox'] {
+                width: auto; /* Override width for checkboxes */
+                margin: 0 5px 0 0; /* Adjust margin to line up with text */
+            }
+
+
+            .form-control {
+                margin: 10px 0;
+                padding: 8px;
+                width: 100%;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 10px 2px;
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+            }
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                margin-top: 20px;
+                background: #fff;
+            }
+            table, th, td {
+                border: 1px solid #ccc;
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+        .options-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+        }
+
+        fieldset {
+            width: 48%; /* Each fieldset will take up nearly half the width of the .options-container */
+            padding: 10px; /* Adding some padding inside the fieldsets for better spacing of elements */
+            margin-bottom: 20px; /* Adds space between rows of fieldsets if wrapped */
+            box-sizing: border-box; /* Includes padding and border in the width and height */
+            border: 2px solid #ccc; /* Adds a subtle border around each fieldset */
+        }
+
+        legend {
+            padding: 0 10px; /* Adds padding inside the legend for text */
+            margin-bottom: 10px; /* Extra space below the legend */
+            font-size: 1.2em; /* Slightly larger font for the legend */
+            color: #333; /* Darker text for better readability */
+        }
+
+        label {
+            display: block; /* Each label will be a block, making the radio button align nicely with the text */
+            margin-bottom: 5px; /* Space between each label */
+            cursor: pointer; /* Indicates that the label is clickable */
+        }
+
+        input[type="radio"] {
+            margin-right: 5px; /* Space between the radio button and its label */
+        }
+        h2 {margin: 0px;}
+
+        </style>
+    </head>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/attractions">Attractions in City</a>
+        <a href="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0//city-info">City Information</a>
+        <a href="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/custom-article" class="active">Custom Article</a>
+    </div>
+    <body>
+
+    
+    <h1>Custom Article</h1>
+    <form id="customArticleForm" action="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/custom-article" method="POST">
+        <div class="container">
+            <div class="form-section">
+                <!-- Checkbox section -->
+                <div class="options-container">
+
+                    <!-- Topic Selection Group -->
+                    <fieldset>
+                        <legend>Select a Topic</legend>
+                        <div>
+                            <label><input type="radio" name="topic_selection" value="neighborhoods" required checked> Is Topic Neighborhoods</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="topic_selection" value="cities" required> Is Topic Cities</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="topic_selection" value="counties" required> Is Topic Counties</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="topic_selection" value="states" required> Is Topic States</label>
+                        </div>
+                    </fieldset>
+                
+                    <!-- Width Selection Group -->
+                    <fieldset>
+                        <legend>Select Width</legend>
+                        <div>
+                            <label><input type="radio" name="width_selection" value="citywide" required checked> Is Citywide</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="width_selection" value="countywide" required> Is Countywide</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="width_selection" value="statewide" required> Is Statewide</label>
+                        </div>
+                        <div class="unselectable-crossed-out">
+                            <label><input type="radio" name="width_selection" value="nationwide" required disabled> Is Nationwide</label>
+                        </div>
+                    </fieldset>
+                
+                </div>
+                <!-- Input fields -->
+                <div>
+                    <label for="neighborhood">Neighborhood:</label>
+                    <input type="text" id="neighborhood" name="neighborhood" class="form-control" placeholder="West End">
+                </div>
+                <div>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" class="form-control" placeholder="Atlanta">
+                </div>
+                <div>
+                    <label for="county">County:</label>
+                    <input type="text" id="county" name="county" class="form-control" placeholder="Fulton">
+                </div>
+                <div>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" class="form-control" placeholder="GA">
+                </div>
+                <div>
+                    <label for="search_radius">Search Radius In Miles:</label>
+                    <input type="number" id="search_radius" name="search_radius" value="50" class="form-control">
+                </div>
+                <div>
+                    <label for="min_population">Minimum Population:</label>
+                    <input type="number" id="min_population" name="min_population" value="20000" class="form-control">
+                </div>
+                <div>
+                    <label for="max_population">Maximum Population:</label>
+                    <input type="number" id="max_population" name="max_population" value="99999999" class="form-control">
+                </div>
+                <div>
+                    <label for="number_of_results">Number Of Results:</label>
+                    <input type="number" id="number_of_results" name="number_of_results" value="25" class="form-control">
+                </div>
+                <button type="submit" class="button">Generate Article</button>
+            </div>
+
+            <div class="table-section">
+                <h2>Methodologies</h2>
+                <table id="API_Table">
+                    <thead>
+                        <tr>
+                            <th>API Client</th>
+                            <th>API Call</th>
+                            <th>Weight (0 - 100)</th>
+                            <th>Arguments</th>
+                            <th>Sub Arguments (Rental)</th>
+                            <th>Order</th>
+                            <th>Remove Row</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button type="button" class="button" onclick="addRow('API_Table')">Add Row</button>
+            </div>
+        </div>
+    </form>
+        <script>
+        const apiOptions = {
+            'GoogleMapsAPIClient': {
+                calls: ['Get Minutes From Location', 'Get Miles From Location'],
+                arguments: []
+            },
+            'WalkscoreAPIClient': {
+                calls: ['Get Walk Score', 'Get Bike Score', 'Get Transit Score'],
+                arguments: []
+            },
+            'FoursquareAPIClient': {
+                calls: ['Get Number Of Nearby Places'],
+                arguments: ['']
+            }/*,
+            'LocationsAPIClient': {
+                calls: ['Population'],
+                arguments: []
+            }*/,
+            'CensusAPIClient': {
+                calls: ['Get Census Data'],
+                arguments: [
+                'Est. Average Household Size',
+                '% High School Diploma',
+                "% Bachelor's Degree or Higher",
+                "% Employed",
+                "% Unemployed",
+                "% Commute to Work: Public Transportation",
+                "% Commute to Work: Walk",
+                "% Work From Home",
+                "Est. Mean Travel Time to Work",
+                "Est. Median Household Income",
+                "Est. Mean Household Income",
+                "Est. Per Capita Income",
+                "% Homes Using Solar Energy",
+                "% 20 to 24 year-olds",
+                "% 25 to 34 year-olds",
+                "% 34 to 44 year-olds",
+                "% 45 to 54 year-olds",
+                "% 55 to 59 year-olds",
+                "% 62 years and over"
+                ]
+            },
+            'RedfinAPIClient': {
+                'Get Housing Data': {
+                    calls : [ 
+                    'Get Housing Data'
+                ],
+                arguments: [   
+                        "# of Active Listings in Last 30 Days",
+                        "# of New Listings",
+                        "Median List Price",
+                        "Median Sale Price",
+                        "Median List Price $/Sq Ft",
+                        "Median Sale Price $/Sq Ft",
+                        "% of Homes Sold Within 2 Weeks",
+                        "% Average Down Payment",
+                        "Median Days on Market",
+                        "# of Homes Sold in Last 30 Days",
+                        "# of Homes Sold in Last 365 Days",
+                        "% of Homes Sold More than 5% Under List Price",
+                        "% of Homes Sold Up to 5% Under List Price",
+                        "% of Homes Sold at List Price",
+                        "% of Homes Sold Above List Price",
+                        "% of Homes Sold Up to 5% Above List Price",
+                        "% of Homes Sold 5-10% Above List Price",
+                        "% of Homes Sold More than 10% Above List Price"]
+                    },
+                    'Get Rental Data': {
+                        calls: ['Get Rental Data'],
+                        arguments: [
+                        "All Median Rent By Month", 
+                        "Condo/Co-op Median Rent By Month",
+                        "Townhouse Median Rent By Month",
+                        'Single Family Residential Median Rent By Month',
+                        "Multi-Family (5+ Unit) Median Rent By Month",
+                        "All MoM Median Rent Change",
+                        "Condo/Co-op MoM Median Rent Change",
+                        "Townhouse MoM Median Rent Change",
+                        "Single Family Residential MoM Median Rent Change",
+                        "Multi-Family (5+ Unit) MoM Median Rent Change"
+                    ],
+                    sub_arguments : ['last_1_month', 'last_3_month', 'last_6_month', 'last_12_month']
+                
+                }
+                
+        
+    }/*,
+            'TouristAPIClient': {
+                calls : ['Get Nearby Tourist Attractions'],
+                arguments: [],
+                
+            }
+            */
+        };
+
+function updateDropdowns(clientSelect, callSelect, argSelect, subArgSelect) {
+        // Clear existing options
+        callSelect.innerHTML = '';
+        // Note: We don't clear the argSelect here because we need to replace it rather than clear it.
+
+        // Get the selected API client
+        const selectedClient = clientSelect.value;
+        const options =  apiOptions[selectedClient];
+        
+        if (options.calls) {
+            // Simpler client structure
+            options.calls.forEach(call => {
+                const option = document.createElement('option');
+                option.value = call;
+                option.textContent = call;
+                callSelect.appendChild(option);
+            });
+        } else {
+            // More complex client structure like RedfinAPIClient
+            Object.keys(options).forEach(call => {
+                const option = document.createElement('option');
+                option.value = call;
+                option.textContent = call;
+                callSelect.appendChild(option);
+            });
+        }
+
+        // Function to update arguments dropdown based on the selected API call
+        function updateArgumentsDropdown() {
+            const selectedCall = callSelect.value;
+            const args = options[selectedCall] ? options[selectedCall].arguments : options.arguments;
+
+            argSelect.innerHTML = ''; // Clear previous arguments
+            if (!args || args.length === 0) {
+                const option = document.createElement('option');
+                option.value = '';
+                option.textContent = 'No arguments available';
+                argSelect.appendChild(option);
+                argSelect.disabled = true;
+            } else {
+                args.forEach(arg => {
+                    const option = document.createElement('option');
+                    option.value = arg;
+                    option.textContent = arg;
+                    argSelect.appendChild(option);
+                });
+                argSelect.disabled = false;
+            }
+        }
+        function updateSubArgumentsDropdown() {
+            
+            const selectedCall = callSelect.value;
+            
+            const args = options[selectedCall] ? options[selectedCall].sub_arguments : options.sub_arguments;
+            
+            subArgSelect.innerHTML = ''; // Clear previous arguments
+
+            if (!args || args.length === 0) {
+                const option = document.createElement('option');
+                option.value = 'Rental Args';
+                option.textContent = 'Rental Args';
+                subArgSelect.appendChild(option);
+                subArgSelect.disabled = true;
+                
+            } else {
+                args.forEach(arg => {
+                    const option = document.createElement('option');
+                    option.value = arg;
+                    option.textContent = arg;
+                    subArgSelect.appendChild(option);
+                });
+                subArgSelect.disabled = false;
+            }
+            
+        }
+    // Initialize arguments dropdown when API calls dropdown is populated
+    updateArgumentsDropdown();
+    updateSubArgumentsDropdown();
+    // Add event listener to callSelect to update arguments when the selected API call changes
+    callSelect.addEventListener('change', updateArgumentsDropdown);
+    callSelect.addEventListener('change', updateSubArgumentsDropdown);
+    // Populate API calls
+    removeHiddenInputs(argSelect.parentNode, 'arguments[]');
+    removeHiddenInputs(subArgSelect.parentNode, 'sub_arguments[]');
+
+    // Handle argument input/select based on the selected API client
+    if (selectedClient === 'FoursquareAPIClient') {
+        const input = document.createElement('input');
+        input.type = 'text';
+        input.name = 'arguments[]';
+        input.placeholder = 'Enter POI';
+
+        // Replace the current argSelect with the new input
+        // We need to remove any hidden inputs that might be left over from previous selections
+        removeHiddenInputs(argSelect.parentNode, 'arguments[]');
+        argSelect.parentNode.replaceChild(input, argSelect);
+    } 
+    else if (selectedClient == 'RedfinAPIClient') {        const newArgSelect = document.createElement('select');
+        newArgSelect.name = 'arguments[]';
+    }
+        
+
+    else {
+        const newArgSelect = document.createElement('select');
+        newArgSelect.name = 'arguments[]';
+
+        if (options.arguments.length === 0) {
+            const option = document.createElement('option');
+            option.value = 'Disabled';
+            option.textContent = 'Disabled';
+            newArgSelect.appendChild(option);
+            newArgSelect.disabled = true;
+
+            // Add a hidden input field with value "Disabled" only if it does not exist
+            ensureSingleHiddenInput(argSelect.parentNode, 'Disabled', 'arguments[]');
+        } else {
+            options.arguments.forEach(arg => {
+                const option = document.createElement('option');
+                option.value = arg;
+                option.textContent = arg;
+                newArgSelect.appendChild(option);
+            });
+            newArgSelect.disabled = false;
+
+            // Remove any existing hidden inputs to ensure no 'Disabled' values are sent
+            removeHiddenInputs(argSelect.parentNode, 'arguments[]');
+        }
+
+        // Replace the current argSelect with the new select element
+        argSelect.parentNode.replaceChild(newArgSelect, argSelect);
+    }
+
+
+}
+
+function removeHiddenInputs(parentNode, target) {
+
+    const hiddenInputs = parentNode.querySelectorAll('input[type="hidden"][name=' + '"' + target + '"]');
+    hiddenInputs.forEach(input => {
+        parentNode.removeChild(input);
+    });
+}
+
+function ensureSingleHiddenInput(parentNode, value, target) {
+   
+    const existingHiddenInputs = parentNode.querySelectorAll('input[type="hidden"][name=' + '"' + target + '"]');
+    if (existingHiddenInputs.length === 0) {
+        const hiddenInput = document.createElement('input');
+        hiddenInput.type = 'hidden';
+        hiddenInput.name = target;
+        hiddenInput.value = value;
+        parentNode.appendChild(hiddenInput);
+    }
+}
+
+function addRow(tableID) {
+    var table = document.getElementById(tableID).getElementsByTagName('tbody')[0];
+    var newRow = table.insertRow();
+    var colCount = 7; // Assuming 6 columns
+
+    for (var i = 0; i < colCount; i++) {
+        var newCell = newRow.insertCell(i);
+
+        switch (i) {
+            case 0: // API Client
+                var select = document.createElement('select');
+                select.name = 'api_client[]';
+                Object.keys(apiOptions).forEach(key => {
+                    var option = document.createElement('option');
+                    option.value = key;
+                    option.textContent = key;
+                    select.appendChild(option);
+                });
+                select.onchange = function() {
+                    updateDropdowns(this, this.parentNode.nextSibling.children[0], this.parentNode.nextSibling.nextSibling.nextSibling.children[0], this.parentNode.nextSibling.nextSibling.nextSibling.nextSibling.children[0]);
+                };
+                newCell.appendChild(select);
+                break;
+            case 1: // API Call
+                var select = document.createElement('select');
+                select.name = 'api_call[]';
+                newCell.appendChild(select);
+                break;
+            case 2: // Weight
+                var input = document.createElement('input');
+                input.type = 'number';
+                input.name = 'weight[]';
+                input.min = 0;
+                input.max = 100;
+                input.value = 1;
+                newCell.appendChild(input);
+                break;
+            case 3: // Arguments
+                var select = document.createElement('select');
+                select.name = 'arguments[]';
+                newCell.appendChild(select);
+                break;
+            case 4: // Sub arguemnts
+                var select = document.createElement('select');
+                    select.name = 'sub_arguments[]';
+                    newCell.appendChild(select);
+                    break;
+            case 5: // Order
+                var hiddenInput = document.createElement('input');
+                hiddenInput.type = 'hidden';
+                hiddenInput.name = 'order[]';
+                hiddenInput.value = 'Off';
+                newCell.appendChild(hiddenInput);
+
+                var checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.name = 'order[]';
+                checkbox.onclick = function() {
+                    hiddenInput.disabled = this.checked;
+                };
+                newCell.appendChild(checkbox);
+                newCell.appendChild(document.createTextNode('Asc'));
+                break;
+            case 6: // Remove button
+                var button = document.createElement('button');
+                button.type = 'button';
+                button.textContent = 'Remove';
+                button.onclick = function() {
+                    this.parentNode.parentNode.remove();
+                };
+                newCell.appendChild(button);
+                break;
+        }
+    }
+
+    // Initial update for dropdowns based on default selected API client
+    updateDropdowns(newRow.cells[0].children[0], newRow.cells[1].children[0], newRow.cells[3].children[0], newRow.cells[4].children[0]);
+}
+
+function deleteRow(row) {
+    var tableBody = row.parentNode;
+    if (tableBody.rows.length > 1) {
+        tableBody.removeChild(row);  // Directly remove the row element
+    } else {
+        alert("Cannot remove the last row.");
+    }
+}
+
+        document.addEventListener('DOMContentLoaded', function() {
+            addRow('API_Table');
+        });
+
+      
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('customArticleForm');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();  // Very important to prevent the default form submission
+
+                // Check if there are rows in the methodologies table
+                var tableRows = document.querySelectorAll('#API_Table tbody tr');
+                const selectWithOption = document.querySelector("select[name='api_call[]'] option[value='Get Rental Data']");
+                if (tableRows.length < 1) {
+                    alert("Please add at least one row in the Methodologies section.");
+                    return;  // Stop further execution
+                }
+                else{
+                    var topic = document.querySelector('input[name="topic_selection"]:checked').value;
+                    var width = document.querySelector('input[name="width_selection"]:checked').value;
+                    if (topic == 'neighborhoods' && document.getElementById('neighborhood').value == ''){
+                        alert("Please enter a neighborhood.");
+                        return;
+                    }
+                    else if (topic == 'cities' && document.getElementById('city').value == ''){
+                        alert("Please enter a city.");
+                        return;
+                    }
+                    else if (topic == 'counties' && document.getElementById('county').value == ''){
+                        alert("Please enter a county.");
+                        return;
+                    }
+                    else if (topic == 'states' && document.getElementById('state').value == ''){
+                        alert("Please enter a state.");
+                        return;
+                    }
+                    if (topic == 'neighborhoods') {
+                        if (selectWithOption) {
+                            alert("RedfinAPI Rentals: Neighborhood not supported within API.");
+                            return;
+                        }
+                    }
+
+
+
+                    if (topic == 'cities' && width  == 'citywide') {
+                        alert('Must have topic as neighborhoods for citywide width.');
+                    }
+                    else if (topic == 'counties' && width  == 'citywide') {
+                        alert('Must have topic as neighborhoods for citywide width.');
+                    }
+                    else if (topic == 'counties' && width  == 'countywide') {
+                        alert('Must have topic as cities|neighborhoods for citywide width.');
+                    }
+                    else if (topic == 'states' && width  == 'citywide') {
+                        alert('Must have topic as neighborhoods for citywide width.');
+                    }
+                    else if (topic == 'states' && width  == 'countywide') {
+                        alert('Must have topic as cities|neighborhoods for countywide width.');
+                    }
+                    else if (topic == 'states' && width  == 'statewide') {
+                        alert('Must have topic as cities|neighborhoods|counties for statewide width.');
+                    }
+
+
+                }
+                
+
+                const formData = new FormData(form);
+
+                fetch('/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/custom-article', {
+                    method: 'POST',
+                    body: formData,
+                })
+                .then(response => {
+                    // Debugging: Log the response headers to see the actual content type and disposition
+                    console.log('Content-Type:', response.headers.get("content-type"));
+                    console.log('Content-Disposition:', response.headers.get("content-disposition"));
+
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    // Assuming it's a CSV file, not JSON
+                    return response.blob();  // Always handle as blob if expecting CSV
+                })
+                .then(blob => {
+                    // Initiating download
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'custom_article.csv';  // Make sure the server sets a filename
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    alert('Your file has downloaded!'); // Provide feedback
+                })
+                .catch(error => {
+                    alert('An error occurred: ' + error.message);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

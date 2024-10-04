@@ -1,0 +1,30 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in Maine. Start by producing a section titled exactly as ""# Cheapest Places to Live in Maine"". This section should be 7 to 8 sentences and an overview of Maine within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: South Portland, ME, Portland, ME, Yarmouth, ME.
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State        |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |    Score |
+|---:|:-------------------|-------------:|----------------:|--------------------:|--------------------:|---------:|
+|  0 | South Portland, ME |        25665 |           67198 |              276100 |                2380 | 100      |
+|  1 | Portland, ME       |        66706 |           61695 |              302700 |                4412 |  10.8644 |
+|  2 | Yarmouth, ME       |         5752 |           69576 |              347300 |                2915 |   0      |
+","# Cheapest Places to Live in Maine
+
+Maine, known for its picturesque landscapes and serene environment, is quickly becoming a hot spot for renters due to its affordability. As the Pine Tree State flourishes with opportunities, it provides affordable living for individuals from all walks of life. Rental prices vary greatly across the state, yet Maine sustains an appealing cost of living for many. Particularly, three cities have marked their places as the cheapest for renters; South Portland, Portland, and Yarmouth. These cities not only offer affordable rent but also present a high quality of living with their unique characteristics.
+
+## South Portland, ME
+
+With a population of 25,665, South Portland is not just an affordable city but also a great place to live. The city offers a median income of $67,198 and a median home value of $276,100. Life in South Portland comes with more than just affordable living, it's a city that thrives on its local community and stunning coastal views. You’re never far from a stunning view, with the city’s unique location on the coast of Maine. The city also has plenty of green spaces, including Mill Creek Park and Willard Beach, providing the perfect backdrop for a Maine lifestyle.
+
+## Portland, ME
+
+As the most populous city in Maine with 66,706 residents, Portland offers a balance between an affordable cost of living and a vibrant city life. The city has a median income of $61,695, and a median home value of $302,700. Of note to renters, the asking price for a 2-bedroom is around $4,412. Portland's Old Port district, with its cobblestone streets, 19th-century brick buildings, and fishing piers, is a hub of activity. Plus, there are numerous recreational areas in the city, including East End Beach and the Eastern Promenade.
+
+## Yarmouth, ME
+
+Although smaller with a population of 5,752, Yarmouth is a charming town that offers an affordable lifestyle. Here, the median income stands at $69,576 with a median home value of $347,300. Renters can find a 2-bedroom place for an asking price of around $2,915. Yarmouth’s Main Street is a testament to its historical charm, while Royal River Park provides a great outdoor experience for residents. Yarmouth also hosts the famous annual Clam Festival, which offers a glimpse into the friendly community spirit of the town."

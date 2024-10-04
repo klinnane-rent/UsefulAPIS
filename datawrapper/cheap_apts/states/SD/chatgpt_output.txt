@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Pierre, SD     |        13908 |           68263 |              180800 |                 785 | 78.5178 |
+|  1 | Vermillion, SD |        10852 |           43750 |              158800 |                 651 | 71.4337 |
+|  2 | Aberdeen, SD   |        28315 |           56455 |              169400 |                1020 | 59.8347 |
+|  3 | Brookings, SD  |        24479 |           53845 |              187100 |                 880 | 58.359  |
+|  4 | Watertown, SD  |        22249 |           52145 |              175600 |                1470 | 45.5471 |
+","# Cheapest Places to Live in South Dakota
+
+When it comes to the most affordable rent prices in the United States, South Dakota often stands out from the crowd. Known for its stunning landscapes, vibrant cities, and a lower cost of living than the national average, South Dakota is an excellent place for renters who want to stretch their dollar. Whether you are a young professional, a student, or a retiree, the Mount Rushmore State offers a variety of locales that are budget-friendly without compromising quality of life. Based on our comprehensive analysis, the cities of Pierre, Vermillion, Aberdeen, Brookings, and Watertown have been identified as the cheapest places to live for renters in South Dakota. 
+
+## Pierre, SD
+
+As the capital city of South Dakota, Pierre, with a population of 13,908, offers renters an affordable lifestyle with a median 2-bedroom rent of just $785. Pierre residents enjoy a healthy median income of $68,263 and a median home value of $180,800. A key attraction is its close proximity to the beautiful Missouri River, offering a host of outdoor activities for all seasons. The city is also home to the South Dakota State Capitol and the Pierre Historic District, adding a historical and cultural flavor to the city's ambiance. 
+
+## Vermillion, SD
+
+Vermillion, home to about 10,852 residents, is a charming city known for its affordable housing with a median 2-bedroom rent of $651. With an average income of $43,750 and a median home value of $158,800, Vermillion provides a cost-effective living alternative. This city is also the proud home to the University of South Dakota, adding great vibrancy and a youthful energy to the community. Plus, Vermillion's location along the Missouri River provides ample opportunities for outdoor exploration.
+
+## Aberdeen, SD 
+
+Aberdeen, with a population of 28,315, is not only economically viable with a median 2-bedroom rent of $1,020 but also a vibrant city with a median income of $56,455. Situated in the northeastern part of South Dakota, Aberdeen offers a blend of small-town charm and city amenities. Not to mention, the city's access to Mina Lake State Recreation Area and Richmond Lake Recreation Area provides numerous recreational activities for residents to enjoy.
+
+## Brookings, SD
+
+Brookings, with a population of 24,479 offers a median 2-bedroom rent of $880. With a comfortable median income of $53,845 and a median home value of $187,100, Brookings presents an affordable yet fulfilling living experience. The city is home to South Dakota State University, contributing to its dynamic and engaging community. Additionally, Brookings' vibrant downtown area and the nearby Dakota Nature Park make it a desirable place to live. 
+
+## Watertown, SD
+
+Watertown, a city of 22,249 residents, offers a median 2-bedroom rent of $1,470. Despite having the highest rent among the five cities, it presents a good value proposition with a respectable median income of $52,145. Watertown offers a great lifestyle with easy access to the picturesque Lake Kampeska and the Codington County Heritage Museum. Also, the city's median home value is $175,600, providing an affordable option for those considering homeownership in the future."

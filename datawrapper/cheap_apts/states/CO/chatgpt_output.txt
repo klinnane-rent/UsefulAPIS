@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State          |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Grand Junction, CO   |        62218 |           54570 |              251400 |                1045 | 96.3452 |
+|  1 | Pueblo, CO           |       111776 |           42902 |              149600 |                1511 | 87.9528 |
+|  2 | Greeley, CO          |       107445 |           57537 |              274800 |                1397 | 82.0025 |
+|  3 | Wheat Ridge, CO      |        31889 |           63333 |              426500 |                1495 | 78.4796 |
+|  4 | Colorado Springs, CO |       471686 |           67719 |              294500 |                1590 | 76.6209 |
+","# Cheapest Places to Live in Colorado
+When it comes to finding the most affordable places to live in Colorado, renters have a range of options. The cost of living in Colorado is known for being on the higher side in comparison to the national average, however, it is still possible to find affordable places to rent within the state. Looking at the value for money, we looked into numerous factors such as population, median income, median home value, and a 2-bedroom asking rental price to come up with the cheapest places to live. Based on our methodology, the cheapest cities in Colorado for renters are Grand Junction, Pueblo, Greeley, Wheat Ridge, and Colorado Springs.
+
+## Grand Junction, CO
+With a population of 62,218, Grand Junction, CO is a great place to live, especially for those who enjoy outdoor activities. Living in Grand Junction, you can enjoy a median income of $54,570, and an affordable 2-bedroom asking rent of $1,045. The city's favorable score on affordability, largely stems from its reasonable median home value of $251,400. The city is located on the western slope of the Colorado Rockies and has a range of outdoor activities such as biking and hiking trails at Colorado National Monument and Grand Mesa. It's a perfect blend of adventure and affordability.
+
+## Pueblo, CO
+Pueblo, CO is the most populated city on our list, with a population of 111,776, yet it still offers an affordable cost of living. With a median income of $42,902 and a 2-bedroom asking rent of $1,511, Pueblo is an affordable city ahead of several others in Colorado. Pueblo residents enjoy a median home value of $149,600. Pueblo is known for its rich history, visible in its well-preserved 19th-century buildings and it also offers abundant outdoor activities at Pueblo State Park and Pueblo Riverwalk.
+
+## Greeley, CO
+If you're looking for a city with a balance of affordability and cultural vibrancy, Greeley, CO might be the perfect place. Greeley has a population of 107,445, a median income of $57,537, and a median home value of $274,800. The 2-bedroom median rent is listed as $1,397, making it a more affordable option. Being home to the University of Northern Colorado, it provides a youthful energy and vibrant arts scene. Moreover, residents can enjoy nature at Poudre River Trail and Glenmere Park.
+
+## Wheat Ridge, CO
+Located in the Denver metropolitan area, Wheat Ridge, CO offers the best of both worlds: proximity to a bustling city and a cost-effective lifestyle. Despite its relatively smaller population of 31,889, the city boasts a strong median income of $63,333, with a median home value of $426,500. A 2-bedroom property in Wheat Ridge typically asks for a rent of $1,495. The city is well-known for its rich agricultural history and offers plenty of green spaces like Wheat Ridge Greenbelt and Discovery Park.
+
+## Colorado Springs, CO
+Colorado Springs, CO, the largest city on our list with a population of 471,686, offers a median income of $67,719 and a median home value of $294,500. The 2-bedroom asking rent sits at an affordable $1,590. The city is the home to famous attractions like Garden of the Gods, Pikes Peak, and the U.S. Olympic Training Center. Colorado Springs is a fun, affordable, and dynamic place to live."

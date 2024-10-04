@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Holyoke, MA     |        40161 |           42537 |              197700 |                 734 | 98.8253 |
+|  1 | Chicopee, MA    |        55186 |           52702 |              188400 |                1365 | 90.4212 |
+|  2 | Springfield, MA |       153677 |           41571 |              162900 |                1486 | 89.7416 |
+|  3 | Pittsfield, MA  |        42514 |           56620 |              176800 |                1450 | 88.9456 |
+|  4 | Gardner, MA     |        20605 |           51708 |              192500 |                1482 | 88.7581 |
+","# Cheapest Places to Live in Massachusetts 
+Massachusetts, known for its rich history, varying landscapes, and higher education access, is also a state that provides affordable living options for renters. While the cost of living can be relatively high in certain areas, particularly around the Greater Boston Area, there are still cities in Massachusetts that boast rent prices well below the national average. These cities also have charm, character, and an array of amenities, making them not just economically viable, but also great places to live. According to our data, the most affordable cities in Massachusetts for renters are Holyoke, Chicopee, Springfield, Pittsfield, and Gardner.
+
+## Holyoke, MA
+Located in Hampden County, Holyoke offers a favorable blend of affordability, history, and outdoor space. With a population of 40,161, this city delivers a small-town feel. The median income is $42,537 and the median home value is at $197,700. However, the 2-bedroom asking rent is at a highly convenient $734. Apart from affordable housing, residents can also enjoy the beauty of the Connecticut River, an array of parks like the Pulaski Park, and the historic Holyoke Heritage State Park.
+
+## Chicopee, MA
+Another city in Hampden County, Chicopee benefits from a larger population of 55,186 and a higher median income of $52,702, yet maintains low cost of living. The median home value is $188,400 and the average 2-bedroom rent is $1,365. Chicopee is known for its close-knit communities, neighborhoods like Willimansett and Fairview, and its multiple recreational areas including Chicopee Memorial State Park and Szot Park.
+
+## Springfield, MA
+Springfield is the third-largest city in Massachusetts, with a population of 153,677. The median income is $41,571, the median home value is $162,900, and a 2-bedroom apartment typically rents for $1,486. Springfield is known as the ""City of Firsts"" due to its numerous innovations and it offers several attractions such as the Springfield Museums, the Dr. Seuss National Memorial Sculpture Garden, and the nearby Forest Park.
+
+## Pittsfield, MA
+Located in Berkshire County, Pittsfield offers a unique New England destination with its population of 42,514. The city’s median income is $56,620, and the median home value stands at $176,800. The average 2-bedroom rent is $1,450. Residents of Pittsfield can enjoy the nearby Berkshire Hills, the beautiful Onota Lake, and cultural experiences at the Berkshire Museum.
+
+## Gardner, MA
+Known as the ""Chair City"" for its long history of furniture manufacturing, Gardner with a population of 20,605 offers affordable living with the median income being $51,708, median home value at $192,500, and the 2-bedroom asking rent at $1,482. Points of interest include Gardner Heritage State Park, the numerous city parks, and unique shops and restaurants in its historic downtown."

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Information - Article Assistant</title>
+    <style>
+
+body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                padding-top: 30px;
+                color: #333;
+            }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Makes sure the padding does not affect the specified width */
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button[type="button"]:hover {
+            background-color: #45a049;
+        }
+        button[type="submit"] {
+            width: 100%;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active { /* Styles for hover and the active page */
+                background-color: #ddd;
+                color: rgb(201, 199, 199);
+        }
+
+        .navbar a.active { /* Additional specific styles for the active link */
+                background-color: #555; /* Darker than hover to stand out */
+        }
+    </style>
+</head>
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/attractions">Attractions in City</a>
+    <a href="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/city-info" class="active">City Information</a>
+    <a href="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/custom-article">Custom Article</a>
+</div>
+<body>
+
+    <h1>City Information</h1>
+    <form action="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/city-info" method="POST">
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" class="form-control" required>
+        </div>
+        <div>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" class="form-control" required>
+        </div>
+
+        <table id="API_Table">
+            <thead>
+                <tr>
+                    <th>API Client</th>
+                    <th>API Call</th>
+                    <th>Weight (0 - 100)</th>
+                    <th>Arguments</th>
+                    <th>Remove Row</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button type="button" onclick="addRow('API_Table')">Add Row</button>
+        <button type="submit" id="formSubmitButton">Generate Article</button>
+    </form>
+
+    <script>
+        const apiOptions = {
+            'WalkscoreAPIClient': {
+                'Get Walk Score': ['Est. Average Household Size'],
+                'Get Bike Score': ['Bike Lane Coverage'],
+                'Get Transit Score': ['Public Transit Accessibility']
+            },/*
+            'LocationsAPIClient': {
+                'Get Population': [],
+
+            },*/
+            'CensusAPIClient': {
+                'Get Census Data': [
+                'Est. Average Household Size',
+                '% High School Diploma',
+                "% Bachelor's Degree or Higher",
+                "% Employed",
+                "% Unemployed",
+                "% Commute to Work: Public Transportation",
+                "% Commute to Work: Walk",
+                "% Work From Home",
+                "Est. Mean Travel Time to Work",
+                "Est. Median Household Income",
+                "Est. Mean Household Income",
+                "Est. Per Capita Income",
+                "% Homes Using Solar Energy",
+                "% 20 to 24 year-olds",
+                "% 25 to 34 year-olds",
+                "% 34 to 44 year-olds",
+                "% 45 to 54 year-olds",
+                "% 55 to 59 year-olds",
+                "% 62 years and over"
+                ],
+            },
+            'RedfinAPIClient': {
+                'Get Housing Data': [
+                    "# of Active Listings in Last 30 Days",
+                    "# of New Listings",
+                    "Median List Price",
+                    "Median Sale Price",
+                    "Median List Price $/Sq Ft",
+                    "Median Sale Price $/Sq Ft",
+                    "% of Homes Sold Within 2 Weeks",
+                    "% Average Down Payment",
+                    "Median Days on Market",
+                    "# of Homes Sold in Last 30 Days",
+                    "# of Homes Sold in Last 365 Days",
+                    "% of Homes Sold More than 5% Under List Price",
+                    "% of Homes Sold Up to 5% Under List Price",
+                    "% of Homes Sold at List Price",
+                    "% of Homes Sold Above List Price",
+                    "% of Homes Sold Up to 5% Above List Price",
+                    "% of Homes Sold 5-10% Above List Price",
+                    "% of Homes Sold More than 10% Above List Price"
+],
+
+            },
+            'TouristAPIClient': {
+                'Get Nearby Tourist Attractions': [],
+                
+            }
+        };
+
+function updateDropdowns(clientSelect, callSelect, argSelect) {
+    let calls = apiOptions[clientSelect.value];
+    callSelect.innerHTML = '';
+    Object.keys(calls).forEach(call => {
+        let option = document.createElement('option');
+        option.value = call;
+        option.textContent = call;
+        callSelect.appendChild(option);
+    });
+
+    // Automatically update arguments for the first call
+    
+
+    // Disable and clear Arguments if specific API Clients are selected
+    if (clientSelect.value === 'WalkscoreAPIClient' || clientSelect.value === 'TouristAPIClient' || clientSelect.value === 'LocationsAPIClient') {
+        argSelect.innerHTML = 'Disabled'; // Clear options
+        argSelect.disabled = true; // Disable the select box
+    } else {
+        argSelect.disabled = false; // Enable the select box if other API clients are selected
+    }
+    updateArguments(callSelect, argSelect);
+}
+
+function updateArguments(callSelect, argSelect) {
+    if (argSelect.disabled) {
+        return; // Do nothing if the Arguments select box is disabled
+    }
+
+    let selectedClient = callSelect.parentNode.previousElementSibling.children[0].value;
+    let arguments = apiOptions[selectedClient][callSelect.value];
+    argSelect.innerHTML = '';
+    arguments.forEach(arg => {
+        let option = document.createElement('option');
+        option.value = arg;
+        option.textContent = arg;
+        argSelect.appendChild(option);
+    });
+}
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('formSubmitButton').addEventListener('click', function(event) {
+        const table = document.getElementById('API_Table').getElementsByTagName('tbody')[0];
+        if (table.rows.length < 1) {
+            alert("You must add at least one row before submitting.");
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+});
+
+function addRow(tableID) {
+    var table = document.getElementById(tableID).getElementsByTagName('tbody')[0];
+    var newRow = table.insertRow(-1);  // Insert at the end of the table
+
+    const cellContents = [
+        `<select name="api_client[]" onchange="updateDropdowns(this, this.parentNode.nextSibling.children[0], this.parentNode.nextSibling.nextSibling.nextSibling.children[0])">
+            <option value="WalkscoreAPIClient">WalkscoreAPIClient</option>
+            <option value="LocationsAPIClient">LocationsAPIClient</option>
+            <option value="CensusAPIClient">CensusAPIClient</option>
+            <option value="RedfinAPIClient">RedfinAPIClient</option>
+            <option value="TouristAPIClient">TouristAPIClient</option>
+        </select>`,
+        `<select name="api_call[]" onchange="updateArguments(this, this.parentNode.nextSibling.children[0])"></select>`,
+        `<input type="number" name="weight[]" min="0" max="100" value="1">`,
+        `<select name="arguments[]"></select>`,
+        `<button type="button">Remove</button>`
+    ];
+
+    cellContents.forEach(function(html, index) {
+        var cell = newRow.insertCell(index);
+        cell.innerHTML = html;
+    });
+
+    updateDropdowns(newRow.cells[0].children[0], newRow.cells[1].children[0], newRow.cells[3].children[0]);
+
+    // Correctly attach event handler for the "Remove" button using a closure
+    var removeButton = newRow.cells[4].children[0];
+    removeButton.onclick = function() {
+        deleteRow(newRow);  // Pass the current newRow directly
+    };
+}
+
+function deleteRow(row) {
+    var tableBody = row.parentNode;
+    if (tableBody.rows.length > 1) {
+        tableBody.removeChild(row);  // Directly remove the row element
+    } else {
+        alert("Cannot remove the last row.");
+    }
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in Tennessee. Start by producing a section titled exactly as ""# Cheapest Places to Live in Tennessee"". This section should be 7 to 8 sentences and an overview of Tennessee within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: Seymour, TN, Union City, TN, Clinton, TN, Crossville, TN, Kingsport, TN.
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Seymour, TN    |        15444 |           61490 |              182700 |                 615 | 94.7092 |
+|  1 | Union City, TN |        10426 |           31123 |              107200 |                 850 | 88.06   |
+|  2 | Clinton, TN    |        10006 |           50158 |              165800 |                 825 | 88.0044 |
+|  3 | Crossville, TN |        11704 |           37212 |              177600 |                 820 | 87.2581 |
+|  4 | Kingsport, TN  |        53699 |           42066 |              149100 |                 845 | 87.0057 |
+","# Cheapest Places to Live in Tennessee
+
+Tennessee is a hidden gem in the Southeast United States, known for its vibrant music scene, delicious food, and beautiful landscapes. However, one often overlooked aspect is the affordability of living in the Volunteer State. Particularly for renters, there are various cities in Tennessee that offer low costs of living without compromising on quality of life. Seymour, Union City, Clinton, Crossville, and Kingsport exemplify this balance, offering affordable rents, along with access to amenities and facilities that make them attractive places to live. Now, let's delve into what each of these cities has to offer.
+
+## Seymour, TN
+
+Seymour, with a population of 15,444, is a peaceful and affordable place to live in Tennessee. Besides its relatively low median rent of $615 for a two-bedroom property, Seymour also boasts a substantial median income of $61,490. This makes it a great place to live and save money. The city is conveniently located between Knoxville and Sevierville, offering easy access to the attractions and amenities of both regions. The nearby Chapman Highway also provides fast and easy access to surrounding areas. Seymour's residential appeal is further complemented by its local parks and amenities, making it an attractive and affordable place to live.
+
+## Union City, TN
+
+Union City, despite its smaller population of 10,426, is another affordable location in Tennessee, with its median rent for a two-bedroom dwelling at $850. Here, you can enjoy a wide range of amenities and recreational activities. The city is home to Discovery Park of America, a world-class museum and park with exhibits spanning fields like history, science, art, and much more. In terms of transportation, Union City is served by State Routes 5, 22, and 216, making travel within and beyond the city convenient.
+
+## Clinton, TN
+
+Clinton, with a population of 10,006, offers its residents reasonably priced housing with a median rental rate of $825 for a two-bedroom home. The city offers a rich history, with numerous historic sites and museums, such as the Museum of Appalachia and the Green McAdoo Cultural Center. Moreover, Clinton's location near Andersonville Highway and Interstate 75 makes commuting and traveling an ease, further enhancing its appeal to renters looking for affordable accommodations.
+
+## Crossville, TN
+
+Crossville is a modest-sized city of 11,704 residents, where a two-bedroom home typically rents for $820. Home to the Cumberland County Playhouse, one of the state's largest professional theaters, and the stunning Cumberland Mountain State Park, there's plenty of entertainment and outdoor activities for residents to enjoy. Accessible via Interstate 40 and U.S. Route 70, Crossville is a convenient and affordable location to call home.
+
+## Kingsport, TN
+
+Kingsport, with a sizable population of 53,699, offers a median rent of $845 for a two-bedroom home. Known for its outdoor amenities, Kingsport is home to Bays Mountain Park and Planetarium providing hiking, biking trails, and wildlife viewing opportunities. Further, it is part of the Kingsport-Bristol metropolitan area, lending it big-city advantages while maintaining its small-town charm. Its location via Interstate 26 also makes for easy commutes, increasing its desirability as an affordable place to live."

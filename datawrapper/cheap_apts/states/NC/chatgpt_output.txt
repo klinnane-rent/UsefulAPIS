@@ -1,0 +1,35 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Albemarle, NC   |        16073 |           44294 |              125700 |                 750 | 84.5149 |
+|  1 | Greenville, NC  |        92826 |           42612 |              159400 |                 910 | 79.6693 |
+|  2 | Statesville, NC |        27114 |           42004 |              161200 |                 875 | 78.7648 |
+|  3 | High Point, NC  |       112434 |           49649 |              162000 |                1151 | 77.2824 |
+|  4 | Shelby, NC      |        20046 |           39398 |              132900 |                1025 | 76.9969 |
+","# Cheapest Places to Live in North Carolina
+
+The state of North Carolina is well-known for its affordable cost of living, making it an attractive destination for renters searching for budget-friendly options. Despite the state's flourishing job market and the beauty of its natural sights, housing costs remain relatively low compared to the national average. Especially for renters, cities like Albemarle, Greenville, Statesville, High Point, and Shelby stand out as the most affordable based on median income, median home value, 2-bed asking rent, and overall score.
+
+## Albemarle, North Carolina
+Home to a population of 16,073, Albemarle offers an enticing combination of affordability and charm. With a median income of $44,294, and median home value at $125,700, it's an accessible choice for many. Rent for a 2-bedroom comes in at a modest $750. Along with its affordability, the city boasts attractions like the Morrow Mountain State Park and the thriving Stanly County Farmers Market. Convenience is heightened with Highway 52 running through, connecting Albemarle to larger surrounding cities.
+
+## Greenville, North Carolina
+With 92,826 residents, Greenville is a larger, yet equally affordable city in North Carolina. The median income is $42,612, and the median home value is $159,400, with a 2-bedroom unit renting for about $910. Beyond affordability, this city is home to East Carolina University, bringing a youthful and energetic vibe. Greenville also offers ample outdoor activities with River Park North and the beautiful Greenville Town Common.
+
+## Statesville, North Carolina
+Statesville, brimming with a population of 27,114, has a median income of $42,004, and the median home value is $161,200. Renters can find a 2-bedroom home for a reasonable $875. The city, intersected by Interstates 77 and 40, provides residents with easy access to nearby cities. Statesville is known for its historic downtown, the Statesville Park and Soccer Complex, and the popular Carolina BalloonFest.
+
+## High Point, North Carolina
+High Point is a notable city in North Carolina with a population of 112,434. The median income is slightly higher at $49,649 and the median home value sits at $162,000. Rent for a 2-bedroom home averages around $1151. Known as the ""Furniture Capital of the World"", High Point offers several attractions such as the High Point Market, High Point University and the Mendenhall Plantation.
+
+## Shelby, North Carolina
+Shelby, with a population of 20,046, is another affordable city with a median income of $39,398 and a median home value of $132,900. A 2-bedroom rent in Shelby is around $1025. Aside from its affordability, Shelby is famous for the Don Gibson Theater, the Earl Scruggs Center, and the Shelby City Park. The city is conveniently located near US-74, granting easy access to both Asheville and Charlotte."

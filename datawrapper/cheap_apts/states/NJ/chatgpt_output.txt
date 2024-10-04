@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Camden, NJ     |        73742 |           28623 |               82500 |                1117 | 97.3096 |
+|  1 | Vineland, NJ   |        59405 |           55740 |              170300 |                1200 | 94.6696 |
+|  2 | Millville, NJ  |        27485 |           63182 |              165900 |                1225 | 94.3319 |
+|  3 | Bellmawr, NJ   |        11375 |           60041 |              169400 |                1400 | 93.4681 |
+|  4 | Lindenwold, NJ |        17288 |           46077 |              124800 |                1499 | 93.456  |
+","# Cheapest Places to Live in New Jersey
+
+New Jersey, also known as the Garden State, boasts both urban and rural living, top-rated schools, and proximity to major cities like New York and Philadelphia. However, living in this Mid-Atlantic state can be expensive, especially for renters. Following our thorough research, we have established a list of the most affordable cities to live in for renters in New Jersey. According to our unique scoring system, the cities that made the cut are Camden, Vineland, Millville, Bellmawr, and Lindenwold. Each city was evaluated based on population size, median income, median home value, and the typical rent for a 2-bedroom apartment.
+
+## Camden, NJ
+
+Camden, located on the east side of the Delaware River across Philadelphia, is the largest city in Camden County. With a population of 73,742 and a median income of $28,623, Camden offers affordable living with a median home value of $82,500. The city is known for attractions such as the Adventure Aquarium and the Camden Waterfront, making it an enjoyable place to live. The asking rent for a 2-bedroom apartment in Camden is approximately $1,117, well below average for the state.
+
+## Vineland, NJ
+
+Vineland, situated in the southern part of the state, is home to approximately 59,405 residents. With a median income of $55,740 and a median home value of $170,300, Vineland offers a balanced cost of living. This city is especially known for its outdoor attractions, with notable places like the Vineland Nature Reserve and the Parvin State Park. The typical asking rent for a 2-bedroom apartment is $1,200.
+
+## Millville, NJ
+
+Millville, with its population of 27,485, is a city offering a more rural living experience. Its residents have a median income of $63,182, and the median home value is $165,900. Millville boasts the artsy district Glasstown and the beautiful Wheaton Arts and Cultural Center. Rental prices for a 2-bedroom apartment in Millville typically fall around $1,225.
+
+## Bellmawr, NJ
+
+The borough of Bellmawr is home to 11,375 residents and sits in Camden County. It has a median income of $60,041 and the median home value stands at $169,400. Bellmawr Park and Big Timber Creek, and its close proximity to Philadelphia make it a charming place to live. Renting a 2-bedroom apartment in Bellmawr would typically cost about $1,400.
+
+## Lindenwold, NJ
+
+Located in Camden County, Lindenwold is home to 17,288 residents. The city offers attractive economic conditions with a median income of $46,077 and a median home value of $124,800. Lindenwold is known for its parks, such as the Lion's Den Park and the Lindenwold Memorial Park which provides a peaceful atmosphere. The rent for a 2-bedroom apartment in Lindenwold falls around $1,499."

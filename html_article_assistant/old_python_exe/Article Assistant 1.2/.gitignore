@@ -1,0 +1,11 @@
+build/
+dist/
+installer/
+venv/
+.git
+.idea
+__pycache__/
+data/logs/*
+
+*.xlsx
+*.py[cod]

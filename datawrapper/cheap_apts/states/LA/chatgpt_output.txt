@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State      |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:-----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Opelousas, LA    |        16687 |           32666 |              123100 |                 679 | 95.8522 |
+|  1 | Ruston, LA       |        21987 |           32295 |              169900 |                 675 | 88.0515 |
+|  2 | Lake Charles, LA |        77832 |           44785 |              155700 |                 937 | 83.3276 |
+|  3 | Pineville, LA    |        14179 |           50188 |              154400 |                 899 | 83.0914 |
+|  4 | West Monroe, LA  |        12431 |           35528 |              127500 |                 815 | 80.9713 |
+","# Cheapest Places to Live in Louisiana
+
+When it comes to affordable living, Louisiana stands out amongst other states. This deep southern state is known for its rich culture, delicious cuisine, and vibrant music scene. However, what many people may not realize is how affordable it is to live here, especially for renters. According to our comprehensive analysis, which takes into account factors such as population, median income, and median home value in addition to rental prices, several cities in Louisiana offer renters a high quality of life at a reasonable cost. The cities that rank as the most affordable are Opelousas, Ruston, Lake Charles, Pineville, and West Monroe.
+
+## Opelousas, LA
+
+With a population of 16,687 residents, Opelousas is an appealing option for those seeking a residential setting with plenty of opportunities for engagement. The median income in Opelousas is $32,666, and the asking rent for a two-bedroom home is $679, making it an affordable choice for many. This city, steeped in history, is home to the Creole Heritage Folk Life Center and the Opelousas Museum of Art, offering residents a touch of culture right in their backyard.
+
+## Ruston, LA
+
+Ruston, with a population of 21,987 and a median income of $32,295, offers a wonderful balance of affordability and amenities. The two-bedroom asking rent here is just $675. Known as a college town, Ruston is home to Louisiana Tech University, bringing with it a youthful, vibrant energy. The city also boasts attractions like the Ruston Farmers Market and the lovely Lincoln Parish Park.
+
+## Lake Charles, LA
+
+With its population of 77,832, Lake Charles is a bustling city with an affordable median two-bedroom asking rent of $937. The city's median income is $44,785. Lake Charles is rich in natural beauty, with it being in close proximity to the scenic Creole Nature Trail and the popular Lake Charles State Park. In addition, it hosts the famous Mardi Gras festival which adds a vibrant touch to the city's culture.
+
+## Pineville, LA
+
+Featuring a smaller population of just 14,179 and a higher median income of $50,188, Pineville offers an appealing blend of affordability and prosperity. The median two-bedroom rent is $899. The city houses the beautiful Fort Buhlow Recreation Area and the historic Kisatchie National Forest, making it an ideal location for outdoor enthusiasts.
+
+## West Monroe, LA
+
+Located in northern Louisiana, West Monroe - with its population of 12,431 and median income of $35,528 - provides affordable living with a median two-bedroom rent of $815. It is home to Antique Alley, a popular shopping district with over 40 antique shops and boutiques. The city is also known for its rich history and green spaces like Kiroli Park and Restoration Park. For those who enjoy the outdoors, both parks offer trails, gardens, and picnic spots."

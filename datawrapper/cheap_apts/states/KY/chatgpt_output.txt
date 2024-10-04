@@ -1,0 +1,41 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Henderson, KY  |        28469 |           40360 |              119800 |                 822 | 96.9637 |
+|  1 | Richmond, KY   |        35744 |           39329 |              148900 |                 800 | 92.3599 |
+|  2 | Burlington, KY |        18203 |           86651 |              176400 |                 810 | 87.6544 |
+|  3 | Frankfort, KY  |        27705 |           50602 |              132500 |                 835 | 85.6398 |
+|  4 | Ashland, KY    |        20449 |           42639 |              101900 |                 950 | 83.3908 |
+","# Cheapest Places to Live in Kentucky
+
+Kentucky, renowned for its horse racing and bourbon distilleries, also offers some of the most affordable places to live in the United States, particularly for renters. With its charming southern hospitality and scenic beauty - from the Appalachian Mountains to the Bluegrass region - Kentucky has much to offer. Following an extensive analysis of different data points including population size, median income, median home value, and current asking rents, we have identified Henderson, Richmond, Burlington, Frankfort, and Ashland as the five most affordable cities in Kentucky for renters.
+
+## Henderson, KY
+
+Henderson is a city located along the Ohio River known for its affordable living. It has a population of 28,469, a median income of $40,360, and an inviting median home value of $119,800. Further, renters can find a two-bedroom apartment for an average asking rent of just $822. Henderson notably hosts the annual W.C. Handy Blues & Barbecue Festival and is just a stone's throw away from John James Audubon State Park, offering residents ample opportunities to enjoy the city's cultural richness and natural beauty.
+
+## Richmond, KY
+
+Located in the heart of Kentucky's Bluegrass region, Richmond has a population of 35,744 and a median income of $39,329. Known as one of the state's fastest-growing cities, it has a median home value of $148,900, and a 2-bedroom asking rent averaging $800. Richmond is home to the historic Eastern Kentucky University, and offers remarkable sites such as the Battle of Richmond Visitors Center and the White Hall State Historic Site.
+
+## Burlington, KY
+
+Burlington, despite being a smaller city with a population of 18,203, is a thriving community with a substantial median income of $86,651. The median home value stands at $176,400, proving its desirability, with a 2-bedroom asking rent averaging $810. It's uniquely situated near the Ohio River Scenic Byway and the Boone County Fairgrounds, providing many entertainment options for locals.
+
+## Frankfort, KY
+
+Frankfort, the capital of Kentucky, provides an affordable and enriching environment for its 27,705 residents. With a median income of $50,602 and a median home value of $132,500, it retains the charm of a small town while offering the amenities of a larger city. The 2-bedroom asking rent averages around $835. Notably, Frankfort is known for its captivating architecture, historical sites such as the Frankfort Cemetery, and its proximity to the Kentucky River.
+
+## Ashland, KY
+
+Ashland, with a population of 20,449 and a median income of $42,639, offers an exceptionally affordable lifestyle. The city has a median home value of $101,900, the lowest among our selected cities, and a 2-bedroom asking rent of about $950. It's home to the Paramount Arts Center and Central Park, offering a strong community vibe and plenty of recreational activities for its residents.
+"

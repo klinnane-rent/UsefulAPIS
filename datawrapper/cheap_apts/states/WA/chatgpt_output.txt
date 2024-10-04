@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Pullman, WA    |        33974 |           32073 |              287700 |                1050 | 97.3185 |
+|  1 | Yakima, WA     |        93829 |           48220 |              182900 |                1150 | 96.0662 |
+|  2 | Cheney, WA     |        12455 |           43567 |              225900 |                1315 | 94.602  |
+|  3 | Ellensburg, WA |        20679 |           43567 |              235800 |                1020 | 94.0835 |
+|  4 | Moses Lake, WA |        23442 |           60136 |              188000 |                1359 | 90.827  |
+","# Cheapest Places to Live in Washington
+
+When it comes to affordability for renters, Washington offers a variety of cities that rank well. These cities offer a balance of economic viability with median income and home value in consideration, alongside a low rent cost. They also provide a great quality of life with a variety of local amenities to enjoy. Based on our methodology, the cheapest cities in Washington State are Pullman, Yakima, Cheney, Ellensburg, and Moses Lake. 
+
+## Pullman, WA
+
+Home to a population of 33,974 residents and Washington State University, Pullman is an affordable city that offers a vibrant community and thriving local culture. With a median household income of $32,073 and a very affordable 2-bedroom asking rent of $1,050, Pullman presents a great place for renters. The city also boasts a high score of 97.3185, indicating its overall liveability. Pullman offers plenty of attractions such as the Bill Chipman Palouse Trail and the WSU Arboretum & Wildlife Conservation Center, enhancing its appeal for residents.
+
+## Yakima, WA
+
+With a population of 93,829, Yakima is a larger city that also offers affordability for renters, with a median household income of $48,220 and an average 2-bedroom rent of $1,150. A notable point of interest in Yakima is the Yakima River, a beautiful location for outdoor activities. Additionally, its liveability score of 96.0662 showcases the city's overall attractiveness as a place to live.
+
+## Cheney, WA
+
+Cheney is a smaller city with a population of 12,455, making it a peaceful and cozy environment for renters. Its median household income sits at $43,567, with a 2-bedroom asking rent of $1,315. This city is home to Eastern Washington University and is near the Turnbull National Wildlife Refuge, offering a vibrant community life and ample outdoor recreation opportunities respectively. Cheney has a high score of 94.602, highlighting its overall liveability.
+
+## Ellensburg, WA
+
+Ellensburg, with a population of 20,679, offers a great balance with a median household income of $43,567 and an average 2-bedroom rent of $1,020. Home to Central Washington University and the popular Kittitas County Fair, this city offers a lively community atmosphere. Its liveability score of 94.0835 further emphasizes Ellensburg as a prime location for renters.
+
+## Moses Lake, WA
+
+Moses Lake is a city with a population of 23,442 residents and boasts the highest median income on the list at $60,136. Despite this, the average 2-bedroom rent remains affordable at $1,359. It also offers plenty of outdoor recreational activities at Moses Lake Park and the Moses Pointe golf course. With a score of 90.827, Moses Lake is a great place for renters looking for high-quality life at a lower cost."

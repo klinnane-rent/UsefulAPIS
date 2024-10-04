@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |    Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|---------:|
+|  0 | Woonsocket, RI |        41616 |           44310 |              191500 |                1214 | 100      |
+|  1 | Cranston, RI   |        81252 |           74425 |              257400 |                2000 |  75.5043 |
+|  2 | Pawtucket, RI  |        71821 |           52902 |              213700 |                2190 |  56.1717 |
+|  3 | Warwick, RI    |        81043 |           73285 |              238300 |                1630 |  52.8032 |
+|  4 | Westerly, RI   |        17842 |           75200 |              307700 |                1500 |  46.6967 |
+","# Cheapest Places to Live in Rhode Island
+
+Rhode Island, despite its small size, offers a diverse mix of urban and coastal living. For renters looking for affordability in ""The Ocean State,"" there are several options. This article utilizes multiple data sets, for determining the most affordable cities in Rhode Island to rent a two-bedroom home. Factors in our methodology include city population, median income, median home value, and asking rent prices. The top five most budget-friendly cities according to our analysis are: Woonsocket, Cranston, Pawtucket, Warwick, and Westerly. 
+
+## Woonsocket, Rhode Island
+
+A city with a population of 41,616, Woonsocket comes in as the most affordable place to rent in Rhode Island. With a median income of $44,310 and a median home value of $191,500, it offers a manageable cost of living. Woonsocket has many attractions like the Museum of Work and Culture that showcases its industrial history. Moreover, the Blackstone River Valley National Historical Park provides recreational opportunities for residents and tourists alike.
+
+## Cranston, Rhode Island
+
+Cranston, with a population of 81,252 and a median income of $74,425, ranks second on our affordability list. The median home value here is $257,400. Cranston is known for its vibrant lifestyle which includes numerous parks, such as the Roger Williams Park and Garden City Center, a popular shopping center. Despite the city's relatively high-income level, the rent prices are still quite affordable for a two-bedroom home at $2000.
+
+## Pawtucket, Rhode Island
+
+As Rhode Island's fourth-largest city, Pawtucket boasts affordability with a median income of $52,902. With a median home value of $213,700, it's a great place for those looking to rent a two-bedroom home. The Slater Mill Historic Site, a tribute to Pawtucket's influential role in America’s industrial revolution, and McCoy Stadium, home to the minor league Pawtucket Red Sox, offer a rich array of local attractions.
+
+## Warwick, Rhode Island
+
+Home to 81,043 residents, Warwick also offers a great quality of life at an affordable price. With a median income of $73,285 and a median home value of $238,300, Warwick is an affordable choice for many renters. Warwick is known for its beautiful shoreline and historic sites like the Clouds Hill Victorian House Museum and the Warwick City Park.
+
+## Westerly, Rhode Island
+
+Despite being a smaller city with a population of 17,842, Westerly still finds its place on our list. This seaside town with a median income of $75,200 and a median home value of $307,700 provides a coastal lifestyle at affordable rates. Westerly is known for its beautiful beaches like Misquamicut State Beach and the Atlantic Beach Park, making it ideal for those who love the sea."

@@ -1,0 +1,42 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Wheeling, WV    |        27046 |           41911 |              110900 |                 760 | 79.0122 |
+|  1 | Martinsburg, WV |        17517 |           44363 |              162200 |                1095 | 70.4138 |
+|  2 | Charleston, WV  |        47273 |           49769 |              156900 |                 859 | 66.0216 |
+|  3 | Morgantown, WV  |        30953 |           42474 |              215000 |                 732 | 43.4234 |
+|  4 | Clarksburg, WV  |        15743 |           41226 |               88600 |                1800 | 33.2884 |
+","# Cheapest Places to Live in West Virginia
+
+As the mountain state, West Virginia boasts impressive natural beauty, a strong sense of community, and an economical cost of living. When it comes to affordable rental properties, West Virginia offers a range of options for those on a budget. Our study has determined the five most affordable cities for renters in West Virginia: Wheeling, Martinsburg, Charleston, Morgantown, and Clarksburg. These cities not only offer economical rental choices but also provide a high-quality life with all the essential amenities, leisure facilities, and great neighbourhoods. 
+
+The cheapest cities in West Virginia based on our methodolody are: Wheeling, Martinsburg, Charleston, Morgantown, and Clarksburg.
+
+## Wheeling, WV
+
+Wheeling sits in the upper Ohio River Valley and has a population of 27,046. Wheeling affords a compact, friendly community with a median income of $41,911. The city is known for its cultural landmarks, including the Victoria Theater and the Wheeling Suspension Bridge. In addition, the median home value is $110,900, adding to the city's affordability. Renters seeking a two-bedroom property can expect to pay around $760, well below the national average. Overall, the city scores a healthy 79.0122 on our affordability index.
+
+## Martinsburg, WV
+
+Located in the Eastern Panhandle of West Virginia, Martinsburg has a population of 17,517. With a median income of $44,363 and a median home value of $162,200, Martinsburg strikes a balance between cost and quality of living. The city offers historical charm with attractions such as the Belle Boyd House and the Martinsburg Roundhouse. A two-bedroom rental in Martinsburg averages $1,095, providing affordable rental options in a charming locale. Martinsburg scores 70.4138 on our affordability index.
+
+## Charleston, WV
+
+As the capital and largest city of West Virginia, Charleston offers a thriving city life with a population of 47,273. Despite being a major city, Charleston's median home value is a manageable $156,900. With a median income of $49,769, residents can enjoy city living without breaking the bank. Points of interest such as the West Virginia State Museum and Capitol Street offer entertainment and shopping within the city. Charleston's average two-bedroom rent is $859, and the city scores 66.0216 on our affordability index.
+
+## Morgantown, WV
+
+Home to West Virginia University, Morgantown is a vibrant city with a population of 30,953. The housing market in Morgantown leans towards home-buying, with a median home value of $215,000, but it still provides affordable rental options. A two-bedroom rental averages $732, making the city an affordable choice for students and young professionals. The city's median income is $42,474, and its score on our affordability index is 43.4234. 
+
+## Clarksburg, WV
+
+Clarksburg has a population of 15,743 and offers a small-town feel with easy access to city amenities. The city has a median income of $41,226 and a median home value of $88,600, one of the lowest in the state. Despite this, Clarksburg offers a variety of community events and points of interest, such as the Clarksburg Amphitheater and the West Virginia Italian Heritage Festival. However, the city has a high average two-bedroom rental price at $1,800. With an affordability index score of 33.2884, Clarksburg remains one of the affordable options for renters in our list."

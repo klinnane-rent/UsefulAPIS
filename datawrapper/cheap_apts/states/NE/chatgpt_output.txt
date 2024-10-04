@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State          |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | South Sioux City, NE |        12867 |           56744 |              124300 |                1084 | 75.159  |
+|  1 | Grand Island, NE     |        51250 |           56513 |              148200 |                 777 | 74.9686 |
+|  2 | Kearney, NE          |        33783 |           60755 |              188800 |                 762 | 70.7729 |
+|  3 | Fremont, NE          |        26362 |           54291 |              140400 |                1250 | 54.7015 |
+|  4 | Bellevue, NE         |        63970 |           70647 |              165900 |                1095 | 53.7683 |
+","# Cheapest Places to Live in Nebraska
+When it comes to affordable living, Nebraska is one of the states that has a lot to offer. Known for its rich agricultural heritage, Nebraska is much more than its famous cornfields. The state boasts an excellent quality of life with a balance of urban and rural living, making it quite attractive for renters. Based on our research and scoring methodology, the cities that shine when it comes to affordability in Nebraska are South Sioux City, Grand Island, Kearney, Fremont, and Bellevue. 
+
+## South Sioux City, NE
+Home to a population of 12,867, South Sioux City offers a small-town feel with the conveniences of city living. The median income stands at $56,744, aligning well with the median home value of $124,300. Renting a 2-bedroom apartment in South Sioux City would set you back about $1,084-a very reasonable rate given the city's attributes. Points of interest such as the beautiful Scenic Park on the banks of the Missouri River add appeal to this affordable city.
+
+## Grand Island, NE
+Grand Island, the fourth largest city in Nebraska, provides a rich blend of community, culture, and commerce. Housing a population of 51,250 with a median income of $56,513, the city has a median home value of $148,200. For renters, the 2-bedroom asking rent averages at $777. The city is packed with attractions like the Stuhr Museum of the Prairie Pioneer and Island Oasis Water Park, making it a delightful place to reside.
+
+## Kearney, NE
+Kearney, with a population of 33,783, is a city that successfully combines history, culture, and affordability. The median income here is $60,755, and the median home value is $188,800. Rent for a two-bedroom apartment averages around $762. Notable attractions such as the Great Platte River Road Archway Monument and various trails at Yanney Park make Kearney a great place to call home.
+
+## Fremont, NE
+Fremont is a city that offers a wealth of community spirit and natural beauty. The city hosts 26,362 residents and has a median income of $54,291. The median home value is $140,400, with the 2-bedroom asking rent approximately $1,250. Fremont is known for its historic downtown district and scenic parks like Fremont Lakes State Recreation Area, offering various outdoor activities.
+
+## Bellevue, NE
+Bellevue, the third-largest city in Nebraska, provides an admirable blend of small-town charm and big-city amenities. It houses a population of 63,970 people, a median income of $70,647, and median home values around $165,900. Rent for a two-bedroom apartment typically costs around $1,095. Residents can enjoy the pristine beauty of the Fontenelle Forest Nature Center and easy access to Omaha, the state's largest city, adding to Bellevue's desirability."

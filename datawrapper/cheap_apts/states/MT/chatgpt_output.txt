@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Great Falls, MT |        58717 |           49809 |              181500 |                1505 | 89.8577 |
+|  1 | Helena, MT      |        32655 |           60074 |              263300 |                1350 | 88.6765 |
+|  2 | Missoula, MT    |        74994 |           50947 |              301700 |                1495 | 86.7607 |
+|  3 | Kalispell, MT   |        23935 |           47750 |              242500 |                1650 | 83.7447 |
+|  4 | Billings, MT    |       109705 |           60032 |              233700 |                1760 | 76.2938 |
+","# Cheapest Places to Live in Montana
+
+Montana, known for its sprawling landscapes and rugged beauty, also boasts some of the most affordable places to live for renters in the United States. This state blends the charm of small towns with the amenities of larger cities and provides a high quality of life without the exorbitant price tag. Montana's cost of living is notably lower than the national average, making it an appealing prospect for renters looking to save money without sacrificing comfort and convenience. The cities we identified as the cheapest to live in Montana based on our analysis are (in no particular order): Great Falls, Helena, Missoula, Kalispell and Billings.
+
+## Great Falls, MT
+
+Great Falls is one of the most affordable cities in Montana, whilst offering a wealth of attractions. It has a population of 58,717, a median income of $49,809, and a median home value of $181,500. Its moderate population size offers an intimate feeling without feeling too remote. The city is located along the Missouri River, providing beautiful scenic views and outdoor recreational opportunities at Giant Springs State Park. The low 2-bedroom asking rent of $1,505 further enhances its appeal for renters.
+
+## Helena, MT
+
+Helena, the state capital of Montana, is known for its rich history and vibrant art scene. With a population of 32,655 and a median income of $60,074, this city provides a blend of affordability and high quality of life. Helena's median home value is higher at $263,300, reflecting its appeal and the quality amenities it offers. The proximity to Mount Helena City Park provides ample outdoor activities for residents. Renters will find the average asking rent for a 2-bedroom apartment to be $1,350, which is very reasonable considering the benefits the city offers.
+
+## Missoula, MT
+
+Missoula, home to the University of Montana, has a population of 74,994 and a median income of $50,947. Residents have access to a mix of urban amenities and natural attractions such as the Rattlesnake National Recreation Area and Wilderness. The median home value is $301,700, indicating the desirability of this city. Despite this, the 2-bedroom asking rent remains affordable at $1,495.
+
+## Kalispell, MT
+
+Kalispell is a smaller city of 23,935 residents with a median income of $47,750. The city is located in proximity to Glacier National Park, providing residents with stunning natural beauty and ample recreational activities. The median home value in Kalispell is $242,500, and a 2-bedroom apartment asks an average rent of $1,650. Despite the slightly higher rent, the amenities and neighboring natural attractions make Kalispell an appealing choice for renters.
+
+## Billings, MT
+
+Finally, Billings stands as the largest city in Montana with a population of 109,705 and a median income of $60,032. It boasts a vibrant downtown area featuring eateries, craft breweries, and shopping centers. It is near the Yellowstone River and the Rimrocks, offering residents a balance between city life and nature. The median home value is $233,700 and the 2-bedroom asking rent averages at $1,760. Despite being a larger city, Billings still offers affordability for renters."

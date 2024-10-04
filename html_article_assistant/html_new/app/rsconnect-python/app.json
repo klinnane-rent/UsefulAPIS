@@ -1,0 +1,12 @@
+{
+    "https://analytics-apps.prod.ade-redfin.com/": {
+        "server_url": "https://analytics-apps.prod.ade-redfin.com/",
+        "filename": "/Users/rentpath/Documents/Analytics/html_article_assistant/creation/app",
+        "app_url": "https://analytics-apps.prod.ade-redfin.com/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/",
+        "app_id": "0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0",
+        "app_guid": "0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0",
+        "title": "app",
+        "app_mode": "python-api",
+        "app_store_version": 1
+    }
+}

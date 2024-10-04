@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Plattsburgh, NY |        19343 |           51588 |              144800 |                 759 | 96.8539 |
+|  1 | Binghamton, NY  |        44819 |           35730 |               92800 |                1135 | 96.2716 |
+|  2 | Lackawanna, NY  |        17751 |           39984 |               99400 |                 950 | 95.8493 |
+|  3 | Endicott, NY    |        12684 |           40838 |               88300 |                1015 | 95.7843 |
+|  4 | Dunkirk, NY     |        11812 |           36282 |               67700 |                 785 | 95.1536 |
+","# Cheapest Places to Live in New York
+If you're searching for affordable places to live in New York, you're in luck. The state is not only home to the bustling metropolis of New York City but also to a variety of low-cost, high-quality cities ideal for renters. From the northern reaches near the Canadian border to the western region near the Great Lakes, New York offers diverse options for affordable living. The cities we've highlighted combine low rental prices with the perks of New York living. Our methodology revealed the top 5 cheapest cities in New York: Plattsburgh, Binghamton, Lackawanna, Endicott, and Dunkirk.
+
+## Plattsburgh, New York
+With a population of 19,343 and a median income of $51,588, Plattsburgh offers a comfortable lifestyle at an affordable cost. The 2-bedroom asking rent in this city is $759, far below the average in New York state. Home to SUNY Plattsburgh and located near beautiful Lake Champlain, this city combines education, natural beauty, and affordability. Whether you're exploring the city's rich history at the War of 1812 Museum or enjoying a day out at Cumberland Bay State Park, Plattsburgh is an affordable gem.
+
+## Binghamton, New York
+Binghamton, home to 44,819 residents, is another city offering great value for renters in New York. Renters can expect to pay around $1,135 for a 2-bedroom apartment, while enjoying the cultural and educational opportunities the city offers. Home to Binghamton University, one of the top public universities in the state, residents get to enjoy the intellectual stimulation and events a college town offers. You can also explore the city's rich history at the Roberson Museum and Science Center or enjoy nature at the Ross Park Zoo.
+
+## Lackawanna, New York
+In the Erie County, you'll find Lackawanna, a city of 17,751 residents with a median income of $39,984. The average 2-bedroom asking rent is $950. Endowed with the beautiful Holy Cross Cemetery and located just off the breathtaking shore of Lake Erie, Lackawanna charms with its blend of natural landscape and city amenities. Key highlights include the Botanical Gardens and the Our Lady Victory Basilica, one of the stunning architectural marvels in the state.
+
+## Endicott, New York
+Endicott, with a population of 12,684 and a median income of $40,838, provides a warm, community-driven lifestyle. Rent for a 2-bedroom apartment averages $1,015. Home to the IBM Corporation's birthplace, Endicott offers a rich industrial history. You can enjoy the outdoors at Grippen Park, take in a round of golf at the Endicott Golf Course, or explore the history of shoes at the Endicott Shoe Factory.
+
+## Dunkirk, New York
+Rounding off our list is Dunkirk, a city with a population of 11,812 and a median income of $36,282. The average costs for a 2-bedroom rental is only $785. It is located on the shores of Lake Erie, offering amazing waterfront views and a laid-back lifestyle. The city is also home to SUNY Fredonia, providing plenty of educational and cultural opportunities. With attractions like the Dunkirk Lighthouse and Veterans Park Museum, Dunkirk offers a rich history alongside affordability."

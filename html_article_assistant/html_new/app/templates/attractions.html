@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Assistant - Attractions in City</title>
+    <style>
+        body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                padding-top: 30px;
+                color: #333;
+            }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding-top: 70px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Makes sure the padding does not affect the specified width */
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button[type="button"]:hover {
+            background-color: #45a049;
+        }
+        button[type="submit"] {
+            width: 100%;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active { /* Styles for hover and the active page */
+                background-color: #ddd;
+                color: rgb(201, 199, 199);
+        }
+
+        .navbar a.active { /* Additional specific styles for the active link */
+                background-color: #555; /* Darker than hover to stand out */
+        }
+
+
+    </style>
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/attractions" class="active">Attractions in City</a>
+            <a href="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/city-info">City Information</a>
+            <a href="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/custom-article">Custom Article</a>
+        </div>
+<body>
+    
+
+    <h1>Article Assistant - Attractions in City</h1>
+    <form action="/content/0e64c0fe-a2b3-41ca-a1f4-0895060dd5b0/attractions" method="POST" id="attractionsForm">
+        <div>
+            <label for="attraction">Attraction:</label>
+            <input type="text" id="attraction" name="attraction" class="form-control" required>
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" class="form-control" required>
+        </div>
+        <div>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" class="form-control" required>
+        </div>
+
+        <!-- Here you include all checkboxes with verbose labeling -->
+        <div>
+            <label><input type="checkbox" name="name" value="name"> Include Name</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="location" value="location"> Include Location</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="categories" value="categories"> Include Categories</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="distance" value="distance"> Include Distance</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="email" value="email"> Include Email</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="website" value="website"> Include Website</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="rating" value="rating"> Include Rating</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="popularity" value="popularity"> Include Popularity</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="price" value="price"> Include Price</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="exclude_chains" value="exclude_chains"> Exclude Chains</label>
+        </div>
+
+        <div>
+            <label for="number_of_results">Number Of Results:</label>
+            <input type="number" id="number_of_results" name="number_of_results" value="50" class="form-control">
+        </div>
+
+        <button type="submit">Generate Article</button>
+    </form>
+    <script>
+        document.getElementById('attractionsForm').onsubmit = function() {
+            var city = document.getElementById('city').value.trim();
+            var state = document.getElementById('state').value.trim();
+            var attraction = document.getElementById('attraction').value.trim();
+            var allFilled = true;
+
+            if (city === '' || state === '' || attraction === '') {
+                allFilled = false;
+            }
+
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var oneChecked = Array.prototype.slice.call(checkboxes).some(x => x.checked);
+
+            if (!allFilled) {
+                alert("Please fill out all of (Attractions, State, City).");
+                return false; // Prevent form submission
+            }
+
+            if (!oneChecked) {
+                alert("Please select at least one checkbox.");
+                return false; // Prevent form submission
+            }
+
+            return true; // Allow form submission
+        };
+    </script>
+</body>
+</html>

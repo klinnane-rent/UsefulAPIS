@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State      |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:-----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Jacksonville, AL |        12796 |           41530 |              150000 |                 525 | 94.0882 |
+|  1 | Ozark, AL        |        14350 |           41894 |              123800 |                 589 | 92.2105 |
+|  2 | Center Point, AL |        15971 |           45221 |               99400 |                 725 | 89.887  |
+|  3 | Gadsden, AL      |        35224 |           34062 |               80400 |                 700 | 88.1679 |
+|  4 | Sylacauga, AL    |        12132 |           37093 |              134500 |                 600 | 87.958  |
+","# Cheapest Places to Live in Alabama
+As the heart of the Southern United States, Alabama is known for its rich history, warm hospitality, and lush landscapes. It's no surprise that many people are attracted to the state's affordable cost of living. For renters aspiring to reside in the Cotton State, there are several low-cost options to consider. According to our proprietary method of city ranking, five cities stand out as the cheapest places to live in Alabama. These are: Jacksonville, Ozark, Center Point, Gadsden, and Sylacauga. Each city provides a unique blend of charm, community spirit, and affordability that makes them attractive locales for renters.
+
+## Jacksonville, Alabama
+With a population of 12,796 and a median income of $41,530, Jacksonville offers a small-town feel with a strong sense of community. The median home value in Jacksonville is $150,000, making it an affordable option for those looking to put down roots. Jacksonville is home to Jacksonville State University, contributing to its lively atmosphere. Renters will find that the average 2-bedroom apartment rents for a comfortable $525. Nearby attractions include the scenic Chief Ladiga Trail and the beautiful Germany Mountain.
+
+## Ozark, Alabama
+Ozark is another gem in Alabama, with a population of 14,350 and a median income of $41,894. The average cost of a home stands at $123,800, indicating an affordable property market. Renters can expect to pay around $589 for a two-bedroom apartment. Opportunities for outdoor recreation abound in Ozark, with the expansive Ed Lisenby Lake Park offering hiking, boating, and fishing. The city's closeness to Fort Rucker also makes Ozark a convenient location for military families.
+
+## Center Point, Alabama
+Center Point, with a population of 15,971 and a median income of $45,221, is another affordable place to live in Alabama. Amidst its suburban feel, the median home value is $99,400, making it a reasonable choice for homebuyers. Renters won't break the bank either, with a two-bedroom apartment asking rent of just $725. The city is close to Pinson Valley Parkway and the picturesque Turkey Creek Nature Preserve is just a short drive away.
+
+## Gadsden, Alabama
+Gadsden, the largest city on this list with a population of 35,224, offers a rural-suburban mix atmosphere. The median income in Gadsden is $34,062, with a median home value of $80,400. Those looking to rent can expect to pay around $700 for a two-bedroom apartment. Bordered by the Coosa River, Gadsden boasts attractions like the Noccalula Falls Park & Campground, providing plenty of scenic beauty to enjoy.
+
+## Sylacauga, Alabama
+Sylacauga, a city with a population of 12,132 and a median income of $37,093, is renowned for its friendliness and community spirit. Housing is especially affordable with the median home value at $134,500. Renters can find a two-bedroom place for approximately $600. It is home to the Sylacauga Marble Quarry, one of the world's largest sources of marble, and residents are just a stone's throw away from the Talladega National Forest, offering plenty of outdoor activities."

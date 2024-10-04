@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in Florida. Start by producing a section titled exactly as ""# Cheapest Places to Live in Florida"". This section should be 7 to 8 sentences and an overview of Florida within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: Lake City, FL, Milton, FL, Leesburg, FL, Zephyrhills, FL, Tarpon Springs, FL.
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State        |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:-------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Lake City, FL      |        12166 |           40397 |              117300 |                 975 | 97.548  |
+|  1 | Milton, FL         |        10259 |           62561 |              134900 |                1250 | 97.1542 |
+|  2 | Leesburg, FL       |        23142 |           38026 |              160000 |                1329 | 95.6708 |
+|  3 | Zephyrhills, FL    |        16062 |           36799 |              117200 |                1650 | 95.4962 |
+|  4 | Tarpon Springs, FL |        25389 |           53713 |              231900 |                1300 | 95.3992 |
+","# Cheapest Places to Live in Florida
+Florida is well-known for its beautiful coastlines, entertainment hub Miami, and the famous Disney World. However, what people don't often realize is the affordability of living in the Sunshine State, especially for renters. Given the high quality of life, diverse culture, and access to various amenities, Florida offers some of the cheapest places to live for renters. Our comprehensive study identifies five such cities: Lake City, Milton, Leesburg, Zephyrhills, and Tarpon Springs. These cities offer high affordability without compromising on the quintessential Floridian lifestyle.
+
+## Lake City, FL
+Lake City, with a population of 12,166 and a high score of 97.548, offers an affordable living option in Florida. With a median income of $40,397 and a median home value of $117,300, Lake City provides a low-cost living environment. The asking rent for a 2-bedroom apartment is approximately $975, which is quite reasonable. Aside from its affordability, Lake City offers a lot to its residents, such as the beautiful Alligator Lake Park and the charm of Olustee Park located downtown. Its closeness to I-75 makes commuting easy and quick.
+
+## Milton, FL
+Located in the Florida Panhandle, Milton, with a population of 10,259 and a score of 97.1542, is yet another feasible option. A median income of $62,561 and a median home value of $134,900, coupled with a 2-bed asking rent of $1,250, makes Milton a sensible choice for those seeking affordability and comfort. Besides, Milton isn't just about inexpensive living; it's a city rich in history and natural beauty, with Blackwater River State Park nearby for outdoor enthusiasts.
+
+## Leesburg, FL
+Leesburg, flanked by Lake Griffin and Lake Harris, offers affordability with a population of 23,142 and a score of 95.6708. With a median income of $38,026, a median home value of $160,000, and 2-bed asking rent of $1,329, Leesburg is definitely worth considering. Leesburg is also famous for its annual Bikefest, and the Venetian Gardens Park offers a picturesque environment for residents to enjoy.
+
+## Zephyrhills, FL 
+Zephyrhills, with a population of 16,062 and a score of 95.4962, provides an affordable living option with a median income of $36,799 and a median home value of $117,200. The 2-Bed Asking Rent is approximately $1,650. Comfortably located near I-4 and I-75, Zephyrhills is easy to commute from and provides access to major cities like Tampa. Zephyr Park and Waterplay provide a great place for outdoor activities.
+
+## Tarpon Springs, FL
+Tarpon Springs, known for its rich Greek heritage and natural sponge harvests, holds a population of 25,389 and a score of 95.3992. It offers affordability with a median income of $53,713 and a median home value of $231,900. The asking rent for a two-bedroom apartment is roughly $1,300. From the historic Sponge Docks to Fred Howard Park and Anclote River Park, Tarpon Springs is full of cultural and natural attractions."

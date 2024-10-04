@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State    |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:---------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Alamogordo, NM |        31635 |           45786 |              125400 |                 583 | 90.8201 |
+|  1 | Farmington, NM |        44967 |           56576 |              188500 |                 983 | 76.5322 |
+|  2 | Las Cruces, NM |       102950 |           45140 |              161100 |                1160 | 72.2977 |
+|  3 | Gallup, NM     |        21637 |           45754 |              135500 |                1125 | 69.1772 |
+|  4 | Clovis, NM     |        38701 |           47794 |              132300 |                1235 | 66.6503 |
+","# Cheapest Places to Live in New Mexico
+
+In the realm of affordable living, many individuals consider New Mexico an attractive option. Known for its rich culture, stunning landscapes, and lower cost of living, New Mexico stands out among other states. More specifically, for renters looking for a budget-friendly city to call home, New Mexico offers numerous options. Factors like population, median income, home value, and asking rents play crucial roles in determining affordability. According to our methodology, the five cheapest cities in New Mexico for renters include Alamogordo, Farmington, Las Cruces, Gallup, and Clovis. 
+
+## Alamogordo, NM
+
+With a population of 31,635, Alamogordo has a small-town charm and a sense of community. The median income of $45,786 and a median home value of $125,400 make it an affordable option for many. When it comes to rent, the asking price for a 2-bedroom apartment is as low as $583. Alamogordo is home to the New Mexico Museum of Space History and Alameda Park Zoo. It's also near the Lincoln National Forest, which offers ample outdoor activities.
+
+## Farmington, NM 
+
+Farmington, with a population of 44,967 and a median income of $56,576, is another cost-effective city in New Mexico. The median home value stands at $188,500 with a fairly reasonable 2-bedroom asking rent of $983. Farmington is known for Farmington Lake, Pinon Hills Golf Course, and a variety of outdoor recreation areas, enhancing the city's livability.
+
+## Las Cruces, NM 
+
+Las Cruces is the largest city on our list with 102,950 residents. It has a median income of $45,140 and a median home value of $161,100. The 2-bedroom asking rent typically stands around $1160. Known as ""The City of Crosses"", it is home to New Mexico State University, the historic Old Mesilla Village, and is near the picturesque Organ Mountains-Desert Peaks National Monument.
+
+## Gallup, NM 
+
+Despite having the smallest population on our list (21,637), Gallup offers a rich cultural experience due to its Native American heritage. With a median income of $45,754, a median home value of $135,500, and an asking rent for a 2-bedroom apartment at $1125, Gallup is a feasible option for many. It is home to Red Rock Park, Gallup Cultural Center, and close to the historic Route 66.
+
+## Clovis, NM 
+
+Clovis, with a population of 38,701, a median income of $47,794, and a median home value of $132,300, is another affordable city to rent in New Mexico. The asking price for a 2-bedroom home is about $1235. The city is known for the Norman Petty Studios, where Buddy Holly recorded many of his hits, Hillcrest Park Zoo, and is conveniently located near highways for easy commuting."

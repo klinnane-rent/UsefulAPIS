@@ -1,0 +1,34 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State       |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:------------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Kingman, AZ       |        30433 |           51081 |              162200 |                 990 | 98.9465 |
+|  1 | Sierra Vista, AZ  |        43756 |           59585 |              174100 |                1033 | 95.3383 |
+|  2 | Yuma, AZ          |        97428 |           52183 |              152300 |                1159 | 90.8905 |
+|  3 | Bullhead City, AZ |        40808 |           43442 |              152100 |                1350 | 89.4191 |
+|  4 | Tucson, AZ        |       545340 |           45227 |              165900 |                1315 | 86.7273 |
+","# Cheapest Places to Live in Arizona
+When it comes to affordable living in the United States, Arizona often emerges as a top choice for renters. Boasting a vibrant culture, stunning natural beauty, and favorable climate, the state's allure is undeniable. It offers cities with relatively low rental pricing while maintaining a high quality of life, making it a popular choice for both residents and migrants exploring budget-friendly options. The cheapest cities in Arizona, based on factors such as median home value, median income, and asking rent for a 2-bedroom apartment, include Kingman, Sierra Vista, Yuma, Bullhead City, and Tucson. 
+
+## Kingman, AZ
+Kingman, a city with a population of 30,433, is one of the most affordable places to live in Arizona. With a median income of $51,081 and a median home value of $162,200, Kingman offers an ideal mix of affordability and comfortable living. The asking rent for a 2-bedroom apartment stands at $990, indicating the affordability for renters. The city is known for its historical richness with the Route 66 Museum and beautiful outdoor locations like the Hualapai Mountain Park nearby.
+
+## Sierra Vista, AZ
+Sierra Vista, known as the Hummingbird Capital of the U.S., offers a population of 43,756 and a median income of $59,585. The median home value stands at $174,100, indicating the city's affordable housing market. Renters can find a 2-bedroom apartment for around $1,033. Notable attractions include the Fort Huachuca - a National Historic Landmark, and the San Pedro Riparian National Conservation Area, making it a great place to live for nature and history enthusiasts.
+
+## Yuma, AZ
+Yuma, with a population of 97,428, is another affordable city in Arizona with a median income of $52,183 and a median home value of $152,300. The average asking rent for a 2-bedroom apartment is reasonably priced at $1,159. Yuma is known for its sunny weather and historical sites like Yuma Territorial Prison State Historic Park and the Yuma Art Center, offering residents a balance between outdoor and cultural activities.
+
+## Bullhead City, AZ
+Bullhead City offers an affordable lifestyle with a population of 40,808 and a median income of $43,442. The city has a median home value of $152,100 with an average rent of $1,350 for a 2-bedroom apartment. Bullhead City is located near the Colorado River, offering several water activities. The city also boasts of its closeness to the Lake Mead National Recreation Area and the Laughlin casinos which are just across the river.
+
+## Tucson, AZ
+Tucson, the largest city on the list with a population of 545,340, has a median income of $45,227 and a median home value of $165,900. Renters can find a 2-bedroom apartment for an average of $1,315. Aside from its affordability, Tucson offers a variety of attractions, from the stunning views of Saguaro National Park to the vibrant arts scene at the downtown Rialto Theatre, making it an exciting city to live in."

@@ -1,0 +1,40 @@
+prompt,response
+"
+I want to produce an article on the cheapest places to live (for renters) in {state}. Start by producing a section titled exactly as ""# Cheapest Places to Live in {state}"". This section should be 7 to 8 sentences and an overview of {state} within the broader context of cheapest places to live for renters.
+
+Based on our methodology, the cheapest cities are: {listed_cities}
+
+Next, produce one section for each of the 5 cities mentioned above. Create a standard header that starts with ""## "" before discussing the cities.  Talk about why the city is a great place to live given the data points below. When it comes to rent prices, do not draw any comparisons. Just focus on the data that is given and why the city is nice to live in. Try to reference actual nearby points of interest, roads, neighborhoods, parks, etc.
+
+
+Data to utilize:
+|    | City, State     |   Population |   Median Income |   Median Home Value |   2-Bed Asking Rent |   Score |
+|---:|:----------------|-------------:|----------------:|--------------------:|--------------------:|--------:|
+|  0 | Idaho Falls, ID |        62417 |           56590 |              179600 |                1235 | 69.764  |
+|  1 | Post Falls, ID  |        34971 |           62033 |              246400 |                1637 | 47.5697 |
+|  2 | Nampa, ID       |        96825 |           53205 |              191800 |                1502 | 45.9862 |
+|  3 | Caldwell, ID    |        56734 |           55069 |              188300 |                1747 | 44.6928 |
+|  4 | Meridian, ID    |       107787 |           76403 |              304500 |                1596 | 40.9496 |
+","# Cheapest Places to Live in Idaho
+
+Idaho, known for its beautiful landscapes and outdoor activities, is also a state with some surprisingly affordable cities to live in, particularly for renters. Despite the overall cost of living in Idaho being slightly above the national average, rental prices in many cities are still very affordable, especially when compared to neighboring states. Based on our comprehensive analysis, the ideal options for renters in Idaho are Idaho Falls, Post Falls, Nampa, Caldwell, and Meridian. Each of these cities offers its unique charm, amenities, and economic opportunities that make them some of the best places to live in Idaho for renters.
+
+## Idaho Falls, ID
+
+Idaho Falls, with a population of 62,417, offers a blend of small-town charm and big-city amenities. With a median income of $56,590 and an average 2-bedroom asking rent of $1,235, residents can enjoy an affordable cost of living. The city is home to the beautiful Idaho Falls Greenbelt, a network of trails along the Snake River that provides ample opportunities for outdoor adventures. The city is also known for its close proximity to natural attractions like Yellowstone National Park and the Grand Teton National Park.
+
+## Post Falls, ID
+
+Post Falls, located in the heart of the Inland Northwest, has a population of 34,971. The median income here is $62,033 with an average 2-bedroom asking rent of $1,637. Residents are drawn to Post Falls for its natural beauty, including Spokane River and Falls Park, and its small-town charm despite its growing population. It's an outdoor lover's paradise with many recreational activities like fishing, boating, and hiking available year-round.
+
+## Nampa, ID
+
+Nampa, the third-largest city in Idaho with a population of 96,825, offers an affordable lifestyle with an average 2-bedroom asking rent of $1,502 and a median income of $53,205. Known for its vibrant atmosphere and strong sense of community, Nampa boasts destinations like the Lakeview Park, Nampa Public Library, and the Idaho Center, which hosts concerts, rodeos, and other events. 
+
+## Caldwell, ID
+
+Caldwell, with a population of 56,734, is a city that combines a rich history with modern amenities. The city has a median income of $55,069 and an average 2-bedroom asking rent of $1,747. Caldwell is home to the College of Idaho and is known for its annual Caldwell Night Rodeo. The Indian Creek Plaza in downtown Caldwell offers a venue for concerts, festivals, and community events. 
+
+## Meridian, ID
+
+Meridian, the second-largest city in Idaho with a population of 107,787, offers an average 2-bedroom asking rent of $1,596 and a median income of $76,403. Despite its size, Meridian still retains a small-town feel with a strong sense of community. It's a family-friendly city known for its excellent schools, parks like Kleiner Park, and attractions such as Roaring Springs Waterpark and Wahooz Family Fun Zone."

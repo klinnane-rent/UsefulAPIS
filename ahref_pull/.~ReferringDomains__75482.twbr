@@ -1,0 +1,1243 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='mac' version='18.1' xml:base='https://viz.rentpath.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='CompetitveRerferringDomainAcquisitions' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Organic Search Results (results)' inline='true' name='federated.12n3svw14aveqn1ejuwa31wxrv6k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='results' name='excel-direct.1636xbq1q9jj7g19oeh3b1scwzqn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/rentpath/serp_api/results.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1636xbq1q9jj7g19oeh3b1scwzqn' name='Organic Search Results' table='[&apos;Organic Search Results$&apos;]' type='table'>
+          <columns gridOrigin='A1:C3996:no:A1:C3996:0' header='yes' outcome='6'>
+            <column datatype='string' name='Keyword' ordinal='0' />
+            <column datatype='string' name='URL' ordinal='1' />
+            <column datatype='integer' name='Rank' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1636xbq1q9jj7g19oeh3b1scwzqn' name='Organic Search Results' table='[&apos;Organic Search Results$&apos;]' type='table'>
+          <columns gridOrigin='A1:C3996:no:A1:C3996:0' header='yes' outcome='6'>
+            <column datatype='string' name='Keyword' ordinal='0' />
+            <column datatype='string' name='URL' ordinal='1' />
+            <column datatype='integer' name='Rank' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Organic Search Results]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C3996:no:A1:C3996:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Keyword</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Keyword]</local-name>
+            <parent-name>[Organic Search Results]</parent-name>
+            <remote-alias>Keyword</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Organic Search Results_AF25DBBEDFE34D46A41039D1C8658123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>URL</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[URL]</local-name>
+            <parent-name>[Organic Search Results]</parent-name>
+            <remote-alias>URL</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Organic Search Results_AF25DBBEDFE34D46A41039D1C8658123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[Organic Search Results]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Organic Search Results_AF25DBBEDFE34D46A41039D1C8658123]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Organic Search Results' datatype='table' name='[__tableau_internal_object_id__].[Organic Search Results_AF25DBBEDFE34D46A41039D1C8658123]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Organic Search Results' id='Organic Search Results_AF25DBBEDFE34D46A41039D1C8658123'>
+            <properties context=''>
+              <relation connection='excel-direct.1636xbq1q9jj7g19oeh3b1scwzqn' name='Organic Search Results' table='[&apos;Organic Search Results$&apos;]' type='table'>
+                <columns gridOrigin='A1:C3996:no:A1:C3996:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Keyword' ordinal='0' />
+                  <column datatype='string' name='URL' ordinal='1' />
+                  <column datatype='integer' name='Rank' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='new_lost_refdomains' inline='true' name='federated.19yodeg1g2rq531a9kw3w0ssbd9h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='new_lost_refdomains' name='textscan.14tf3au12cpugj1a697on1hk1kud'>
+            <connection class='textscan' directory='/Users/rentpath/ahref_pull' filename='new_lost_refdomains.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.14tf3au12cpugj1a697on1hk1kud' name='new_lost_refdomains.csv' table='[new_lost_refdomains#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='string' name='refdomain' ordinal='3' />
+            <column datatype='string' name='refdomain_top' ordinal='4' />
+            <column datatype='integer' name='domain_rating' ordinal='5' />
+            <column datatype='string' name='target' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.14tf3au12cpugj1a697on1hk1kud' name='new_lost_refdomains.csv' table='[new_lost_refdomains#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='string' name='refdomain' ordinal='3' />
+            <column datatype='string' name='refdomain_top' ordinal='4' />
+            <column datatype='integer' name='domain_rating' ordinal='5' />
+            <column datatype='string' name='target' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[new_lost_refdomains.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[new_lost_refdomains.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[new_lost_refdomains.csv_F538FB92DE614EECA0CE319F729D9EDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[new_lost_refdomains.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[new_lost_refdomains.csv_F538FB92DE614EECA0CE319F729D9EDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[new_lost_refdomains.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[new_lost_refdomains.csv_F538FB92DE614EECA0CE319F729D9EDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refdomain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[refdomain]</local-name>
+            <parent-name>[new_lost_refdomains.csv]</parent-name>
+            <remote-alias>refdomain</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[new_lost_refdomains.csv_F538FB92DE614EECA0CE319F729D9EDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>refdomain_top</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[refdomain_top]</local-name>
+            <parent-name>[new_lost_refdomains.csv]</parent-name>
+            <remote-alias>refdomain_top</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[new_lost_refdomains.csv_F538FB92DE614EECA0CE319F729D9EDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domain_rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[domain_rating]</local-name>
+            <parent-name>[new_lost_refdomains.csv]</parent-name>
+            <remote-alias>domain_rating</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[new_lost_refdomains.csv_F538FB92DE614EECA0CE319F729D9EDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>target</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[target]</local-name>
+            <parent-name>[new_lost_refdomains.csv]</parent-name>
+            <remote-alias>target</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[new_lost_refdomains.csv_F538FB92DE614EECA0CE319F729D9EDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Count of New Links' datatype='integer' name='[Calculation_3693796156735033344]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED MONTH([date]),[target], [type]: SUM(IF [type] == &apos;new&apos; THEN 1 ELSE 0 END)}' />
+      </column>
+      <column caption='New Vs Lost' datatype='integer' name='[Calculation_3693796156735782914]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(SUM([Calculation_3693796156735033344])) - RUNNING_SUM(SUM([Count of New Links (copy)_3693796156735741953]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Calculation1' datatype='integer' name='[Calculation_3693796156736393219]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(COUNT(IF [type] == &apos;new&apos; THEN [domain_rating] ELSE NULL END)) - RUNNING_SUM(COUNT(IF [type] == &apos;lost&apos; THEN [domain_rating] ELSE NULL END))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='New Links' datatype='integer' name='[Calculation_3693796156737638404]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [type] == &quot;new&quot;&#10;THEN &#10;[domain_rating]&#10;ELSE &#10;NULL&#10;END' />
+      </column>
+      <column caption='Lost Links' datatype='integer' name='[Calculation_3693796156737728517]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [type] == &apos;lost&apos;&#10;THEN&#10;[domain_rating]&#10;ELSE &#10;NULL&#10;END' />
+      </column>
+      <column caption='Total Diff' datatype='integer' name='[Calculation_3693796156738424838]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(COUNT([Calculation_3693796156737638404])) - RUNNING_SUM(COUNT([Calculation_3693796156737728517]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Count of Lost Links' datatype='integer' name='[Count of New Links (copy)_3693796156735741953]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED Month([date]),[target], [type]: SUM(IF [type] == &apos;lost&apos; THEN 1 ELSE 0 END)}' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='new_lost_refdomains.csv' datatype='table' name='[__tableau_internal_object_id__].[new_lost_refdomains.csv_F538FB92DE614EECA0CE319F729D9EDD]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+      <column caption='Refdomain' datatype='string' name='[refdomain]' role='dimension' type='nominal' />
+      <column caption='Refdomain Top' datatype='string' name='[refdomain_top]' role='dimension' type='nominal' />
+      <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='new_lost_refdomains.csv' id='new_lost_refdomains.csv_F538FB92DE614EECA0CE319F729D9EDD'>
+            <properties context=''>
+              <relation connection='textscan.14tf3au12cpugj1a697on1hk1kud' name='new_lost_refdomains.csv' table='[new_lost_refdomains#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='string' name='type' ordinal='2' />
+                  <column datatype='string' name='refdomain' ordinal='3' />
+                  <column datatype='string' name='refdomain_top' ordinal='4' />
+                  <column datatype='integer' name='domain_rating' ordinal='5' />
+                  <column datatype='string' name='target' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Referring Domains &gt;=20 Cumulative All Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='new_lost_refdomains' name='federated.19yodeg1g2rq531a9kw3w0ssbd9h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19yodeg1g2rq531a9kw3w0ssbd9h'>
+            <column caption='New Links' datatype='integer' name='[Calculation_3693796156737638404]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [type] == &quot;new&quot;&#10;THEN &#10;[domain_rating]&#10;ELSE &#10;NULL&#10;END' />
+            </column>
+            <column caption='Lost Links' datatype='integer' name='[Calculation_3693796156737728517]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [type] == &apos;lost&apos;&#10;THEN&#10;[domain_rating]&#10;ELSE &#10;NULL&#10;END' />
+            </column>
+            <column caption='Total Diff' datatype='integer' name='[Calculation_3693796156738424838]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(COUNT([Calculation_3693796156737638404])) - RUNNING_SUM(COUNT([Calculation_3693796156737728517]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+            <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3693796156738424838]' derivation='User' name='[usr:Calculation_3693796156738424838:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]' value='108' />
+            <encoding attr='space' class='0' field='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]' field-type='quantitative' max='#2023-08-15 00:00:00#' min='#2017-01-01#' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]' scope='rows' value='Total Unique Referring Domains &gt;=20' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]' value='57' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' />
+              <text column='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</rows>
+        <cols>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;forrent&quot;</value>
+                <value>285</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='25' y='14' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;rentals&quot;</value>
+                <value>252</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-15' y='-4' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;hotpads&quot;</value>
+                <value>216</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-46' y='-6' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;apartmentguide&quot;</value>
+                <value>6322</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-34' y='-9' />
+          </mark-label>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;redfin&quot;</value>
+                <value>24028</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='21' y='11' />
+          </mark-label>
+          <mark-label id='5'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;apartmentlist&quot;</value>
+                <value>6956</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-21' y='16' />
+          </mark-label>
+          <mark-label id='6'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;apartments&quot;</value>
+                <value>6896</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-27' y='5' />
+          </mark-label>
+          <mark-label id='7'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;rent&quot;</value>
+                <value>8923</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-17' y='6' />
+          </mark-label>
+          <mark-label id='8'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-08-14#</value>
+                <value>&quot;apartmentguide&quot;</value>
+                <value>6705</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-46' y='-19' />
+          </mark-label>
+          <mark-label id='9'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-08-14#</value>
+                <value>&quot;apartmentlist&quot;</value>
+                <value>7042</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-40' y='14' />
+          </mark-label>
+          <mark-label id='10'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-08-14#</value>
+                <value>&quot;forrent&quot;</value>
+                <value>2462</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-21' y='7' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{22E4FB95-D3CE-4CE7-B62A-582168EFFFDE}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Referring Domains &gt;=20 Cumulative 2022 to Today
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='new_lost_refdomains' name='federated.19yodeg1g2rq531a9kw3w0ssbd9h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19yodeg1g2rq531a9kw3w0ssbd9h'>
+            <column caption='New Links' datatype='integer' name='[Calculation_3693796156737638404]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [type] == &quot;new&quot;&#10;THEN &#10;[domain_rating]&#10;ELSE &#10;NULL&#10;END' />
+            </column>
+            <column caption='Lost Links' datatype='integer' name='[Calculation_3693796156737728517]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [type] == &apos;lost&apos;&#10;THEN&#10;[domain_rating]&#10;ELSE &#10;NULL&#10;END' />
+            </column>
+            <column caption='Total Diff' datatype='integer' name='[Calculation_3693796156738424838]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RUNNING_SUM(COUNT([Calculation_3693796156737638404])) - RUNNING_SUM(COUNT([Calculation_3693796156737728517]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Domain Rating' datatype='integer' name='[domain_rating]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[target]' derivation='None' name='[none:target:nk]' pivot='key' type='nominal' />
+            <column caption='Target' datatype='string' name='[target]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_3693796156738424838]' derivation='User' name='[usr:Calculation_3693796156738424838:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]' included-values='in-range'>
+            <min>#2022-01-01#</min>
+            <max>#2023-08-14#</max>
+          </filter>
+          <slices>
+            <column>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]' value='108' />
+            <format attr='title' class='0' field='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]' scope='rows' value='Total Unique Referring Domains &gt;=20' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]' value='57' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' />
+              <text column='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</rows>
+        <cols>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;forrent&quot;</value>
+                <value>285</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='25' y='14' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;rentals&quot;</value>
+                <value>252</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-15' y='-4' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;hotpads&quot;</value>
+                <value>216</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-46' y='-6' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;apartmentguide&quot;</value>
+                <value>6322</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-34' y='-9' />
+          </mark-label>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;redfin&quot;</value>
+                <value>24028</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='21' y='11' />
+          </mark-label>
+          <mark-label id='5'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;apartmentlist&quot;</value>
+                <value>6956</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-21' y='16' />
+          </mark-label>
+          <mark-label id='6'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;apartments&quot;</value>
+                <value>6896</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-27' y='5' />
+          </mark-label>
+          <mark-label id='7'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-06-13#</value>
+                <value>&quot;rent&quot;</value>
+                <value>8923</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-17' y='6' />
+          </mark-label>
+          <mark-label id='8'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-08-14#</value>
+                <value>&quot;forrent&quot;</value>
+                <value>219</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='15' y='14' />
+          </mark-label>
+          <mark-label id='9'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:date:qk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]</field>
+                  <field>[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[usr:Calculation_3693796156738424838:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>#2023-08-14#</value>
+                <value>&quot;rentals&quot;</value>
+                <value>218</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='19' y='6' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{24A3B45E-9DC9-47A9-977D-19A4C9D3AEC8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='2022+ Acquisitions'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='5' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='88625' id='1' name='Sheet 1 (2)' w='98400' x='800' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9375' id='6' name='Sheet 1 (2)' pane-specification-id='3' param='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' type-v2='color' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='88625' id='1' is-fixed='true' name='Sheet 1 (2)' w='98400' x='800' y='10375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9375' id='6' name='Sheet 1 (2)' pane-specification-id='3' param='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' type-v2='color' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4686A0E2-821D-4502-9BE0-2D0902AA26DB}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='All time Acquisitions'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='88625' id='3' name='Sheet 1' w='98400' x='800' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='82' h='9375' id='8' is-fixed='true' leg-item-order='normal' name='Sheet 1' pane-specification-id='3' param='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' type-v2='color' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='88625' id='3' is-fixed='true' name='Sheet 1' w='98400' x='800' y='10375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='82' h='9375' id='8' leg-item-order='normal' name='Sheet 1' pane-specification-id='3' param='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' type-v2='color' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{65CDE291-6FFC-4867-928E-1010EAE35DAE}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='dashboard' name='All time Acquisitions'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{AFFA7505-6C76-465B-9C9C-DD3FA806CE59}' />
+    </window>
+    <window class='dashboard' maximized='true' name='2022+ Acquisitions'>
+      <viewpoints>
+        <viewpoint name='Sheet 1 (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{985A141E-78D0-4070-AC8E-F83221B7ED55}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7A8A775F-6944-4122-A877-06871F5BEEA2}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.19yodeg1g2rq531a9kw3w0ssbd9h].[none:target:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9EEFBF2E-DA4B-4D49-A220-39112F2BBD05}' />
+    </window>
+  </windows>
+</workbook>
